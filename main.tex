@@ -1,0 +1,120 @@
+\documentclass[11pt,a4paper,twoside,openright]{report}
+
+\usepackage[top=25mm,bottom=25mm,right=25mm,left=30mm,head=12.5mm,foot=12.5mm]{geometry}
+\let\openright=\cleardoublepage
+
+\input{macros}
+
+\def\NazevPrace{Zařízení pro realizaci chytré domácnosti}
+\def\Trida{4.C}
+\def\AutorPrace{Vladislav Aulich}
+\def\DatumOdevzdani{2021}
+
+% Vedoucí práce: Jméno a příjmení s~tituly
+\def\Vedouci{Emil Miler}
+
+% Studijní program a obor
+\def\StudijniProgram{studijní program}
+\def\StudijniObor{studijní obor}
+
+% Text čestného prohlášení
+\def\Prohlaseni{Prohlašuji, že jsem svou práci vypracoval samostatně a použil jsem pouze prameny a literaturu
+	uvedené v~seznamu bibliografických záznamů. Nemám žádné námitky proti zpřístupňování této práce v~souladu se
+	zákonem č. 121/2000 Sb. o~právu autorském, o~právech souvisejících s~právem autorským a
+	o~změně některých zákonů (autorský zákon) ve znění pozdějších předpisů.}
+
+% Text poděkování
+\def\Podekovani{%
+podekovani
+}
+
+% Abstrakt česky
+\def\Abstrakt{%
+	neco
+}
+
+% Abstrakt anglicky
+\def\AbstraktEN{%
+	neco
+}
+
+% 3 až 5 klíčových slov
+\def\KlicovaSlova{aktivní farmaceutické látky; molekulární dynamika; amorfní disperze}
+% 3 až 5 klíčových slov anglicky
+\def\KlicovaSlovaEN{active pharmaceutical ingredients; molecular dynamics; amorphous dispersion}
+
+\begin{document}
+	
+	\include{titlepage}
+	
+	% Obsah
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	
+	\chapter{Introduction}
+	\pagestyle{fancy}
+
+	\section{Studied compounds}
+    \subsection{Polylactic acid}
+
+    \subsection{Active pharmaceutical ingredients}
+    
+   % \subsubsection{Ibuprofen}
+    
+    %\subsubsection{Naproxen}
+    The second selected API is \textbf{naproxen} a non-steroidal anti-inflammatory drug, used as a painkiller. Naproxen contains three oxygen atoms (one carboxyl group and one ether bond), the structure is shown in Figure \ref{fig:APIs} on the right. According to its structure, naproxen can donate one hydrogen bond and accept up to three hydrogen bonds. Naproxen is a white crystalline powder, with a molar weight of $M_\mathrm{w}$~=~230.263~$\mathrm{g\ mol^{-1}}$ and melting point 429.3 K \cite{stejfa}. 
+    
+    %\subsubsection{Carbamazepine}
+    \textbf{Carbamazepine} is a representative anticonvulsant, which is used for the treatment of seizures and neuropathic pain. Carbamazepine contains two nitrogen atoms (amide group) and one oxygen in the carboxyl group; its structure is shown in Figure \ref{fig:APIs} on the left side. According to its structure, carbamazepine can accept and donate one hydrogen bond. Carbamazepine is a white crystalline powder, with a molar weight of $M_\mathrm{w}$~=~236.273~$\mathrm{g\ mol^{-1}}$ and melting temperature of 463.6 K \cite{stejfa}.
+    
+    %\subsubsection{Indomethacine}
+    
+    %\subsubsection{Sulfathiazole}
+    The selected API was \textbf{sulfathiazole} as a representative antibiotic drug from the sulfonamides group, which is used in the treatment of pyogenic cutaneous infections \cite{sulfathiazole_usage}. Sulfathiazole is a white crystalline powder, with molar weight $(M_\mathrm{w})$ =255.3 $\mathrm{gmol^{-1}}$ \cite{sulfathiazole}, which is highly polymorphic, there are 5 polymorphs discovered so far \cite{caron}. All known polymorphs of sulfathiazole crystallize in the $P2_1/c$ space group, but there are differences in intermolecular bonding and structural properties \cite{sulfathiazole_exp}. For our research, we chose the II polymorph, the structure of which is pictured in Figure \ref{fig:sulfathiazole}, there are four molecules of sulfathiazole in the crystal monoclinic unit cell. Our goal is to use quantum computing methods to determine the charges on atoms to complete the force field file model, and then to use MD to validate the model through comparison of simulated crystallographic parameters and density with experimental data.
+    
+    \begin{figure}[htb!]
+        \begin{subfigure}{0.5\textwidth}
+        \includegraphics[1\linewidth]{img/sulfathiazol.png} 
+        \end{subfigure}
+        \begin{subfigure}{0.5\textwidth}
+        \includegraphics[1\linewidth]{img/sulfathiazol_packing.png}
+        \end{subfigure}
+        \caption{Sulfathiazole - molecular structure on the left and a unit cell of its II polymorph on the right.}
+        \label{fig:sulfathiazole}
+    \end{figure}
+	
+
+	\chapter{Theoretical part}
+
+	
+	\chapter{Computational methods}
+
+    \chapter{Results and discussion}
+	
+	
+	
+	\chapter*{Conclusion}
+	\pagestyle{empty}
+	\addcontentsline{toc}{chapter}{Conclusion}
+	
+	
+	%%% Seznam použité literatury
+	\printbibliography[title={References},heading={bibintoc}]
+	
+	%%% Seznam obrázků
+	\openright
+	\listoffigures
+	\addcontentsline{toc}{chapter}{Seznam obrázků}
+	
+	%%% Seznam tabulek
+	\clearpage
+	\listoftables
+	\addcontentsline{toc}{chapter}{Seznam tabulek}
+	
+	%%% Přílohy k práci, existují-li. Každá příloha musí být alespoň jednou
+	%%% odkazována z vlastního textu práce. Přílohy se číslují.
+	
+	%\part*{Přílohy}
+	%\appendix
+	
+\end{document}
