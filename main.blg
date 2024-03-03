@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/TeX Live for SUSE Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: achemso.bst
+A level-1 auxiliary file: firstComponents.aux
+A level-1 auxiliary file: INTRODUCTION.aux
+A level-1 auxiliary file: THEORETICAL_PART.aux
+A level-1 auxiliary file: METHODS.aux
+A level-1 auxiliary file: RESULTS.aux
+A level-1 auxiliary file: CONCLUSION.aux
+A level-1 auxiliary file: lastComponents.aux
+A level-1 auxiliary file: appendix.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-main.bib
+Database file #2: references.bib
+Warning--I didn't find a database entry for "sulfathiazole_usage"
+Warning--I didn't find a database entry for "sulfathiazole"
+Warning--I didn't find a database entry for "caron"
+Warning--I didn't find a database entry for "sulfathiazole_exp"
+achemso 2022-11-25 v3.13f
+You've used 9 entries,
+            2538 wiz_defined-function locations,
+            829 strings with 8962 characters,
+and the built_in function-call counts, 3051 in all, are:
+= -- 247
+> -- 144
+< -- 7
++ -- 58
+- -- 49
+* -- 323
+:= -- 403
+add.period$ -- 16
+call.type$ -- 9
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 9
+duplicate$ -- 165
+empty$ -- 226
+format.name$ -- 58
+if$ -- 601
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 76
+num.names$ -- 24
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 9
+stack$ -- 0
+substring$ -- 210
+swap$ -- 157
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 60
+warning$ -- 0
+while$ -- 27
+width$ -- 0
+write$ -- 133
+(There were 4 warnings)

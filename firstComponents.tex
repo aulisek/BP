@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FRONTPAGE
+\newpage
+\includepdf[pages={1}]{documents/frontpage_placeholder.pdf} 
+%replace your document
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ASSIGNMENT
+\newpage
+\includepdf[pages={1,2}]{documents/assignment_placeholder.pdf}
+%replace your document
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGEMENT
+
+\newpage
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\section*{ACKNOWLEDGEMENT}
+\mbox
+\indent text....
+
+%\vspace*{\fill}
+% \noindent Práce byla podpořena projekty Grantové agentury ČR č. ...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SUMMARY
+
+\newpage
+\thispagestyle{empty}
+
+\section*{SUMMARY}
+Text in English.
+
+
+\subsection*{keywords:}
+\textit{text,text,text}
+
+\bigskip %space between paragraphs
+
+\section*{SOUHRN}
+Text.
+
+
+
+\subsection*{klíčová slova:}
+\textit{text,text,text}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Contents
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+%deleting page numbering from all of the List of Contents pages
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\pagenumbering{gobble}

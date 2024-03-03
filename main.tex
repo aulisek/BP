@@ -1,0 +1,192 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper, 12pt]{article}
+\renewcommand{\baselinestretch}{1.5} 
+
+%Notes:
+
+
+%put in class[draft] to faster pre-compilation
+
+\NeedsTeXFormat{LaTeX2e}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage{xltxtra}
+  \usepackage[english]{babel}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[english]{babel}
+\fi
+%\usepackage[slovak]{babel}
+%\usepackage[czech]{babel}
+
+\usepackage[super=false,usetitle=true]{achemso}
+\bibpunct{[}{]}{,}{n}{}{;}
+\def\citenumfont{\textrm}
+\renewcommand\bibnumfmt[1]{#1. }
+\def\pwidth{210}
+\def\margin{25.0}
+\hbadness=1350
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\usepackage{styles/bakalarska_prace}
+\usepackage[top=3.0cm, bottom=3.0cm, left=3.5cm, right=2.5cm]{geometry}
+
+%Extra packages
+\usepackage{amsmath}
+\usepackage[flushleft]{threeparttable}
+\usepackage{siunitx}
+\usepackage{verbatim}
+\usepackage{amssymb}  
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{bm}
+\usepackage{nicefrac}
+\usepackage{enumitem}
+\usepackage[titletoc,title]{appendix}
+%\usepackage{comment}
+%\usepackage{cite}
+%\usepackage{mciteplus}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{pdfpages}
+%dal experiment
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{xkeyval}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+%\usepackage{subfigure}
+%\usepackage{underscore}
+\mciteErrorOnUnknownfalse
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
+%\usepackage{wrapfig}
+
+\newcommand{\kB}{k_{\text{B}}}
+\newcommand{\rbold}{\mathbf{r}}
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% %%%%%   LISTS   %%%%%%%%%%%%%%%%%%%%%
+%deleting the headline of List of Figures
+\makeatletter
+\renewcommand\listoffigures{%
+        \@starttoc{lof}%
+}
+%deleting the headline of List of Tables
+\makeatletter
+\renewcommand\listoftables{%
+        \@starttoc{lot}%
+}
+
+
+% change Figure Caption
+% \addto\captionsenglish{\renewcommand{\figurename}{Obrázek}}
+% change TOC caption
+% \addto\captionsenglish{\renewcommand{\contentsname}{Obsah}}
+% change appendix caption
+%\addto\captionsenglish{\renewcommand{\appendixname}{Příloha}}
+% change Table Caption
+%\addto\captionsenglish{\renewcommand{\tablename}{Tabulka}}
+
+
+% %%%%%   MATLAB FORMAT   %%%%%%%%%%%%%%%%%%%%%
+\definecolor{mygreen}{RGB}{28,172,0} 
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+    basicstyle=\ttfamily\small,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{black},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break,function,if},emphstyle=[1]\color{blue}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},
+    literate={á}{{\'a}}1
+       {š}{{\v s}}1
+       {č}{{\v c}}1
+       {ž}{{\v z}}1
+       {é}{{\'e}}1
+       {í}{{\'i}}1
+       {ý}{{\'y}}1
+       {ú}{{\' u}}1
+       {ľ}{{\v l}}1
+       {ô}{{\^o}}1
+       {ä}{{\"a}}1
+       {ť}{{\v t}}1
+       {ň}{{\v n}}1
+}
+
+% depth of 5 layers
+% chapter,section,subsection,subsubsection,paragraph,subparagraph
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%equation counter according to sections
+\numberwithin{equation}{section}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGEMENT, SUMMARY, Contents
+\include{firstComponents}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{INTRODUCTION}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{THEORETICAL_PART}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{METHODS}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{RESULTS}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{CONCLUSION}
+\cite{cervinka_structure_2021}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REFERENCES, List of Abbreviations, List of Symbols, List of Tables, 
+% List of Figures
+\include{lastComponents}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+\include{appendix}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
