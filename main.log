@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  3 MAR 2024 14:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  3 MAR 2024 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -866,95 +866,95 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 (./appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-60.
+62.
  (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 160.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 160.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 160.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 160.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 160.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 160.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 160.
-LaTeX Font Info:    Redeclaring math accent \check on input line 160.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 160.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 160.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 160.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 160.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 162.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 162.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 162.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 162.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 162.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 162.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 162.
+LaTeX Font Info:    Redeclaring math accent \check on input line 162.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 162.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 162.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 162.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 162.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 160.
+(Font)              `operators' in the math version `normal' on input line 162.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 160.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 162.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 160.
+(Font)              `operators' in the math version `bold' on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 160.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 160.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 160.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 160.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 160.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 160.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 160.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 160.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 160.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 160.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 162.
 \openout3 = `acs-main.bib'.
 
 \c@bibnote=\count371
 
-Package chemgreek Info: Activating mapping `fontspec' on line 160.
+Package chemgreek Info: Activating mapping `fontspec' on line 162.
 
-Package hyperref Info: Link coloring ON on input line 160.
+Package hyperref Info: Link coloring ON on input line 162.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -1013,7 +1013,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 160.
+or `english'. on input line 162.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1093,52 +1093,76 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `INTRODUCTION.aux'.
 
  (./INTRODUCTION.tex
-
-LaTeX Warning: Reference `fig:APIs' on page 1 undefined on input line 27.
-
 [1
 
 
 
 ]
+File: img/pla_vzorec.png Graphic file (type bmp)
+<img/pla_vzorec.png>
+File: img/pla_1d.png Graphic file (type bmp)
+<img/pla_1d.png>
 
-LaTeX Warning: Reference `fig:APIs' on page 2 undefined on input line 30.
+Overfull \hbox (25.60735pt too wide) in paragraph at lines 28--29
+[][] 
+ []
+
+File: img/pla_100g_tube.png Graphic file (type bmp)
+<img/pla_100g_tube.png>
+
+Overfull \hbox (56.3359pt too wide) in paragraph at lines 31--32
+[][] 
+ []
+
+File: img/ibu_s.png Graphic file (type bmp)
+<img/ibu_s.png>
+File: img/nap.png Graphic file (type bmp)
+<img/nap.png>
+File: img/cbz_svk.png Graphic file (type bmp)
+<img/cbz_svk.png>
+File: img/indo.png Graphic file (type bmp)
+<img/indo.png>
+
+Overfull \hbox (10.90775pt too wide) in paragraph at lines 51--58
+[]  []  [] 
+ []
 
 
 Package natbib Warning: Citation `sulfathiazole_usage' on page 2 undefined on i
-nput line 35.
+nput line 63.
 
 
 Package natbib Warning: Citation `sulfathiazole' on page 2 undefined on input l
-ine 35.
+ine 63.
 
 
-Package natbib Warning: Citation `caron' on page 2 undefined on input line 35.
+Package natbib Warning: Citation `caron' on page 2 undefined on input line 63.
 
 
 Package natbib Warning: Citation `sulfathiazole_exp' on page 2 undefined on inp
-ut line 35.
+ut line 63.
 
+[2]
 File: img/sulfathiazol.png Graphic file (type bmp)
 <img/sulfathiazol.png>
 
-Overfull \hbox (42.67848pt too wide) in paragraph at lines 39--40
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 67--68
 [][] 
  []
 
 File: img/sulfathiazol_packing.png Graphic file (type bmp)
 <img/sulfathiazol_packing.png>
 
-Overfull \hbox (21.34087pt too wide) in paragraph at lines 42--43
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 38--44
+Overfull \hbox (2.608pt too wide) in paragraph at lines 66--72
 [][] [] 
  []
 
-) [2] [3]
+) [3]
 \openout2 = `THEORETICAL_PART.aux'.
 
  (./THEORETICAL_PART.tex) [4
@@ -1155,15 +1179,15 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 38--44
 ]
 \openout2 = `RESULTS.aux'.
 
- (./RESULTS.tex)
-[6
+ (./RESULTS.tex) [6
 
 
 
 ]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [7
+
+(./CONCLUSION.tex) [7
 
 
 
@@ -1174,10 +1198,15 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 38--44
 ]
 \openout2 = `lastComponents.aux'.
 
- (./lastComponents.tex (./main.bbl) [9
+ (./lastComponents.tex (./main.bbl
+Underfull \hbox (badness 6078) in paragraph at lines 38--45
+[]\TU/lmr/m/n/12 Batisai, E. Solubility Enhancement of Antidiabetic Drugs Using
+ a
+ []
 
-] [10]
-[11] (./main.lot)
+) [9
+
+] [10] [11] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
@@ -1199,9 +1228,6 @@ Package natbib Warning: There were undefined citations.
 (./main.aux (./firstComponents.aux) (./INTRODUCTION.aux)
 (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux) (./CONCLUSION.aux)
 (./lastComponents.aux) (./appendix.aux))
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A02A92E983BE9A3C3607C2639F047193;1806.
  )
@@ -1210,12 +1236,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26938 strings out of 477835
- 543593 string characters out of 5829531
- 1858018 words of memory out of 5000000
- 46681 multiletter control sequences out of 15000+600000
+ 27007 strings out of 477835
+ 545056 string characters out of 5829531
+ 1862018 words of memory out of 5000000
+ 46743 multiletter control sequences out of 15000+600000
  520133 words of font info for 69 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1128b,11914s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1128b,11918s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (20 pages).

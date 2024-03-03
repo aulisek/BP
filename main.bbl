@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{9}
+\begin{mcitethebibliography}{12}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -34,11 +34,28 @@ Leuner,~C. Improving drug solubility for oral delivery using solid dispersions.
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Singh \latin{et~al.}(2011)Singh, Worku, and {Van Den
-  Mooter}]{singh_oral_2011}
-Singh,~A.; Worku,~Z.~A.; {Van Den Mooter},~G. Oral formulation strategies to
-  improve solubility of poorly water-soluble drugs. \emph{Expert Opinion on
-  Drug Delivery} \textbf{2011}, \emph{8}, 1361–1378\relax
+\bibitem[Batisai(2021)]{batisai_solubility_2021}
+Batisai,~E. Solubility {Enhancement} of {Antidiabetic} {Drugs} {Using} a
+  {Co}‐{Crystallization} {Approach}. \emph{ChemistryOpen} \textbf{2021},
+  \emph{10}, 1260–1268\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Huang(2004)]{huang_impact_2004}
+Huang,~L. Impact of solid state properties on developability assessment of drug
+  candidates. \emph{Advanced Drug Delivery Reviews} \textbf{2004}, \emph{56},
+  321–334\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Srinarong \latin{et~al.}(2011)Srinarong, {De Waard}, Frijlink, and
+  Hinrichs]{srinarong_improved_2011}
+Srinarong,~P.; {De Waard},~H.; Frijlink,~H.~W.; Hinrichs,~W.~L. Improved
+  dissolution behavior of lipophilic drugs by solid dispersions: the production
+  process as starting point for formulation considerations. \emph{Expert
+  Opinion on Drug Delivery} \textbf{2011}, \emph{8}, 1121–1140\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -78,6 +95,16 @@ Newman,~A.; Zografi,~G. What {Are} the {Important} {Factors} {That} {Influence}
   {Mixtures} during {Long}-{Term} {Storage} in the {Glassy} {State}?
   \emph{Molecular pharmaceutics} \textbf{2022}, \emph{19}, 378–391, Place:
   United States\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Klajmon \latin{et~al.}(2023)Klajmon, Aulich, Ludík, and
+  Červinka]{klajmon_glass_2023}
+Klajmon,~M.; Aulich,~V.; Ludík,~J.; Červinka,~C. Glass {Transition} and
+  {Structure} of {Organic} {Polymers} from {All}-{Atom} {Molecular}
+  {Simulations}. \emph{Industrial \& Engineering Chemistry Research}
+  \textbf{2023}, \emph{62}, 21437–21448\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

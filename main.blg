@@ -18,45 +18,45 @@ Warning--I didn't find a database entry for "sulfathiazole"
 Warning--I didn't find a database entry for "caron"
 Warning--I didn't find a database entry for "sulfathiazole_exp"
 achemso 2022-11-25 v3.13f
-You've used 9 entries,
+You've used 12 entries,
             2538 wiz_defined-function locations,
-            829 strings with 8962 characters,
-and the built_in function-call counts, 3051 in all, are:
-= -- 247
-> -- 144
-< -- 7
-+ -- 58
-- -- 49
-* -- 323
-:= -- 403
-add.period$ -- 16
-call.type$ -- 9
+            855 strings with 9882 characters,
+and the built_in function-call counts, 4113 in all, are:
+= -- 339
+> -- 188
+< -- 9
++ -- 75
+- -- 63
+* -- 434
+:= -- 543
+add.period$ -- 22
+call.type$ -- 12
 change.case$ -- 4
 chr.to.int$ -- 2
-cite$ -- 9
-duplicate$ -- 165
-empty$ -- 226
-format.name$ -- 58
-if$ -- 601
+cite$ -- 12
+duplicate$ -- 216
+empty$ -- 313
+format.name$ -- 75
+if$ -- 819
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 76
-num.names$ -- 24
-pop$ -- 15
+newline$ -- 94
+num.names$ -- 33
+pop$ -- 21
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 9
+skip$ -- 12
 stack$ -- 0
-substring$ -- 210
-swap$ -- 157
-text.length$ -- 16
+substring$ -- 309
+swap$ -- 204
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 60
+type$ -- 81
 warning$ -- 0
-while$ -- 27
+while$ -- 36
 width$ -- 0
-write$ -- 133
+write$ -- 172
 (There were 4 warnings)
