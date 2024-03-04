@@ -1,7 +1,19 @@
 \newpage
-\section{METHODS}
+\section{COMPUTATIONAL METHODS}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-text
+LAMMPS software \cite{thompson_lammps_2022} (version 5 May 2020) was used for all molecular dynamics calculations. The placement of molecular chains in the simulation boxes was made by Packmol \cite{martinez_p_2009}, the chains are randomly distributed in the space of a cubic box. The input files for the LAMMPS software were generated using the fftool \cite{fftool} script written in Python programming language.
+
+We also used periodic boundary conditions in the directions of all axes. The contributions of long-range charge interactions of distant atoms are calculated using the long-range solver by the particle-particle-particle-mesh (pppm) algorithm\cite{hockney1988}. The bonds and angles are considered as a harmonic oscillator, and for dihedral angles, OPLS (Optimised Potentials for Liquid Simulations) is used for every atom. The Coulombic point charges and Lennard-Jones potential are used. The cutoff distance for dispersion and Coulombic interactions was set to 12 \r{A}. A SHAKE atom algorithm\cite{ryckaert1977} was applied to constrain the lengths of covalent bonds terminating in hydrogen atoms. The simulations were run under NPT conditions using the Nosé-Hoover thermostat and barostat\cite{tuckerman2006}, with relaxation times for the temperature control as 100 fs and pressure control as 1000 fs. The simulations contained around 25~000 atoms in a box. From previous research, this was considered to be a suitable setting.
+
+The box of neat carbamazepine contained 800 molecules (24~000 atoms), after equilibration, the run size of the box was 66 \r{A}. In the naproxen simulation box 800 molecules were presented (24~800 atoms), balanced box size was 66 \r{A}.
+
+The parameterisation of the PLA force field used during MD simulations was obtained from the literature \cite{ff_pla}. The parameterizations of APIs were also taken from the literature\cite{pharmaceutics13081253}.
+
+We started all simulations with an equilibration simulation run from randomly packed simulation boxes under the temperature of 500~K and pressure of 1 bar in three blocks with a gradually increasing time-integration step. The simulation began with a step of 0.25~fs, followed by steps 0.5 and 0.75 each for a simulation time of 0.5~ns, then 1~ns of simulation with a step of 1~fs. From this point, we cooled the system, down to 300~K for 2~ns with a step of 1~fs. After this cooling, we continued with a 10~ns long production run with a temperature of 300~K and pressure equal to 1~bar.
+
+From these production runs we evaluated the MSD (Mean Squared Displacement) of API and PLA molecules in the mixture and the RDF (radial distribution function) of atom interactions. We also performed a production run under the higher temperature of 500~K and the same pressure of 1 bar starting from conformations after the first equilibration under 500~K. We also sampled RDFs and MSDs. Those simulations were performed for neat APIs, PLA polymer, and mixtures with different concentrations of API. For each API the concentration ratio API:PLA in the number of molecules was 100:17, 200:17, and 300:17. 
+
+To determine the glass transition temperature of mixtures, we performed simulations with gradually decreasing temperature (simulated annealing) starting at 800 K and ending at 200 K. Systems containing a mixture of API and PLA were first warmed to 800 K for 2 ns from conformations from simulations under 500 K.      

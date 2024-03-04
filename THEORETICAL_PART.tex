@@ -3,5 +3,32 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Molecular dynamics}
+The molecular dynamics method is based on solving the equations of motion of classical Newtonian mechanics for atoms. Let us choose the assumption that the interaction potential $U$ is continuous and differentiable. The force acting on the $i$ particle can thus be written as an equation \ref{sila1} 
+\begin{equation}\label{sila1}
+	f_i=-\frac{\partial U(r^N)}{\partial r_i}, \qquad i=1,...,N.
+\end{equation}
 
-text
+In molecular dynamics, we are focused on the time development of the model. In the other words, we are looking for the trajectory of the solution of the respective systems of differential equations. In Newtonian mechanics, acceleration is directly related to forces through the equations of motion. Formally, we can write the equation \ref{sila2}
+\begin{equation}\label{sila2}
+	\Ddot{r_i}=\frac{f_i}{m_i}, \qquad i=1,...,N,
+\end{equation}
+where the second time derivative of the positions appears on the left side. The equation \ref{sila2} is a system of 3$N$ ordinary differential equations for a set of $N$ atoms. As initial conditions, we usually choose knowledge of all positions $r_i$ and velocities $\dot{r_i}$ at the initial time $t=t_0$. 
+
+We solve equation \ref{sila2} using the finite difference method when we track the desired solution in the form of the function $r_i(t), i=1,..,N$, in the time interval $[t_0,t_{max}]$ at discrete points of the form $t=t_0+kh$, where $h$ is the integration step and $k$ is a non-negative integer.
+
+To find a solution, it is necessary to calculate the forces acting on individual particles at each step of the simulation. One of the methods that is applied in this area is the Verlet integration method. It is a simple and very effective method that provides sufficiently accurate results. Its great advantage is the reversibility of time and the conservation of the total energy of the system~\cite{mdskripta}.
+
+\subsubsection{Verlet integration}
+Verlet integration method is a numerical method for integrating the equation \ref{sila1}. We express the second derivative using finite differences. From the second-order Taylor expansion $r_i(t\pm h)$ centred at $t$, we obtain the formula
+\begin{equation}\label{sila3}
+	\Ddot{r_i}=\frac{r_i(t-h)-2r_i(t)+r_i(t+h)}{h^2},
+\end{equation}
+binding values at three points in a row ($t-h$, $t$ and $t+h$). We will use this characteristic to calculate $r_i(t+h)$. By substituting \ref{sila3} into \ref{sila1} we get 
+\begin{equation}\label{sila4}
+	r_i(t+h)=2r_i(t)-r_i(t-h)+h^2\frac{f_i(t)}{m_i}.
+\end{equation}
+In this formulation, we are able to calculate the new positions at time $t+h$ from knowledge of the forces at time $t$, the positions of the particles at time $t$ and the previous time $t-h$. The time reversibility of the method is clearly visible here. The advantage is that the force is calculated only once in each step of the simulation. For the position preceding the initial position ($r_i(t_0-h)$), we can use the expansion \ref{sila5}
+\begin{equation}\label{sila5}
+	r_i(t_0-h)=r_i(t)-h\dot{r_i}(t_0)+h^2\frac{f_i(t_0)}{2m_i}.
+\end{equation}
