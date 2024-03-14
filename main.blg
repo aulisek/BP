@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/TeX Live for SUSE Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: achemso.bst
+A level-1 auxiliary file: firstComponents.aux
+A level-1 auxiliary file: INTRODUCTION.aux
+A level-1 auxiliary file: THEORETICAL_PART.aux
+A level-1 auxiliary file: METHODS.aux
+A level-1 auxiliary file: RESULTS.aux
+A level-1 auxiliary file: CONCLUSION.aux
+A level-1 auxiliary file: lastComponents.aux
+A level-1 auxiliary file: appendix.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-main.bib
+Database file #2: references.bib
+achemso 2022-11-25 v3.13f
+You've used 22 entries,
+            2538 wiz_defined-function locations,
+            928 strings with 12772 characters,
+and the built_in function-call counts, 7886 in all, are:
+= -- 636
+> -- 415
+< -- 16
++ -- 163
+- -- 143
+* -- 834
+:= -- 1052
+add.period$ -- 40
+call.type$ -- 22
+change.case$ -- 5
+chr.to.int$ -- 4
+cite$ -- 22
+duplicate$ -- 432
+empty$ -- 576
+format.name$ -- 167
+if$ -- 1579
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 154
+num.names$ -- 63
+pop$ -- 43
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 517
+swap$ -- 427
+text.length$ -- 43
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 145
+warning$ -- 0
+while$ -- 67
+width$ -- 0
+write$ -- 297

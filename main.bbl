@@ -1,0 +1,224 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{22}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Leuner(2000)]{leuner_improving_2000}
+Leuner,~C. Improving drug solubility for oral delivery using solid dispersions.
+  \emph{European Journal of Pharmaceutics and Biopharmaceutics} \textbf{2000},
+  \emph{50}, 47–60\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Batisai(2021)]{batisai_solubility_2021}
+Batisai,~E. Solubility {Enhancement} of {Antidiabetic} {Drugs} {Using} a
+  {Co}‐{Crystallization} {Approach}. \emph{ChemistryOpen} \textbf{2021},
+  \emph{10}, 1260–1268\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Huang(2004)]{huang_impact_2004}
+Huang,~L. Impact of solid state properties on developability assessment of drug
+  candidates. \emph{Advanced Drug Delivery Reviews} \textbf{2004}, \emph{56},
+  321–334\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Srinarong \latin{et~al.}(2011)Srinarong, {De Waard}, Frijlink, and
+  Hinrichs]{srinarong_improved_2011}
+Srinarong,~P.; {De Waard},~H.; Frijlink,~H.~W.; Hinrichs,~W.~L. Improved
+  dissolution behavior of lipophilic drugs by solid dispersions: the production
+  process as starting point for formulation considerations. \emph{Expert
+  Opinion on Drug Delivery} \textbf{2011}, \emph{8}, 1121–1140\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Vasconcelos \latin{et~al.}(2007)Vasconcelos, Sarmento, and
+  Costa]{vasconcelos_solid_2007}
+Vasconcelos,~T.; Sarmento,~B.; Costa,~P. Solid dispersions as strategy to
+  improve oral bioavailability of poor water soluble drugs. \emph{Drug
+  Discovery Today} \textbf{2007}, \emph{12}, 1068–1075\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Caron \latin{et~al.}(2011)Caron, Tajber, Corrigan, and
+  Healy]{caron_comparison_2011}
+Caron,~V.; Tajber,~L.; Corrigan,~O.~I.; Healy,~A.~M. A {Comparison} of {Spray}
+  {Drying} and {Milling} in the {Production} of {Amorphous} {Dispersions} of
+  {Sulfathiazole}/{Polyvinylpyrrolidone} and
+  {Sulfadimidine}/{Polyvinylpyrrolidone}. \emph{Molecular Pharmaceutics}
+  \textbf{2011}, \emph{8}, 532–542\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Prudic \latin{et~al.}(2014)Prudic, Ji, and
+  Sadowski]{prudic_thermodynamic_2014}
+Prudic,~A.; Ji,~Y.; Sadowski,~G. Thermodynamic {Phase} {Behavior} of
+  {API}/{Polymer} {Solid} {Dispersions}. \emph{Molecular Pharmaceutics}
+  \textbf{2014}, \emph{11}, 2294–2304\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Newman and Zografi(2022)Newman, and Zografi]{newman_what_2022}
+Newman,~A.; Zografi,~G. What {Are} the {Important} {Factors} {That} {Influence}
+  {API} {Crystallization} in {Miscible} {Amorphous} {API}-{Excipient}
+  {Mixtures} during {Long}-{Term} {Storage} in the {Glassy} {State}?
+  \emph{Molecular pharmaceutics} \textbf{2022}, \emph{19}, 378–391, Place:
+  United States\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Klajmon \latin{et~al.}(2023)Klajmon, Aulich, Ludík, and
+  Červinka]{klajmon_glass_2023}
+Klajmon,~M.; Aulich,~V.; Ludík,~J.; Červinka,~C. Glass {Transition} and
+  {Structure} of {Organic} {Polymers} from {All}-{Atom} {Molecular}
+  {Simulations}. \emph{Industrial \& Engineering Chemistry Research}
+  \textbf{2023}, \emph{62}, 21437–21448\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rainsford(2009)]{rainsford_ibuprofen_2009}
+Rainsford,~K.~D. Ibuprofen: pharmacology, efficacy and safety.
+  \emph{Inflammopharmacology} \textbf{2009}, \emph{17}, 275–342\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Štejfa \latin{et~al.}(2021)Štejfa, Pokorný, Mathers, Růžička,
+  and Fulem]{stejfa_heat_2021}
+Štejfa,~V.; Pokorný,~V.; Mathers,~A.; Růžička,~K.; Fulem,~M. Heat
+  capacities of selected active pharmaceutical ingredients. \emph{The Journal
+  of Chemical Thermodynamics} \textbf{2021}, \emph{163}, 106585\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Drebushchak \latin{et~al.}(2008)Drebushchak, Boldyreva, and
+  Mikhailenko]{drebushchak_crystal_2008}
+Drebushchak,~T.~N.; Boldyreva,~E.~V.; Mikhailenko,~M.~A. Crystal structures of
+  sulfathiazole polymorphs in the temperature range 100–295 {K}: {A}
+  comparative analysis. \emph{Journal of Structural Chemistry} \textbf{2008},
+  \emph{49}, 84–94\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nezbeda \latin{et~al.}(1998)Nezbeda, Kolafa, and Kotrla]{mdskripta}
+Nezbeda,~I.; Kolafa,~J.; Kotrla,~M. \emph{Úvod do počítačových
+  simulací:metody Monte Carlo a molekulární dynamiky.}; Karolinum,
+  1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Thompson \latin{et~al.}(2022)Thompson, Aktulga, Berger, Bolintineanu,
+  Brown, Crozier, {In 'T Veld}, Kohlmeyer, Moore, Nguyen, Shan, Stevens,
+  Tranchida, Trott, and Plimpton]{thompson_lammps_2022}
+Thompson,~A.~P.; Aktulga,~H.~M.; Berger,~R.; Bolintineanu,~D.~S.; Brown,~W.~M.;
+  Crozier,~P.~S.; {In 'T Veld},~P.~J.; Kohlmeyer,~A.; Moore,~S.~G.;
+  Nguyen,~T.~D.; Shan,~R.; Stevens,~M.~J.; Tranchida,~J.; Trott,~C.;
+  Plimpton,~S.~J. {LAMMPS} - a flexible simulation tool for particle-based
+  materials modeling at the atomic, meso, and continuum scales. \emph{Computer
+  Physics Communications} \textbf{2022}, \emph{271}, 108171\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Martínez \latin{et~al.}(2009)Martínez, Andrade, Birgin, and
+  Martínez]{martinez_p_2009}
+Martínez,~L.; Andrade,~R.; Birgin,~E.~G.; Martínez,~J.~M. P {\textless}span
+  style="font-variant:small-caps;"{\textgreater}{ACKMOL}{\textless}/span{\textgreater}
+  : {A} package for building initial configurations for molecular dynamics
+  simulations. \emph{Journal of Computational Chemistry} \textbf{2009},
+  \emph{30}, 2157–2164\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Padua()]{fftool}
+Padua,~A. ENS Lyon, France. \url{https://github.com/paduagroup/fftool}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hockney and Eastwood(2021)Hockney, and
+  Eastwood]{hockney_computer_2021}
+Hockney,~R.; Eastwood,~J. \emph{Computer {Simulation} {Using} {Particles}}, 0th
+  ed.; CRC Press, 2021; p 540\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ryckaert \latin{et~al.}(1977)Ryckaert, Ciccotti, and
+  Berendsen]{ryckaert_numerical_1977}
+Ryckaert,~J.-P.; Ciccotti,~G.; Berendsen,~H.~J. Numerical integration of the
+  cartesian equations of motion of a system with constraints: molecular
+  dynamics of n-alkanes. \emph{Journal of Computational Physics} \textbf{1977},
+  \emph{23}, 327–341\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tuckerman \latin{et~al.}(2006)Tuckerman, Alejandre, López-Rendón,
+  Jochim, and Martyna]{tuckerman_liouville-operator_2006}
+Tuckerman,~M.~E.; Alejandre,~J.; López-Rendón,~R.; Jochim,~A.~L.;
+  Martyna,~G.~J. A {Liouville}-operator derived measure-preserving integrator
+  for molecular dynamics simulations in the isothermal–isobaric ensemble.
+  \emph{Journal of Physics A: Mathematical and General} \textbf{2006},
+  \emph{39}, 5629–5651\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McAliley and Bruce(2011)McAliley, and
+  Bruce]{mcaliley_development_2011}
+McAliley,~J.~H.; Bruce,~D.~A. Development of {Force} {Field} {Parameters} for
+  {Molecular} {Simulation} of {Polylactide}. \emph{Journal of Chemical Theory
+  and Computation} \textbf{2011}, \emph{7}, 3756–3767\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Červinka and Fulem(2021)Červinka, and
+  Fulem]{cervinka_structure_2021}
+Červinka,~C.; Fulem,~M. Structure and {Glass} {Transition} {Temperature} of
+  {Amorphous} {Dispersions} of {Model} {Pharmaceuticals} with {Nucleobases}
+  from {Molecular} {Dynamics}. \emph{Pharmaceutics} \textbf{2021}, \emph{13},
+  1253\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}
