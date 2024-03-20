@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  18 MAR 2024 18:24
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  20 MAR 2024 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,21 +1123,21 @@ Overfull \hbox (13.47179pt too wide) in paragraph at lines 47--48
 benzo(b,f)azepine (C$[]$H$[]$N$[]$O)
  []
 
-File: img/ibu_s.png Graphic file (type bmp)
-<img/ibu_s.png>
-File: img/nap.png Graphic file (type bmp)
-<img/nap.png>
-File: img/cbz_svk.png Graphic file (type bmp)
-<img/cbz_svk.png>
-File: img/indo.png Graphic file (type bmp)
-<img/indo.png>
+File: img/ibu_s_popis.png Graphic file (type bmp)
+<img/ibu_s_popis.png>
+File: img/nap_popis.png Graphic file (type bmp)
+<img/nap_popis.png>
+File: img/cbz_svk_popis.png Graphic file (type bmp)
+<img/cbz_svk_popis.png>
+File: img/indo_popis.png Graphic file (type bmp)
+<img/indo_popis.png>
 
-Overfull \hbox (10.90775pt too wide) in paragraph at lines 53--59
+Overfull \hbox (32.2421pt too wide) in paragraph at lines 53--61
 []  []  [] 
  []
 
 
-Overfull \hbox (4.21347pt too wide) in paragraph at lines 50--62
+Overfull \hbox (4.21347pt too wide) in paragraph at lines 50--64
 []\TU/lmr/bx/n/12 Indomethacin\TU/lmr/m/n/12 , 2-1-[(4-Chlorophenyl)carbonyl]-5
 -methoxy-2-methyl-1H-indol-3-
  []
@@ -1146,43 +1146,41 @@ Overfull \hbox (4.21347pt too wide) in paragraph at lines 50--62
 File: img/sulfathiazol.png Graphic file (type bmp)
 <img/sulfathiazol.png>
 
-Overfull \hbox (42.67848pt too wide) in paragraph at lines 68--69
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
 File: img/sulfathiazol_packing.png Graphic file (type bmp)
 <img/sulfathiazol_packing.png>
 
-Overfull \hbox (21.34087pt too wide) in paragraph at lines 71--72
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 73--74
 [][] 
  []
 
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 67--73
+Overfull \hbox (2.608pt too wide) in paragraph at lines 69--75
 [][] [] 
  []
 
 ) [4]
 \openout2 = `THEORETICAL_PART.aux'.
 
- (./THEORETICAL_PART.tex [5
-
-
-
-] [6]
-
-LaTeX Warning: Reference `ff' on page 7 undefined on input line 67.
-
+ (./THEORETICAL_PART.tex
 File: img/ff.png Graphic file (type bmp)
 <img/ff.png>
-) [7] [8]
+ [5
+
+
+
+] [6] [7] [8]) [9]
 \openout2 = `METHODS.aux'.
 
- (./METHODS.tex [9
+ (./METHODS.tex [10
 
 
 
-]) [10]
+])
+[11]
 \openout2 = `RESULTS.aux'.
 
  (./RESULTS.tex
@@ -1194,14 +1192,14 @@ File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
- [11
+ [12
 
 
 
 ]
 File: img/d_coeficienty.png Graphic file (type bmp)
 <img/d_coeficienty.png>
- [12]
+ [13]
 File: img/msd_ibu_s_api_r1.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r1.png>
 File: img/msd_nap_api_r1.png Graphic file (type bmp)
@@ -1210,15 +1208,7 @@ File: img/msd_cbz_api_r1.png Graphic file (type bmp)
 <img/msd_cbz_api_r1.png>
 File: img/msd_indo_api_r1.png Graphic file (type bmp)
 <img/msd_indo_api_r1.png>
- [13]
-File: img/ibu_s_popis.png Graphic file (type bmp)
-<img/ibu_s_popis.png>
-File: img/nap_popis.png Graphic file (type bmp)
-<img/nap_popis.png>
-File: img/cbz_svk_popis.png Graphic file (type bmp)
-<img/cbz_svk_popis.png>
-File: img/indo_popis.png Graphic file (type bmp)
-<img/indo_popis.png>
+ [14]
 File: img/rdf_ibu_s_api_r2.png Graphic file (type bmp)
 <img/rdf_ibu_s_api_r2.png>
 File: img/rdf_nap_api_r1.png Graphic file (type bmp)
@@ -1241,18 +1231,16 @@ File: img/rdf_indo_api_r1.png Graphic file (type bmp)
 <img/rdf_indo_api_r1.png>
 File: img/rdf_indo_api_r2.png Graphic file (type bmp)
 <img/rdf_indo_api_r2.png>
- [14]
 File: img/cbz_interakce.png Graphic file (type bmp)
 <img/cbz_interakce.png>
 File: img/nap1_interakce.png Graphic file (type bmp)
 <img/nap1_interakce.png>
 File: img/nap2_interakce.png Graphic file (type bmp)
 <img/nap2_interakce.png>
- [15]
-[16]
+ [15] [16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 149.
+               Default added (so using `tbp') on input line 135.
 
 File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_2.png>
@@ -1271,7 +1259,7 @@ File: img/RDF_indo_2_36.png Graphic file (type bmp)
 File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
 <img/RDF_indo_2_36_r2.png>
 
-LaTeX Warning: Float too large for page by 14.11101pt on input line 165.
+LaTeX Warning: Float too large for page by 14.11101pt on input line 151.
 
 File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_6.png>
@@ -1289,20 +1277,20 @@ File: img/RDF_indo_36_6.png Graphic file (type bmp)
 <img/RDF_indo_36_6.png>
 File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
 <img/RDF_indo_36_6_r2.png>
-[17] [18]
-Overfull \vbox (14.11101pt too high) has occurred while \output is active []
+[17]
+Overfull \vbox (512.64125pt too high) has occurred while \output is active []
 
 
-[19]
+[18] [19] [20]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 212.
+(hyperref)                than one, level fixed on input line 198.
 
 
-Package natbib Warning: Citation `vargas' on page 20 undefined on input line 21
-6.
+Package natbib Warning: Citation `vargas' on page 21 undefined on input line 20
+2.
 
-) [20] [21]
+) [21]
 \openout2 = `CONCLUSION.aux'.
 
  (./CONCLUSION.tex) [22
@@ -1324,7 +1312,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
 
 
 ]
-Underfull \hbox (badness 1769) in paragraph at lines 149--160
+Underfull \hbox (badness 1769) in paragraph at lines 186--197
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
@@ -1334,14 +1322,7 @@ S.;
 \openout6 = `main.lot'.
 
  [27] (./main.lof
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 5--5
- \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
-lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
-m 
- []
-
-
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 7--7
+Overfull \hbox (12.2336pt too wide) in paragraph at lines 6--6
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
 m 
@@ -1379,7 +1360,7 @@ ion between HCZ6
  []
 
 [28]
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 14--14
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 13--13
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
 een hydrogen atoms 
  []
@@ -1409,25 +1390,22 @@ Package natbib Warning: There were undefined citations.
 (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux) (./CONCLUSION.aux)
 (./lastComponents.aux) (./appendix.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F90E5151100D122E151761713ED53713;4789.
+(rerunfilecheck)             Checksum: E48F9B19502B66C38C8710F89697FC3A;4883.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27452 strings out of 477835
- 556065 string characters out of 5829531
+ 27437 strings out of 477835
+ 556084 string characters out of 5829531
  1862018 words of memory out of 5000000
- 47134 multiletter control sequences out of 15000+600000
+ 47123 multiletter control sequences out of 15000+600000
  520181 words of font info for 75 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1766b,12196s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1766b,12207s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (37 pages).

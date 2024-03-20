@@ -63,21 +63,7 @@ where $V_{\text{API}}$ is the average volume of the pure API simulation box, $N_
 
 Sampling the radial distribution function from the simulations was done to explore the interactions that are having the highest impact. The hydrogen bonds were mostly studied. All RDF data containing the API-API interaction in the mixtures were scaled for the intensities of the pure API signal. The strongest API-API interaction was chosen and plotted to study the change between simulations with different concentrations of PLA. 
 
-For ibuprofen, the interaction between hydrogen from OH group and oxygen from OC was studied. For naproxen, the hydrogen bonding between two carboxyl groups was studied, for carbamazepine, hydrogen bonding was studied between the N$\text{H}_\text{2}$ and OC group and for indomethacine the interaction of oxygen from OC and hydrogen from OH was studied.  The selected atom types involved in interactions are visualised in Figure \ref{fig:nap_int} . 
-
-
-\begin{figure}[htb]
-	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/ibu_s_popis.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/nap_popis.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/cbz_svk_popis.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/indo_popis.png}}
-	\caption{Visualization of studied interactions, ibuprofen (\textbf{top left}), naproxen (\textbf{top right}), carbamazepine (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
-	\label{fig:nap_int}    
-\end{figure}
-
-
-
+For ibuprofen, the interaction between hydrogen from OH group and oxygen from OC was studied. For naproxen, the hydrogen bonding between two carboxyl groups was studied, for carbamazepine, hydrogen bonding was studied between the N$\text{H}_\text{2}$ and OC group and for indomethacine the interaction of oxygen from OC and hydrogen from OH was studied.  The selected atom types involved in interactions are visualised in Figure \ref{fig:APIs}. 
 
 \begin{figure}[htb!]
 	\centering
@@ -159,7 +145,7 @@ The RDF of hydrogen bonding with the carbonyl group is shown in Figure \ref{fig:
 	\vspace{-0.2cm}
 	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_2_36.png}}
 	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_2_36_r2.png}}
-	\vspace{-0.2cm}
+		\vspace{-0.2cm}
 	\caption{Radial distribution function of the interaction between hydrogen atoms and oxygen atom from carbonyl group in PLA, first ibuprofen on top, second naproxen, third carbamazepine and indomethacine in the bottom, temperature 300~K on the left and 500~K on the right.}
 	\label{fig:carbonyl}
 \end{figure}
@@ -184,7 +170,7 @@ The hydrogen bonds with the oxygen bonded by ether bond in PLA are shown in Figu
 	\caption{Radial distribution function of the interaction between hydrogen atoms and oxygen atom bonded by ether bond in PLA, first ibuprofen on top, second naproxen, third carbamazepine and indomethacine in the bottom, temperature 300~K on the left and 500~K on the right.}
 	\label{fig:ether}
 \end{figure}
-
+\subsection{Smesi s polarizovanym polem}
 \newpage
 \section{Calculated properties of mixtures}
 Mixing energies and volumes were calculated for both systems, and the comparison is shown in Table \ref{tab:vobjemy}. The data show that a mixture of naproxen and PLA can create a more advantageous arrangement of molecules in space, meaning that the mixing volumes are negative. For carbamazepine the trend is the opposite; this could be caused by the shape of the carbamazepine molecule when the mixture needs more space. From the positive changes in energies, we can assume that mixing the APIs with PLA can reduce the interactions between API-API molecules, and also that new interactions between API and PLA are not developed in order to compensate for the API-API cohesion.  
@@ -223,4 +209,3 @@ Since this method is sensitive to the initial state of the simulated box, more s
 
 The resulting value for carbamazepine is $T_{\text{g, cbz}} = 385 \pm 4$ (k = 2) and for naproxen is $T_{\text{g, nap}} = 365 \pm 2$ (k = 2). 
 
-\subsection{Smesi s polarizovanym polem}

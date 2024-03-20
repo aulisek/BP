@@ -3,6 +3,48 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In order to convert a real system consisting of individual molecules into a form that can be understood by computer software, we must define the individual parameters that are essential for describing mutual interactions. When describing real systems, it is usually necessary to consider a certain degree of approximation due to the possible computational complexity. In computational chemistry methods, we often encounter the so-called Born-Oppenheimer approximation, which is based on the decoupling of the binding of nuclei to electrons. The basis of the approximation is the order of magnitude difference in mass between the electron and the nucleus, which move very slowly relative to the electrons and can thus be considered as a fixed point charge. This allows us to calculate the energy of a molecule as a function of the positions of the nuclei, in quantum chemistry we talk about the so-called Potential Energy Surface (PES), which is a function of 3$N$ coordinates, where $N$ is the number of nuclei. \cite{leach_molecular_2001} 
+
+For small systems it is possible to calculate the PES based on quantum chemistry method using reasonable resources, for very large systems this is not yet realistic. We therefore introduce a classical mechanics set of functions and their parameters called the Force Field (FF), whose solution is the energy of the molecule based on the positions of the nuclei. Methods based on the use of such Force Fields are called molecular mechanics, which is applied especially when quantum phenomena are not of great importance and we can use classical mechanics approach. \cite{monticelli_force_2013}
+
+\subsection{Force fields}
+The total energy calculated using the force field can be broken down into two contributions, a binding and a non-binding term, which are further expanded in Equations \ref{eq:ff2} and \ref{eq:ff3}.
+
+\begin{comment}
+	\begin{equation}\label{eq:ff1}
+		E_{\text{total}} = E_{\text{bonded}} + E_{\text{nonbonded}}
+	\end{equation}.
+\end{comment}
+
+
+\begin{equation}\label{eq:ff2}
+	E_{\text{bonded}} = E_{\text{bond}} + E_{\text{angle}} + E_{\text{torsion}}
+\end{equation}
+
+\begin{equation}\label{eq:ff3}
+	E_{\text{nonbonded}} = E_{\text{electrostatic}} + E_{\text{Van der Walls}}
+\end{equation}
+
+To get a better idea of what lies behind the individual terms, visualization of the corresponding mathematical functions is in the Figure \ref{fig:ff}. OBRÁZEK VYTVOŘÍM VLASTNÍ V PODOBNÉM DUCHU----
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/ff.png} 
+	\caption{caption}
+	\label{fig:ff}    
+\end{figure}  
+
+\newpage
+By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING, AMBER, GAFF and OPLS. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF or ReaxFF.  The third class includes fluctuating charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
+
+During the parameterization of force fields (FF), we start from the assumption that similar chemical groups of different molecules interact in the same way. When constructing a force field for large molecules, we can use parameters obtained from data for small molecules, which are much more easily graspable and contain the same functional groups. \cite{monticelli_force_2013} In model development, our aim is to achieve the most universal description of the system while still closely corresponding to its actual state. This can be facilitated by employing higher-order terms; however, incorporating anharmonic and cross terms introduces the need for a greater amount of data for parameter optimization. We strive to avoid situations where we employ an overly adapted and detailed model that merely reproduces inserted information without providing any predictive capabilities. \cite{vanommeslaeghe_molecular_2014}
+
+According to the level of parameterization, there are 3 basic types of force fields. In the first case, where the parameters are determined for each individual atom in the system, including hydrogens, we speak of an all-atom force field. A united atom force field is one where we parameterize the individual functional groups (interaction centers), such an interaction center could be for example a methyl group. The third type of force field is coarse grained, used mainly for protein and polymer simulations, offering higher computational efficiency for long simulations of large molecules by grouping them into "superatoms". \cite{da_silva_are_2020}
+
+\subsubsection{OPLS}
+
+\subsubsection{Polarizable Force Fields}
+
 \subsection{Molecular dynamics}
 The molecular dynamics method is based on solving the equations of motion of classical Newtonian mechanics for atoms. Let us choose the assumption that the interaction potential $U$ is continuous and differentiable. The force acting on the $i$ particle can thus be written as an equation \ref{sila1} 
 \begin{equation}\label{sila1}
@@ -42,6 +84,7 @@ When integrating equations of motion, we often impose the condition of conservat
 \subsubsection{SHAKE algorithm}
 
 The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length, which we calculate by considering the correct bond length between atoms i and j from the condition 
+TUTO ČÁST UPRAVÍM ABY tam nebyly zbytečné rovnice
 
 \begin{equation}\label{SHAKE}
 	[\vec{r}_{\text{Verlet},ij}(t + h)-\lambda\vec{r}_{ij}(t)]^2 = \vec{r}_{ij}(t)^2,
@@ -62,20 +105,3 @@ where Verlet index comes from previously described Equation \ref{sila4} for Verl
 \end{equation}
 
 \subsection{title}
-\subsection{Silová pole}
-
-In order to convert a real system consisting of individual molecules into a form that can be understood by computer software, we must define the individual parameters that are essential for calculating interactions. The set of parameters thus calculated is called the force field. Let us discuss the individual members that make up this field. First we approximate the individual atoms by spheres, each such sphere will be represented by its mass. We then have to figure out how to represent the bonds and interatomic interactions. Classical force fields contain the sum of the individual contributions broken down in terms described by Equation \ref{ff}.
-
-To get a better idea of what lies behind the individual terms, let us present a modified figure taken from:  In the following paragraphs, the individual terms will be described in more detail.
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=1.0\linewidth]{img/ff.png} 
-	\caption{caption}
-	\label{fig:ff}    
-\end{figure}  
-
-
-
-
-\subsection{Polarizovaná silová pole}

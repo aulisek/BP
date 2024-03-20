@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{22}
+\begin{mcitethebibliography}{26}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -135,6 +135,43 @@ Drebushchak,~T.~N.; Boldyreva,~E.~V.; Mikhailenko,~M.~A. Crystal structures of
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Leach(2001)]{leach_molecular_2001}
+Leach,~A.~R. \emph{Molecular modelling : principles and applications}, 2nd ed.;
+  Prentice Hall Harlow, England: Harlow, England, 2001; Section: xxiv, 744
+  pages, 16 unnumbered pages of plates : illustrations (some color) ; 24
+  cm\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Monticelli and Tieleman(2013)Monticelli, and
+  Tieleman]{monticelli_force_2013}
+Monticelli,~L.; Tieleman,~D.~P. In \emph{Biomolecular {Simulations}};
+  Monticelli,~L., Salonen,~E., Eds.; Humana Press: Totowa, NJ, 2013; Vol. 924;
+  p 197–213, Series Title: Methods in Molecular Biology\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Vanommeslaeghe \latin{et~al.}(2014)Vanommeslaeghe, Guvench, and
+  MacKerell]{vanommeslaeghe_molecular_2014}
+Vanommeslaeghe,~K.; Guvench,~O.; MacKerell,~A.~D. Molecular {Mechanics}.
+  \emph{Current Pharmaceutical Design} \textbf{2014}, \emph{20},
+  3281–3292\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{Da Silva} \latin{et~al.}(2020){Da Silva}, Silva, Tavares, Fleming,
+  and Horta]{da_silva_are_2020}
+{Da Silva},~G. C.~Q.; Silva,~G.~M.; Tavares,~F.~W.; Fleming,~F.~P.; Horta,~B.
+  A.~C. Are all-atom any better than united-atom force fields for the
+  description of liquid properties of alkanes? \emph{Journal of Molecular
+  Modeling} \textbf{2020}, \emph{26}, 296\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Nezbeda \latin{et~al.}(1998)Nezbeda, Kolafa, and Kotrla]{mdskripta}
 Nezbeda,~I.; Kolafa,~J.; Kotrla,~M. \emph{Úvod do počítačových
   simulací:metody Monte Carlo a molekulární dynamiky.}; Karolinum,
@@ -158,11 +195,10 @@ Thompson,~A.~P.; Aktulga,~H.~M.; Berger,~R.; Bolintineanu,~D.~S.; Brown,~W.~M.;
 \EndOfBibitem
 \bibitem[Martínez \latin{et~al.}(2009)Martínez, Andrade, Birgin, and
   Martínez]{martinez_p_2009}
-Martínez,~L.; Andrade,~R.; Birgin,~E.~G.; Martínez,~J.~M. P {\textless}span
-  style="font-variant:small-caps;"{\textgreater}{ACKMOL}{\textless}/span{\textgreater}
-  : {A} package for building initial configurations for molecular dynamics
-  simulations. \emph{Journal of Computational Chemistry} \textbf{2009},
-  \emph{30}, 2157–2164\relax
+Martínez,~L.; Andrade,~R.; Birgin,~E.~G.; Martínez,~J.~M. PACKMOL: A package
+  for building initial configurations for molecular dynamics simulations.
+  \emph{Journal of Computational Chemistry} \textbf{2009}, \emph{30},
+  2157–2164\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
