@@ -34,6 +34,48 @@ In this formulation, we are able to calculate the new positions at time $t+h$ fr
 \end{equation}
 
 \subsubsection{Velocity Verlet}
+
+\subsubsection{Constraint dynamics}
+
+When integrating equations of motion, we often impose the condition of conservation of variables. The main reason is the optimal choice of the simulation time step. If we simulate with too large time step, we introduce large errors into the simulations, leading in extreme cases to a crash of the simulation. The calculated particle positions at time $t+h$ may lead to overlapping of particles, the calculated force acting on the particles may then bring the particles back to the overlapping region or eject the particles far from their natural position. Conversely, the use of inappropriately short simulation steps reduces the efficiency of the simulations (the most computationally and therefore time consuming element of the simulations is the calculation of the forces when integrating the equations of motion). The criterion determining the optimal step length is the accuracy of the conservation of total energy. The step length can be determined by an Nyquist sampling theorem that says that the time step must be half or less of the period of the quickest dynamics. Thus, for systems containing very light hydrogen atoms, we can either artificially increase the mass of the hydrogen atom while redistributing the masses of the other molecules to conserve the overall mass of the molecule, or fix the bond angles or bond lengths terminating in the hydrogen atoms. It is the fixation of hydrogen bond lengths that is most often implemented in the Verlet method, using an algorithm called SHAKE. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
+
+\subsubsection{SHAKE algorithm}
+
+The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length, which we calculate by considering the correct bond length between atoms i and j from the condition 
+
+\begin{equation}\label{SHAKE}
+	[\vec{r}_{\text{Verlet},ij}(t + h)-\lambda\vec{r}_{ij}(t)]^2 = \vec{r}_{ij}(t)^2,
+\end{equation}
+where Verlet index comes from previously described Equation \ref{sila4} for Verlet method. When we consider After omitting the we can calculate $\lambda$ as
+
+\begin{equation}\label{SHAKE_lamda}
+	\lambda \approx \frac{|\vec{r}_{\text{Verlet},ij}(t + h)|^2 - |\vec{r}_{ij}(t)|^2}
+	{2\vec{r}_{\text{Verlet},ij}(t + h) \cdot \vec{r}_{ij}(t)}
+\end{equation}
+
+\begin{equation}\label{SHAKE_lamdai}
+	\vec{r}_i(t + h) = \vec{r}_{\text{Verlet},i}(t + h) + \lambda \frac{1/m_i}{ 1/m_i + 1/m_j} \vec{r}_{ij}
+\end{equation}
+
+\begin{equation}\label{SHAKE_lamdaj}
+	\vec{r}_j(t + h) = \vec{r}_{\text{Verlet},j}(t + h) - \lambda \frac{1/m_j}{ 1/m_i + 1/m_j} \vec{r}_{ij}
+\end{equation}
+
 \subsection{title}
 \subsection{Silová pole}
+
+In order to convert a real system consisting of individual molecules into a form that can be understood by computer software, we must define the individual parameters that are essential for calculating interactions. The set of parameters thus calculated is called the force field. Let us discuss the individual members that make up this field. First we approximate the individual atoms by spheres, each such sphere will be represented by its mass. We then have to figure out how to represent the bonds and interatomic interactions. Classical force fields contain the sum of the individual contributions broken down in terms described by Equation \ref{ff}.
+
+To get a better idea of what lies behind the individual terms, let us present a modified figure taken from:  In the following paragraphs, the individual terms will be described in more detail.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/ff.png} 
+	\caption{caption}
+	\label{fig:ff}    
+\end{figure}  
+
+
+
+
 \subsection{Polarizovaná silová pole}

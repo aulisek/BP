@@ -11,14 +11,13 @@ COMPARISON OF DENSITIES WITH EXPERIMENTS?
 
 \subsection{Simulations of mixtures of APIs and PLA}
 \subsubsection{Diffusion coefficients}
-RDFs and MSDs were sampled from the 10~ns long run simulations every 1000 fs (integration step 1 fs). For each time step, obtained MSD data were averaged for all API molecules and then plotted as a function of simulation time. The MSD dependencies were then fitted by linear fit and the self-diffusivities of the API in the mixtures were evaluated from the slope of the linear curve using the following Equation \ref{eq:D}:
+RDFs and MSDs were sampled from the 10~ns long run simulations every 1000 fs (integration step 1 fs). For each time step, obtained MSD data were averaged for all API molecules and then plotted as a function of simulation time. The MSD dependencies were then fitted by linear fit and the self-diffusivities of the API in the mixtures were evaluated from the slope of the linear curve using the following Equation \ref{eq:D}
 
 \begin{equation}\label{eq:D}
 	D_{\text{API}} = \frac{a}{2d}, 
 \end{equation}
 where $D$ is the diffusion coefficient, $a$ is the slope of the linear fit curve and $d$ is the dimensionality of the track (3 in our case).
 
-TUTO ČÁST MUSÍM JEŠTĚ ZNAČNĚ VYLEPŠIT, KOUKAL JSEM SE NA DATA, NENAŠEL JSEM CHYBU, ZKUSÍM PŘEPOČÍTAT PRŮMĚRY JEŠTĚ JEDNOU:
 The MSD data for APIs in mixtures with PLA for $T$=500~K are plotted in Figure \ref{fig:msd_r2}. For ibuprofen, there is a significant difference between mobility of neat API and API mixed within the polymer. This could be result of very strong API-PLA interaction forming in the mixture. The data of carbamazepine shows that with increasing API concentration, mobility also increases. There is also not that enormous difference between neat API. For naproxen, it seems that there is no change for different concentrations of mixtures, also in neat API the mobility is higher. The situation for indometacine is completely different. For neat API the mobility is really low compared to mixtures with PLA. This behaviour seems strange, the reason could be, that in pure API, there are really strong API-API interactions that decrease the mobility. Also the MSD values are much lower.
 
 \begin{figure}[htb]
@@ -31,7 +30,7 @@ The MSD data for APIs in mixtures with PLA for $T$=500~K are plotted in Figure \
 	\label{fig:msd_r2}    
 \end{figure}
 
-
+\newpage
 Self-diffusivities were evaluated from the above data and plotted in Figure \ref{fig:d}. The data reveal that in pure liquid carbamazepine the diffusion is faster than in naproxen. For higher temperatures, the main factor affecting diffusion is the shape of the molecules, not the strength of the intermolecular interactions. This is caused because the kinetic energy is higher than the potential for higher temperatures.
 \begin{figure}[htb!]
 	\centering
@@ -54,7 +53,7 @@ MSD was also evaluated at a lower temperature of 300 K, Figure \ref{fig:msd_r1}.
 
 \subsubsection{Radial distribution functions}
 
-Then, all RDFs of mixtures containing the API-API interaction were scaled onto the pure API RDF signal for better visualisation using the following Equation \ref{eq:RDF_formula}:
+Then, all RDFs of mixtures containing the API-API interaction were scaled onto the pure API RDF signal for better visualisation using the following Equation \ref{eq:RDF_formula}
 
 \begin{equation}\label{eq:RDF_formula}
 	\text{RDF}_{\text{scaled}} = \text{RDF} \cdot \frac{\displaystyle\frac{V_{\text{API}}}{N_{\text{API}}}}{\displaystyle{\frac{V_{\text{mix}}}{N_{\text{mix}}}}},
@@ -149,30 +148,39 @@ The RDF of hydrogen bonding with the carbonyl group is shown in Figure \ref{fig:
 \newpage
 \begin{figure}[]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_ibu_s_20_2.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_ibu_s_20_2_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_nap_2_31.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_nap_2_31_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_cbz_2_27.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_cbz_2_27_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_indo_2_36.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_indo_2_36_r2.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_2.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_2_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_nap_2_31.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_nap_2_31_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_cbz_2_27.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_cbz_2_27_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_2_36.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_2_36_r2.png}}
+	\vspace{-0.2cm}
 	\caption{Radial distribution function of the interaction between hydrogen atoms and oxygen atom from carbonyl group in PLA, first ibuprofen on top, second naproxen, third carbamazepine and indomethacine in the bottom, temperature 300~K on the left and 500~K on the right.}
 	\label{fig:carbonyl}
 \end{figure}
 
 The hydrogen bonds with the oxygen bonded by ether bond in PLA are shown in Figure \ref{fig:ether}. Here is the same situation as in the previous contact with carbonyl oxygen, but for naproxen, the interaction is less relevant. Both values also converge to 1 in a long distance.
 
+\vspace{-0.5cm}
 \begin{figure}[H]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_ibu_s_20_6.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_ibu_s_20_6_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_nap_6_31.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_nap_6_31_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_cbz_6_27.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_cbz_6_27_r2.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_indo_36_6.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/RDF_indo_36_6_r2.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_6.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_6_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_nap_6_31.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_nap_6_31_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_cbz_6_27.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_cbz_6_27_r2.png}}\\
+	\vspace{-0.2cm}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_36_6.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_indo_36_6_r2.png}}
+	\vspace{-0.2cm}
 	\caption{Radial distribution function of the interaction between hydrogen atoms and oxygen atom bonded by ether bond in PLA, first ibuprofen on top, second naproxen, third carbamazepine and indomethacine in the bottom, temperature 300~K on the left and 500~K on the right.}
 	\label{fig:ether}
 \end{figure}
@@ -205,6 +213,14 @@ Mixing energies and volumes were calculated for both systems, and the comparison
 
 
 \subsubsection{Tg skelny prechod}
-The glass transition temperatures of the systems with the lowest API concentration were also calculated from simulated annealing simulation using the hyperbolic fit described in the methodology. The resulting value for carbamazepine is $T_{\text{g, cbz}} = 385 \pm 4$ (k = 2) and for naproxen is $T_{\text{g, nap}} = 365 \pm 2$ (k = 2). As I described above, the standard deviation is underestimated.
+The glass transition temperatures of the mixtures were evaluated from the simulated annealing simulations by fitting a hyperbola to the temperature-density data. The whole methodology is described in the paper written by Alzate-Vargas\cite{vargas}, the main equation of the fit is Equation \ref{eq:fit}
+
+\begin{equation}\label{eq:fit}
+	\rho(T)=\rho_0-a\left(T-T_0\right)-b\left[\frac{1}{2}\left(T-T_0\right)+\sqrt{\frac{\left(T-T_0\right)^2}{4}+e^c}\right].
+\end{equation}
+
+Since this method is sensitive to the initial state of the simulated box, more simulated data starting from different conformations must be provided to evaluate $T_\text{g}$. In this work we used 5 simulations from different initial states.
+
+The resulting value for carbamazepine is $T_{\text{g, cbz}} = 385 \pm 4$ (k = 2) and for naproxen is $T_{\text{g, nap}} = 365 \pm 2$ (k = 2). 
 
 \subsection{Smesi s polarizovanym polem}

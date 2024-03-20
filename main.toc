@@ -9,23 +9,25 @@
 \contentsline {subsection}{\numberline {2.1}Molecular dynamics}{5}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Verlet integration}{5}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Velocity Verlet}{6}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}title}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Silová pole}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Polarizovaná silová pole}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{7}{section.3}%
-\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Simulations of API}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Simulations of mixtures of APIs and PLA}{9}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Diffusion coefficients}{9}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Radial distribution functions}{11}{subsubsection.4.2.2}%
-\contentsline {section}{\numberline {5}Calculated properties of mixtures}{18}{section.5}%
-\contentsline {subsubsection}{\numberline {5.0.1}dodatkove energie a objemy}{18}{subsubsection.5.0.1}%
-\contentsline {subsubsection}{\numberline {5.0.2}Tg skelny prechod}{18}{subsubsection.5.0.2}%
-\contentsline {subsection}{\numberline {5.1}Smesi s polarizovanym polem}{18}{subsection.5.1}%
-\contentsline {section}{\numberline {6}CONCLUSION}{19}{section.6}%
-\contentsline {section}{REFERENCES}{20}{section.6}%
-\contentsline {section}{List of Abbreviations}{22}{section.6}%
-\contentsline {section}{List of Symbols}{23}{section.6}%
-\contentsline {section}{List of Tables}{24}{section.6}%
-\contentsline {section}{List of Figures}{25}{section.6}%
-\contentsline {section}{Appendix \numberline {A}Headline}{27}{appendix.1.A}%
+\contentsline {subsubsection}{\numberline {2.1.3}Constraint dynamics}{6}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}SHAKE algorithm}{7}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}title}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Silová pole}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Polarizovaná silová pole}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{9}{section.3}%
+\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Simulations of API}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Simulations of mixtures of APIs and PLA}{11}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Diffusion coefficients}{11}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Radial distribution functions}{13}{subsubsection.4.2.2}%
+\contentsline {section}{\numberline {5}Calculated properties of mixtures}{20}{section.5}%
+\contentsline {subsubsection}{\numberline {5.0.1}dodatkove energie a objemy}{20}{subsubsection.5.0.1}%
+\contentsline {subsubsection}{\numberline {5.0.2}Tg skelny prechod}{20}{subsubsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.1}Smesi s polarizovanym polem}{21}{subsection.5.1}%
+\contentsline {section}{\numberline {6}CONCLUSION}{22}{section.6}%
+\contentsline {section}{REFERENCES}{23}{section.6}%
+\contentsline {section}{List of Abbreviations}{25}{section.6}%
+\contentsline {section}{List of Symbols}{26}{section.6}%
+\contentsline {section}{List of Tables}{27}{section.6}%
+\contentsline {section}{List of Figures}{28}{section.6}%
+\contentsline {section}{Appendix \numberline {A}Headline}{30}{appendix.1.A}%

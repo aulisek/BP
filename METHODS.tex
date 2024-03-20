@@ -12,6 +12,21 @@ All-atom non-polarisable force fields were used during MD simulations, the param
 
 We started all simulations with an equilibration simulation run from randomly packed simulation boxes under the temperature of 500~K and pressure of 1 bar in three blocks with a gradually increasing time-integration step. The simulation began with a step of 0.25~fs, followed by steps 0.5 and 0.75 each for a simulation time of 0.5~ns, then 1~ns of simulation with a step of 1~fs. From this point, we cooled the system, down to 300~K for 2~ns with a step of 1~fs. After this cooling, we continued with a 10~ns long production run with a temperature of 300~K and pressure equal to 1~bar.
 
-From these production runs, we evaluated the MSD (Mean Squared Displacement) of API and PLA molecules in the mixture and the RDF (radial distribution function) of atom interactions. We also performed a production run under the higher temperature of 500~K and the same pressure of 1 bar starting from conformations after the first equilibration under 500~K. We also sampled RDFs and MSDs. Those simulations were performed for neat APIs, PLA polymer, and mixtures with different concentrations of API. For each API, the concentration ratio API:PLA in the number of molecules was 100:17 ($x_\mathrm{API}=0.85$), 200:17 ($x_\mathrm{API}=0.92$), and 300:17 ($x_\mathrm{API}=0.95$). 
+From these production runs, we evaluated the MSD (Mean Squared Displacement) of API and PLA molecules in the mixture and the RDF (radial distribution function) of atom interactions. We also performed a production run under the higher temperature of 500~K and the same pressure of 1 bar starting from conformations after the first equilibration under 500~K. We also sampled RDFs and MSDs. Those simulations were performed for neat APIs, PLA polymer, and mixtures with different concentrations of API. For each API, the concentration ratio API:PLA in the number of molecules was 100:17, 200:17, and 300:17. The molar and mass fractions are available in the Table \ref{tab:fractions}.
+
+\begin{table}[h]
+	\centering
+	\caption{The concentration of API in mixtures with PLA, expressed in molar and mass fractions.}
+	\begin{tabular}{cccccc}
+		\toprule
+		{\textbf{\boldmath{$x_{\text{API}}$}}} & {\textbf{\boldmath{$w_{\text{nap}}$}}} & {\textbf{\boldmath{$w_{\text{cbz}}$}}} & {\textbf{\boldmath{$w_{\text{ibu}}$}}} & {\textbf{\boldmath{$w_{\text{indo}}$}}} \\
+		\midrule
+		0.85 & 0.086 & 0.088 & 0.078 & 0.13 \\
+		0.92 & 0.16 & 0.16 & 0.14 & 0.23 \\
+		0.95 & 0.22 & 0.22 & 0.20 & 0.30 \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:fractions}
+\end{table} 
 
 To determine the glass transition temperature ($T_\mathrm{g}$) of the mixtures, we performed simulated annealing simulations with a gradually decreasing temperature (30 K$\cdot$ ns$^{-1}$) starting at 800~K and ending at 200~K. Systems containing a mixture of API and PLA were first warmed from 500~K to 800~K for 2~ns. To have statistically more reliable data, simulated annealing simulations were performed from 5 different initial conformations. The 4~ns long run was done to obtain those conformations sampling the image of the box every 1~ns.  

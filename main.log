@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  14 MAR 2024 23:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  18 MAR 2024 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,11 +1088,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [6])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-) [1] [2]
+) [1]
 \openout2 = `INTRODUCTION.aux'.
 
  (./INTRODUCTION.tex
@@ -1169,14 +1169,20 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 67--73
 
 
 
-]) [6]
+] [6]
+
+LaTeX Warning: Reference `ff' on page 7 undefined on input line 67.
+
+File: img/ff.png Graphic file (type bmp)
+<img/ff.png>
+) [7] [8]
 \openout2 = `METHODS.aux'.
 
- (./METHODS.tex [7
+ (./METHODS.tex [9
 
 
 
-]) [8]
+]) [10]
 \openout2 = `RESULTS.aux'.
 
  (./RESULTS.tex
@@ -1188,15 +1194,14 @@ File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
-
-[9
+ [11
 
 
 
 ]
 File: img/d_coeficienty.png Graphic file (type bmp)
 <img/d_coeficienty.png>
- [10]
+ [12]
 File: img/msd_ibu_s_api_r1.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r1.png>
 File: img/msd_nap_api_r1.png Graphic file (type bmp)
@@ -1205,7 +1210,7 @@ File: img/msd_cbz_api_r1.png Graphic file (type bmp)
 <img/msd_cbz_api_r1.png>
 File: img/msd_indo_api_r1.png Graphic file (type bmp)
 <img/msd_indo_api_r1.png>
- [11]
+ [13]
 File: img/ibu_s_popis.png Graphic file (type bmp)
 <img/ibu_s_popis.png>
 File: img/nap_popis.png Graphic file (type bmp)
@@ -1224,7 +1229,6 @@ File: img/rdf_nap_api_r2.png Graphic file (type bmp)
 <img/rdf_nap_api_r2.png>
 File: img/coord_nap_r2.png Graphic file (type bmp)
 <img/coord_nap_r2.png>
- [12]
 File: img/rdf_cbz_api_r1.png Graphic file (type bmp)
 <img/rdf_cbz_api_r1.png>
 File: img/coord_cbz_r1.png Graphic file (type bmp)
@@ -1237,16 +1241,18 @@ File: img/rdf_indo_api_r1.png Graphic file (type bmp)
 <img/rdf_indo_api_r1.png>
 File: img/rdf_indo_api_r2.png Graphic file (type bmp)
 <img/rdf_indo_api_r2.png>
+ [14]
 File: img/cbz_interakce.png Graphic file (type bmp)
 <img/cbz_interakce.png>
 File: img/nap1_interakce.png Graphic file (type bmp)
 <img/nap1_interakce.png>
 File: img/nap2_interakce.png Graphic file (type bmp)
 <img/nap2_interakce.png>
- [13] [14]
+ [15]
+[16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 150.
+               Default added (so using `tbp') on input line 149.
 
 File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_2.png>
@@ -1264,6 +1270,9 @@ File: img/RDF_indo_2_36.png Graphic file (type bmp)
 <img/RDF_indo_2_36.png>
 File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
 <img/RDF_indo_2_36_r2.png>
+
+LaTeX Warning: Float too large for page by 14.11101pt on input line 165.
+
 File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_6.png>
 File: img/RDF_ibu_s_20_6_r2.png Graphic file (type bmp)
@@ -1280,15 +1289,23 @@ File: img/RDF_indo_36_6.png Graphic file (type bmp)
 <img/RDF_indo_36_6.png>
 File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
 <img/RDF_indo_36_6_r2.png>
-[15] [16] [17]
+[17] [18]
+Overfull \vbox (14.11101pt too high) has occurred while \output is active []
+
+
+[19]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 204.
+(hyperref)                than one, level fixed on input line 212.
 
-) [18]
+
+Package natbib Warning: Citation `vargas' on page 20 undefined on input line 21
+6.
+
+) [20] [21]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [19
+ (./CONCLUSION.tex) [22
 
 
 
@@ -1302,7 +1319,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
  a
  []
 
-[20
+[23
 
 
 
@@ -1312,11 +1329,11 @@ Underfull \hbox (badness 1769) in paragraph at lines 149--160
 S.;
  []
 
-) [21] [22] [23] (./main.lot)
+) [24] [25] [26] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [24] (./main.lof
+ [27] (./main.lof
 Overfull \hbox (12.2336pt too wide) in paragraph at lines 5--5
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
@@ -1361,8 +1378,8 @@ Overfull \hbox (4.72346pt too wide) in paragraph at lines 12--12
 ion between HCZ6 
  []
 
-[25]
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 13--13
+[28]
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 14--14
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
 een hydrogen atoms 
  []
@@ -1377,33 +1394,40 @@ een hydrogen atoms
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [26]
+) [29]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [27
+ (./appendix.tex) [30
 
 
 
-] (./main.aux (./firstComponents.aux)
-(./INTRODUCTION.aux) (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux)
-(./CONCLUSION.aux) (./lastComponents.aux) (./appendix.aux))
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./main.aux (./firstComponents.aux) (./INTRODUCTION.aux)
+(./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux) (./CONCLUSION.aux)
+(./lastComponents.aux) (./appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B5F0C52BD6DB83E97E59A66EB390A89E;4477.
+(rerunfilecheck)             Checksum: F90E5151100D122E151761713ED53713;4789.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27435 strings out of 477835
- 555842 string characters out of 5829531
+ 27452 strings out of 477835
+ 556065 string characters out of 5829531
  1862018 words of memory out of 5000000
- 47118 multiletter control sequences out of 15000+600000
+ 47134 multiletter control sequences out of 15000+600000
  520181 words of font info for 75 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1233b,12182s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1766b,12196s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (34 pages).
+Output written on main.pdf (37 pages).
