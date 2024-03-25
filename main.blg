@@ -13,47 +13,45 @@ A level-1 auxiliary file: appendix.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: acs-main.bib
 Database file #2: references.bib
-Warning--I didn't find a database entry for "vargas"
 achemso 2022-11-25 v3.13f
-You've used 26 entries,
+You've used 27 entries,
             2538 wiz_defined-function locations,
-            967 strings with 13899 characters,
-and the built_in function-call counts, 9466 in all, are:
-= -- 777
-> -- 491
+            974 strings with 14315 characters,
+and the built_in function-call counts, 9897 in all, are:
+= -- 807
+> -- 524
 < -- 22
-+ -- 191
-- -- 169
-* -- 980
-:= -- 1256
-add.period$ -- 46
-call.type$ -- 26
++ -- 204
+- -- 181
+* -- 1030
+:= -- 1316
+add.period$ -- 48
+call.type$ -- 27
 change.case$ -- 6
 chr.to.int$ -- 6
-cite$ -- 26
-duplicate$ -- 539
-empty$ -- 699
-format.name$ -- 197
-if$ -- 1932
+cite$ -- 27
+duplicate$ -- 564
+empty$ -- 723
+format.name$ -- 210
+if$ -- 2013
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 178
-num.names$ -- 77
-pop$ -- 56
+newline$ -- 184
+num.names$ -- 80
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 26
+skip$ -- 27
 stack$ -- 0
-substring$ -- 585
-swap$ -- 522
-text.length$ -- 53
+substring$ -- 603
+swap$ -- 553
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 170
+type$ -- 177
 warning$ -- 0
-while$ -- 82
+while$ -- 85
 width$ -- 0
-write$ -- 351
-(There was 1 warning)
+write$ -- 364

@@ -4,31 +4,30 @@
 \contentsline {subsection}{\numberline {1.1}Studied compounds}{2}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Polylactic acid}{2}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}Active pharmaceutical ingredients}{2}{subsubsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.2}Objective}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Objective}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}THEORETICAL PART}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Force fields}{5}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}OPLS}{7}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Polarizable Force Fields}{7}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Molecular dynamics}{7}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Verlet integration}{8}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Velocity Verlet}{8}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Constraint dynamics}{8}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2}Velocity Verlet}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Constraint dynamics}{9}{subsubsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.4}SHAKE algorithm}{9}{subsubsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.3}title}{9}{subsection.2.3}%
-\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{10}{section.3}%
-\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Simulations of API}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Simulations of mixtures of APIs and PLA}{12}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Diffusion coefficients}{12}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Radial distribution functions}{14}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Smesi s polarizovanym polem}{20}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Calculated properties of mixtures}{21}{section.5}%
-\contentsline {subsubsection}{\numberline {5.0.1}dodatkove energie a objemy}{21}{subsubsection.5.0.1}%
-\contentsline {subsubsection}{\numberline {5.0.2}Tg skelny prechod}{21}{subsubsection.5.0.2}%
-\contentsline {section}{\numberline {6}CONCLUSION}{22}{section.6}%
-\contentsline {section}{REFERENCES}{23}{section.6}%
-\contentsline {section}{List of Abbreviations}{25}{section.6}%
-\contentsline {section}{List of Symbols}{26}{section.6}%
-\contentsline {section}{List of Tables}{27}{section.6}%
-\contentsline {section}{List of Figures}{28}{section.6}%
-\contentsline {section}{Appendix \numberline {A}Headline}{30}{appendix.1.A}%
+\contentsline {subsection}{\numberline {2.3}title}{10}{subsection.2.3}%
+\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{11}{section.3}%
+\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Simulations of API}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Simulations of mixtures of APIs and PLA}{13}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Calculated properties of mixtures}{13}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Glass transition temperature}{13}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Radial distribution functions}{14}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Diffusion coefficients}{20}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Smesi s polarizovanym polem}{22}{subsection.4.3}%
+\contentsline {section}{\numberline {5}CONCLUSION}{23}{section.5}%
+\contentsline {section}{REFERENCES}{24}{section.5}%
+\contentsline {section}{List of Abbreviations}{27}{section.5}%
+\contentsline {section}{List of Symbols}{28}{section.5}%
+\contentsline {section}{List of Tables}{29}{section.5}%
+\contentsline {section}{List of Figures}{30}{section.5}%
+\contentsline {section}{Appendix \numberline {A}Headline}{32}{appendix.1.A}%
