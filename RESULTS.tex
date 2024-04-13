@@ -3,32 +3,171 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The results section is divided into three logical blocks. First, simulations of the neat polymer were performed to verify the force field and to determine the key properties of the polymer. Subsequently, a series of neat API simulations were performed. Then, simulations of mixtures of different API concentrations in polymer were performed to see the behavior of the mixtures.  
 
-\subsection{Simulations of API}
-The box of neat carbamazepine contained 800 molecules (24~000 atoms), after equilibration run ($T$=500 K), the size of the box was 66 \r{A}. In the naproxen simulation box 800 molecules were presented (24~800 atoms), balanced box size was 66 \r{A}. For ibuprofen the balanced box size with 800 molecules (26~400 atoms) was 67 \r{A}. The simulation box containing 600 molecules (24~600 atoms) of indomethacine had size of 66 \r{A}.
+\subsection{Simulations of neat PLA}
+\subsubsection{Structural properties}
+First, the simulations from 2 initial states were done (fibrilar and globular). The Figure \ref{fig:linearni} shows an example of the shortest polymer in a fibrilar conformation state, whereas Figure \ref{fig:sbalene} displays globular conformations of chains containing 20 and 200 monomer units on the left and right, respectively. 
 
-\begin{table}[htb!]
-	\caption{Calculated mixing energies and volumes for API mixtures of different concentrations, simulations under 500 K.}
+\begin{figure}[htb]
 	\centering
-	\begin{tabular}{lccc} \toprule
-		{\textbf{API}} & {\textbf{\boldmath{$N_{\text{API}}$}}} & \textbf{{\boldmath{$N_{\text{atoms}}$}}} & \textbf{{\boldmath{$l_{\text{box}}$, \AA}}} \\
+	\includegraphics[width=0.9\linewidth]{img/pla_10d_tube.png}
+	\caption{Fibrilar PLA polymer chain, 20 units}
+	\label{fig:linearni}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{img/pla_10g_tube.png} 
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{img/pla_100g_tube.png} 
+	\end{subfigure}   	
+	\caption{Globular PLA polymer chain, 20 and 200 units}
+	\label{fig:sbalene}
+\end{figure}
+
+To see the effects of initial conformations, molecular weight and thermal history of the polymer on bulk densities following simulations were performed. The design of the simulation boxes is in Table \ref{tab:pla_chains}. The simulations were first performed at the temperature of 500 K (run 1), then the box was heated up to 1000 K followed by re-cooling and simulating at a temperature of 500 K (run 2). All subsequent simulations were observing the system for 10~ns with a step 1 fs at 1 bar. From these simulations, the densities and the root mean square distance of the polymer chain termini with their standard deviations were evaluated.
+
+\begin{table}[h]
+	\centering
+	\caption{Design of the neat PLA simulation boxes}
+	\label{tab:pla_chains}
+	\begin{tabular}{ccccc}
+		\toprule
+		\textbf{\boldmath$N_{\text{units}}$} & \textbf{\boldmath$n_{\text{chains}}$} & \textbf{\boldmath$N_{\text{atoms}}$} & \textbf{\boldmath$M$, g mol$^{-1}$} & \textbf{\boldmath$d$, \AA} \\
 		\midrule
-		carbamazepine  & 800 & 24 000 & 66 \\		
-		naproxen  & 800 & 24~800 & 66 \\
-		ibuprofen  & 800 & 26~400 & 67 \\
-		naproxen  & 600 & 24~600 & 66 \\
+		20 & 140 & 25620 & 1459.3 & 67.9 \\
+		40 & 70 & 25410 & 2900.5 & 67.7 \\
+		60 & 40 & 24978 & 4341.8 & 64.3 \\
+		80 & 35 & 25305 & 5783.1 & 67.7 \\
+		100 & 28 & 25284 & 7224.3 & 67.7 \\
+		120 & 23 & 24909 & 8665.6 & 67.3 \\
+		140 & 20 & 25260 & 10106.8 & 67.6 \\
+		160 & 17 & 24531 & 11548.1 & 67.0 \\
+		180 & 15 & 24345 & 12989.4 & 66.8 \\
+		200 & 14 & 25242 & 14430.6 & 67.6 \\
 		\bottomrule
 	\end{tabular}
-	\label{tab:API_n} 
 \end{table}
 
-COMPARISON OF DENSITIES WITH EXPERIMENTS?
+The following graphical representation of the results (Figure \ref{fig:pla_hustoty}) shows a trend of an increasing density depending on the length of the chain (molecular weight), which is independent of the initial conformation of the molecule. There is also visible that densities for longer chains converge to constant value. From this finding, we can consider a system above $M_\mathrm{w}$~=~9~000~$\mathrm{g \ mol^{-1}}$ as sufficiently polymeric.
+
+\begin{figure}[htb!]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/pla_linear_density.png} 
+		\caption{from initial fibrilar conformation}
+		\vspace{-0.2cm}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/pla_glob_density.png}
+		\caption{from initial globular conformation}
+		\vspace{-0.2cm}
+	\end{subfigure} 
+	\caption{Average densities with their standard deviations for PLA polymer chains at 500 K and 1 bar as a function of chain length before (run 1) heating and (run 2) after recooling.}
+	\label{fig:pla_hustoty}
+	\vspace{-0.2cm}
+\end{figure}
+
+From the density data, any impact of the conformation memory cannot be assessed, since the bulk density is too a crude point of view on the polymer structure. That is the reason why the distances of the polymer chain termini that are displayed in the Figure \ref{fig:pla_konce} were calculated. The simulated time of 10 ns at the elevated temperature 1000 K was not enough to completely erase the polymer conformational memory, there is a noticeable deviation of the data sets representing the initial fibrilar and globular conformations.
+
+\begin{figure}[htb!]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/pla_linear_konce.png} 
+		\caption{from initial fibrilar conformation}
+		\vspace{-0.2cm}
+		\label{fig:subim1}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/pla_glob_konce.png}
+		\caption{from initial globular conformation}
+		\vspace{-0.2cm}
+		\label{fig:subim2}
+	\end{subfigure}
+	\caption{Distances of the polymer chain termini with their standard deviations  for PLA polymer chains as a function of chain length before (run 1) heating and (run 2) after recooling.}
+	\label{fig:pla_konce}
+\end{figure}      
+
+The dynamics of the polymer is slow due to complex entanglement of individual chains even at elevated temperatures, for a complete loss of memory it would be necessary to simulate the system for a longer period of time.
+
+To investigate the effect of the box size on the molecular simulations, the simulations with box containing 5-50 polymer chains inside, each having a molar mass 12 989 $\mathrm{g \ mol^{-1}}$ were performed. The simulations were performed with a 3-block initial equilibration at 1000 K and 1 bar and subsequently cooled to 500 K and simulated for 10 ns. Mean densities obtained from these simulations are shown in the Figure \ref{fig:box} on the left. The simulation results prove that the initial size of the box has no significant effect on resulting average density. However, there is a visible effect of a lower uncertainty of standard deviations of densities for larger boxes. To have a better insight what is going on the structural level, we also analyzed the root-mean-squared end-to-end distance of the polymer chain termini shown in Figure \ref{fig:box} on the right. From the obtained data there is visible growing trend in end-to-end distances. That means that the small boxes do not represent correctly the distribution of the end-to-end distances in the polymer. We can say, that the value converge for box containing more than 40 polymer chains. As a conclusion, when we are focused on macroscopic values such as density we can use smaller number of chains in the simulation boxes in order to save the computational resources. However, when dealing with structural properties we should be careful and set the number of chains in a simulation box more carefully.
+
+
+
+\begin{figure}[htb!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{img/box_90_sim.png}
+		\caption{}
+		\label{fig:box}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{img/polydisperzita.png}
+		\caption{}
+		\label{fig:polydisperzita}
+	\end{subfigure}   	
+	\caption{(a) dependence of density on number of chains containing 90 dimer units in the box on the left and (b) density of PLA at 500 K and 1 bar extracted from MD simulations depending on the polydispersity coefficients on the right.}
+	\vspace{-0.2cm}
+\end{figure}
+
+\subsubsection{Polydispersity effect}
+Calculated densities depending on the PDIs are in the Figure \ref{fig:polydisperzita}. There is not a massive difference among the densities obtained for different values of the polydispersity index, for the subsequent simulations we will use monodisperse systems. 
+
+To calculate the glass transition temperature ($T_\mathrm{g}$) for PLA from the MD simulations, the trend shift method was used \cite{trend_shift}. In the density trends, there is visible a trend shift which has the meaning of the transition between the glassy state and the rubbery state. The point of the transition divides the density dataset into two intervals. Coordinates of the breakpoint and one surrounding point from each side were excluded from the further processing and the two resulting intervals were interpolated by a linear function. The $x$-coordinate of the intersection of these two lines determines the glass transition temperature. For this purpose I made a script in Maple software solving the system of linear equations to get the $T_\mathrm{g}$.
+
+Under real conditions, it is hardly possible to experimentally prepare a monodisperse polymer containing only one selected chain length. For this reason, we simulated several polydisperse systems, each exhibiting a different distribution of molar masses of individual molecular chains, containing a total number of 50 chains. The lengths come from interval 8-244 monomer units (that means 4-122 in our system of dimer units). Polydispersity index PDI~=~1 corresponds to 50 chains of length 62 monomer units in our system. Designed compositions of systems with other PDI values are displayed in the Figure \ref{fig:polydisperzita_vyskyt}. The density was again evaluated from the simulations, in this case as a function of the PDI.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\hsize]{img/polydispersity_occurrences.png}
+	\caption{Number of occurrences of chains of a given length (number of dimer units forming a single chain in our system) in the polydisperse systems with corresponding PDI.}
+	\label{fig:polydisperzita_vyskyt}
+\end{figure}       
+
+\subsubsection{Glass transition modeling}
+To obtain a glass transition temperature of PLA ($T_\mathrm{g}$), we start by simulating ten different polymer chain lengths for a set of temperatures in a range 140-485 K with a step of 15 K. For the system equilibration, each polymer chain simulation runs for 1 ns with a step of 1 fs. After the equilibration, the temperature interval for the following simulations was limited to the range of 200-485 K with a step of 15 K. Then, we run a $NpT$ production simulation with this limited temperature interval for 10 ns with a step of 1 fs from which the equilibrium bulk phase densities were calculated and displayed as a function of temperature. The trend shift method is illustrated for one length of the polymer chain in the Figure \ref{fig:glass}. Available experimental $T_\mathrm{g}$ of PLA is $T_\mathrm{g}$ = 57.5 $\pm$ 2.5 °C. We calculated the PLA $T_\mathrm{g}$ = 60 $\pm$ 10~°C as an arithmetic mean of the values for all polymer chain lengths. The calculated $T_\mathrm{g}$ for each polymer chain are displayed as function of polymer chain weight in the Figure \ref{fig:glass} with their arithmetic mean value drawn as a blue line. The calculated $T_\mathrm{g}$ value is very close to the experimental one. There is no significant trend in $T_\mathrm{g}$ of PLA from the calculated data. 
+
+\begin{figure}[htb!]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/vypocet_tg.png} 
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1.0\linewidth]{img/glass_temp.png} 
+	\end{subfigure}   	
+	\caption{Illustration of the trend shift method for one polymer chain length on the left, and calculated $T_\mathrm{g}$ for all lengths of polymer chains by this method where blue line represents mean value on the right.}
+	\label{fig:glass}
+\end{figure}
+
+\subsection{Simulations of neat API}
+The properties of API simulation boxes after equilibration run ($T$=500 K) is presented in Table \ref{tab:API_n}, showing the number of API molecules ($N_{\text{API}}$), the total number of all atoms ($N_{\text{atoms}}$) and size of the cubic box ($l_{\text{box}}$).
+
+\begin{table}[htb!]
+	\caption{Properties of equlibrated API simulations boxes, $T$=500 K.}
+	\centering
+	\begin{tabular}{lcccc} \toprule
+		{\textbf{API}} & {\textbf{\boldmath{$N_{\text{API}}$}}} & \textbf{{\boldmath{$N_{\text{atoms}}$}}} & \textbf{{\boldmath{$M$, g mol$^{-1}$}}} & \textbf{{\boldmath{$l_{\text{box}}$, \AA}}} \\
+			\midrule
+			carbamazepine  & 800 & 24 000 & 6& 66 \\		
+			naproxen  & 800 & 24~800 & 6& 66 \\
+			ibuprofen  & 800 & 26~400 & 6& 67 \\
+			naproxen  & 600 & 24~600 & 6& 66 \\
+			\bottomrule
+		\end{tabular}
+		\label{tab:API_n} 
+	\end{table}
+	
+	To validate the force fields computed densities were compared with experimental values, the comparison is in the Table taken from literature. UPRAVÍM \cite{cervinka_structure_2021}
+	
+	\begin{figure}[htb!]
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/tabulka_validace.png}
+	\end{figure}
 
 \subsection{Simulations of mixtures of APIs and PLA}
 \subsubsection{Calculated properties of mixtures}
 Mixing energies and volumes were calculated for both systems, and the comparison is shown in Table \ref{tab:vobjemy}. The data show that a mixture of naproxen and PLA can create a more advantageous arrangement of molecules in space, meaning that the mixing volumes are negative. For carbamazepine the trend is the opposite; this could be caused by the shape of the carbamazepine molecule when the mixture needs more space. From the positive changes in energies, we can assume that mixing the APIs with PLA can reduce the interactions between API-API molecules, and also that new interactions between API and PLA are not developed in order to compensate for the API-API cohesion.  
 
-\begin{table}[htb!]
+\begin{table}[htb]
 	\caption{Calculated mixing energies and volumes for API mixtures of different concentrations, simulations under 500 K.}
 	\centering
 	\begin{tabular}{lSSS} \toprule
@@ -40,7 +179,16 @@ Mixing energies and volumes were calculated for both systems, and the comparison
 		\midrule
 		naproxen  & 0.85 & -7.07 & 7.50 \\
 		& 0.92  & -8.50 & 6.24\\ 
-		& 0.95   & -9.85 & 4.75   \\ \bottomrule
+		& 0.95   & -9.85 & 4.75   \\ 
+		\midrule
+		naproxen  & 0.85 & -7.07 & 7.50 \\
+		& 0.92  & -8.50 & 6.24\\ 
+		& 0.95   & -9.85 & 4.75   \\ 
+		\midrule
+		naproxen  & 0.85 & -7.07 & 7.50 \\
+		& 0.92  & -8.50 & 6.24\\ 
+		& 0.95   & -9.85 & 4.75   \\ 
+		\bottomrule
 	\end{tabular}
 	\label{tab:vobjemy} 
 \end{table}
@@ -119,7 +267,7 @@ The RDF of the hydrogen bonding interaction of carbamazepine is shown in Figure 
 
 The hydrogen bonding between API and PLA was also studied. The contact visualization is available in Figure \ref{fig:contact}.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 	\begin{subfigure}{0.33\textwidth}
 		\includegraphics[width=\linewidth]{img/cbz_interakce.png} 
 	\end{subfigure}
@@ -136,8 +284,9 @@ The hydrogen bonding between API and PLA was also studied. The contact visualiza
 
 The RDF of hydrogen bonding with the carbonyl group is shown in Figure \ref{fig:carbonyl}. For carbamazepine, those interactions are weak, we can see that the intensity of the first peak is really low. Under temperature 300 K slightly above one, but for 500 K the peak is below one, meaning that this interaction occurs less at a small distance than in the rest of the system. The value converges to one in a long distance. For naproxen, the interaction is more relevant, and the intensity of the peak is much higher but still less than in the NAP-NAP interactions.
 
+The hydrogen bonds with the oxygen bonded by ether bond in PLA are shown in Figure \ref{fig:ether}. Here is the same situation as in the previous contact with carbonyl oxygen, but for naproxen, the interaction is less relevant. Both values also converge to 1 in a long distance.
 \newpage
-\begin{figure}[]
+\begin{figure}[H]
 	\centering
 	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_2.png}}
 	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_2_r2.png}}\\
@@ -155,9 +304,7 @@ The RDF of hydrogen bonding with the carbonyl group is shown in Figure \ref{fig:
 	\label{fig:carbonyl}
 \end{figure}
 
-The hydrogen bonds with the oxygen bonded by ether bond in PLA are shown in Figure \ref{fig:ether}. Here is the same situation as in the previous contact with carbonyl oxygen, but for naproxen, the interaction is less relevant. Both values also converge to 1 in a long distance.
-
-\vspace{-0.5cm}
+\newpage
 \begin{figure}[H]
 	\centering
 	\subfloat{\includegraphics[width=0.5\linewidth]{img/RDF_ibu_s_20_6.png}}

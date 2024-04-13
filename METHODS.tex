@@ -6,10 +6,20 @@
 
 LAMMPS software \cite{thompson_lammps_2022} (version 5 May 2020) was used for all molecular dynamics calculations. The placement of molecular chains in the simulation boxes was done by Packmol \cite{martinez_p_2009}, the chains were randomly distributed in the space of a cubic box. The input files for the LAMMPS software were generated using the fftool \cite{fftool} script written in the Python programming language.
 
-We also used periodic boundary conditions in the directions of all axes and the velocity Verlet integrator. Contributions of long-range charge interactions of distant atoms were calculated using the long-range solver using the particle-particle-particle mesh (PPPM) algorithm \cite{hockney_computer_2021}. The bonds and angles were considered as harmonic oscillators, and for dihedral angles, OPLS (Optimised Potentials for Liquid Simulations) was used for every atom.  Coulombic point charges and the Lennard-Jones potential were used, the cut-off distance for dispersion and Coulombic interactions was set to 12 \r{A}. The SHAKE atom algorithm \cite{ryckaert_numerical_1977} was applied to constrain the lengths of covalent bonds that terminate in hydrogen atoms. The simulations were run under $NPT$ conditions using the Nosé-Hoover thermostat and barostat \cite{tuckerman_liouville-operator_2006}, with relaxation times for temperature control as 100 fs and pressure control as 1000 fs. The simulations contained around 25~000 atoms in a simulation box. From previous research, this was considered to be a suitable setting. \cite{klajmon_glass_2023}
+We also used periodic boundary conditions in the directions of all axes and the velocity Verlet integrator. Contributions of long-range charge interactions of distant atoms were calculated using the long-range solver using the particle-particle-particle mesh (PPPM) algorithm \cite{hockney_computer_2021}. The bonds and angles were considered as harmonic oscillators, and for dihedral angles, OPLS (Optimised Potentials for Liquid Simulations) was used for every atom.  Coulombic point charges and the Lennard-Jones potential were used, the cut-off distance for dispersion and Coulombic interactions was set to 12 \r{A}. The SHAKE atom algorithm \cite{ryckaert_numerical_1977} was applied to constrain the lengths of covalent bonds that terminate in hydrogen atoms. The simulations were run under $NpT$ conditions using the Nosé-Hoover thermostat and barostat \cite{tuckerman_liouville-operator_2006}, with relaxation times for temperature control as 100 fs and pressure control as 1000 fs. The simulations contained around 25~000 atoms in a simulation box. From previous research, this was considered to be a suitable setting. \cite{klajmon_glass_2023}
 
 All-atom non-polarisable force fields were used during MD simulations, the parameterisation of the PLA force field was obtained from the literature \cite{mcaliley_development_2011}, the parameterizations of APIs were also taken from the literature. \cite{cervinka_structure_2021}
 
+\subsection{Simulations of neat PLA}
+The PLA was first simulated separately from two initial conformers, a fibrilar and a globular chain. We try to verify that the resulting state of the system does not depend on the initial conformations that were used for the simulations. The Cartesian coordinates of the positions of atoms forming a globule were obtained from the last frame of a simulation of one linear polymer molecule in a large virtual empty box.
+
+The initial simulation of the polymers led to the equilibration of the system. The simulation was carried out at 500 K and 1 bar in three blocks with a gradually increasing simulation step. First with a step 0.2 fs for 0.5 ns, followed by steps 0.4 fs and 0.7 fs for 0.7 ns, then 1 ns of simulation with step a 1 fs. 
+
+
+
+
+
+\subsection{Simulations of neat APIs and mixtures with PLA}
 We started all simulations with an equilibration simulation run from randomly packed simulation boxes under the temperature of 500~K and pressure of 1 bar in three blocks with a gradually increasing time-integration step. The simulation began with an equilibration procedure using a step of 0.25~fs, followed by steps 0.5 and 0.75 each for a simulation time of 0.5~ns, then 1~ns of simulation with a step of 1~fs. From this point, we cooled the system, down to 300~K for 2~ns with a step of 1~fs. After this cooling, we continued with a 10~ns long production run with a temperature of 300~K and pressure equal to 1~bar.
 
 From these production runs, we evaluated the MSD (Mean Squared Displacement) of API and PLA molecules in the mixture and the RDF (radial distribution function) of atom interactions. We also performed a production run at the higher temperature of 500~K and the same pressure of 1 bar starting from conformations after the first equilibration under 500~K. We also sampled RDFs and MSDs. Those simulations were performed for neat APIs, PLA polymer, and mixtures with different concentrations of API. For each API, the concentration ratio API:PLA in terms of the number of molecules in a simulation box was 100:17, 200:17, and 300:17. The corresponding molar and mass fractions are available in the Table \ref{tab:fractions}.
@@ -17,7 +27,7 @@ From these production runs, we evaluated the MSD (Mean Squared Displacement) of 
 \begin{table}[h]
 	\centering
 	\caption{The concentration of API in mixtures with PLA, expressed in molar and mass fractions.}
-	\begin{tabular}{cccccccc}
+	\begin{tabular}{ccccccc}
 		\toprule
 		{\textbf{\boldmath{$N_{\text{API}}$}}} &
 		{\textbf{\boldmath{$N_{\text{PLA}}$}}} &

@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{27}
+\begin{mcitethebibliography}{28}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -149,6 +149,18 @@ Leach,~A.~R. \emph{Molecular modelling : principles and applications}, 2nd ed.;
 Monticelli,~L.; Tieleman,~D.~P. In \emph{Biomolecular {Simulations}};
   Monticelli,~L., Salonen,~E., Eds.; Humana Press: Totowa, NJ, 2013; Vol. 924;
   p 197–213, Series Title: Methods in Molecular Biology\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Brooks \latin{et~al.}(2009)Brooks, Brooks, Mackerell, Nilsson,
+  Petrella, Roux, Won, Archontis, Bartels, Boresch, Caflisch, Caves, Cui,
+  Dinner, Feig, Fischer, Gao, Hodoscek, Im, Kuczera, Lazaridis, Ma,
+  Ovchinnikov, Paci, Pastor, Post, Pu, Schaefer, Tidor, Venable, Woodcock, Wu,
+  Yang, York, and Karplus]{brooks_charmm_2009}
+Brooks,~B.~R. \latin{et~al.}  {CHARMM}: {The} biomolecular simulation program.
+  \emph{Journal of Computational Chemistry} \textbf{2009}, \emph{30},
+  1545–1614\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

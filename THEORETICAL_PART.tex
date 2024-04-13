@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In order to convert a real system consisting of individual molecules into a form that can be understood by a computer software, we must define individual parameters that are essential for describing mutual interactions of atoms. When describing real systems, it is usually necessary to consider a certain degree of approximation due to the possible computational complexity. In computational chemistry methods, we often encounter the so-called Born-Oppenheimer approximation, which is based on the decoupling of the motion of nuclei and electrons. The basis of the approximation is the orders-of-magnitude difference in mass between the electron and the nucleus. The latter thus move very slowly relative to the electrons and can thus be considered as a fixed point charge. This allows us to calculate the energy of a molecule as a function of the positions of the nuclei, in quantum chemistry we talk about the so-called Potential Energy Surface (PES), which is a function of 3$N$ coordinates, where $N$ is the number of nuclei. \cite{leach_molecular_2001} 
 
-For small systems it is possible to calculate the PES based on quantum chemistry methods using reasonable resources, for very large systems this is not yet realistic. We therefore introduce a classical-mechanics set of analytic functions, yet empiric parameters called the Force Field (FF), which enable to evaluate the energy of symulated systems depending on the positions of the nuclei. Methods based on the use of such Force Fields are called molecular mechanics, which are applied especially when quantum phenomena are not of great importance and we can use classical mechanics approach or big amorphous systems where quantum-based calculations would be extremely expensive and resource taking. \cite{monticelli_force_2013}
+For small systems it is possible to calculate the PES based on quantum chemistry methods using reasonable resources, for very large systems this is not yet realistic. We therefore introduce a classical-mechanics set of analytic functions, yet empiric parameters called the Force Field (FF), which enable to evaluate the energy of simulated systems depending on the positions of the nuclei. Methods based on the use of such Force Fields are called molecular mechanics, which are applied especially when quantum phenomena are not of great importance and we can use classical mechanics approach or big amorphous systems where quantum-based calculations would be extremely expensive and resource taking. \cite{monticelli_force_2013}
 
 \subsection{Force fields}
 The total energy calculated using the force field can be broken down into two contributions, a binding and a non-binding term, which are further expanded in Equations \ref{eq:ff2} and \ref{eq:ff3}.
@@ -25,25 +25,85 @@ The total energy calculated using the force field can be broken down into two co
 	E_{\text{nonbonded}} = E_{\text{electrostatic}} + E_{\text{Van der Walls}}
 \end{equation}
 
-To get a better idea of what lies behind the individual terms, visualization of the corresponding mechanistic degrees of freedom is in the Figure \ref{fig:ff}. OBRÁZEK VYTVOŘÍM VLASTNÍ V PODOBNÉM DUCHU----
+%To get a better idea of what lies behind the individual terms, visualization of the corresponding mechanistic degrees of freedom is in the Figure \ref{fig:ff}. OBRÁZEK VYTVOŘÍM VLASTNÍ V PODOBNÉM DUCHU----
+%
+%\begin{figure}[htb!]
+%	\centering
+%	\includegraphics[width=1.0\linewidth]{img/ff.png} 
+%	\caption{caption}
+%	\label{fig:ff}    
+%\end{figure}  
 
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=1.0\linewidth]{img/ff.png} 
-	\caption{caption}
-	\label{fig:ff}    
-\end{figure}  
-
-\newpage
-By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING, AMBER, GAFF and OPLS. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF or ReaxFF.  The third class includes fluctuations of charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
+By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING, AMBER \cite{brooks_charmm_2009}, GAFF and OPLS. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF or ReaxFF.  The third class includes fluctuations of charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
 
 During the parameterization of force fields (FF), we start from the assumption of transferability,  similar chemical groups of different molecules interact in the same way. When constructing a force field for large molecules, we can use parameters obtained from data for small molecules, which are much more easily graspable and contain the same functional groups. \cite{monticelli_force_2013} In model development, our aim is to achieve the most universal description of the system while still closely corresponding to its actual state. This can be facilitated by employing higher-order terms; however, incorporating anharmonic and cross terms introduces the need for a greater amount of FF parameters. We strive to avoid situations where we employ an overly adapted and detailed model that merely reproduces inserted information without providing any predictive capabilities. \cite{vanommeslaeghe_molecular_2014}
 
 According to the level of parameterization, there are 3 basic types of force fields. In the first case, where the parameters are determined for each individual atom in the system, including hydrogens, we speak of an all-atom force field. A united atom force field is one where we parameterize the individual functional groups (interaction centers), such an interaction center could be for example a methyl group. The third type of force field is coarse grained, used mainly for protein and polymer simulations, offering higher computational efficiency for long simulations of large molecules by grouping them into "superatoms". \cite{da_silva_are_2020}
 
-\subsubsection{OPLS}
+\subsubsection{OPLS force field}
 
-\subsubsection{Polarizable Force Fields}
+Optimized Potential for Liquid Simulations (OPLS) force field was developed by William L. Jorgensen at Purdue University and later at Yale University based on previously released Assisted Model Building and Energy Refinement (AMBER) force field developed by Peter Kollman's group. The OPLS force field consists of following terms written in Equation \ref{eq:opls}. 
+	
+	\begin{equation}
+		\begin{aligned}
+			U_{\text{OPLS}} = & \sum_{\text{bonds}} \frac{1}{2} k_b(r-r_0)^2 + \sum_{\text{angles}} k_{\theta} (\theta-\theta_0)^2 \\
+			& + \sum_{\text{dihedrals}} \Biggl( \frac {V_1} {2} \left [ 1 + \cos (\phi) \right ] + \frac {V_2} {2} \left [ 1 - \cos (2\phi) \right ] 
+			+ \frac {V_3} {2} \left [ 1 + \cos (3\phi) \right ] + \frac {V_4} {2} \left [ 1 - \cos (4\phi) \right ] \Biggr) \\
+			& + \sum_{i<j}^N 4\epsilon_{ij} \left[ \left( \frac{\sigma_{ij}}{r_{ij}} \right)^{12} - \left( \frac{\sigma_{ij}}{r_{ij}} \right)^6 \right] + \sum_{i<j}^N k_{ij} \left( \frac{1}{r_{ij}^m} - \frac{1}{r_{ij}^n} \right)
+		\end{aligned}
+		\label{eq:opls}
+	\end{equation}
+	
+	where,
+	\begin{itemize}
+		\item $U_{\text{OPLS}}$ is the total OPLS potential energy,
+		\item $i$ and $j$ denote different atom types,
+		\item $N$ is the total number of atom pairs,
+		\item $\epsilon_{ij}$ is the depth of the potential well,
+		\item $\sigma_{ij}$ is the finite distance at which the inter-particle potential is zero,
+		\item $r_{ij}$ is the distance between atoms $i$ and $j$,
+		\item $k_{ij}$, $m$, and $n$ are additional parameters.
+	\end{itemize}
+	
+\textbf{Bonds and angles} are described as harmonic oscillators in OPLS FF. The equilibrium parameters are obtained by structural methods, such as x-ray diffraction NMR experiments. The values for force constants are then fitted to experimental data taken from vibrational spectroscopy. In Figure \ref{fig:bond} is the visualization of the constants.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/bond_angles.png} 
+	\caption{caption}
+	\label{fig:bond}    
+\end{figure}   
+
+\textbf{Dihedral angles} could be calculated by two different approaches. First option is to obtain the dihedrals in large molecules from optimization the potential in small molecules containing the same dihedral. calculate and optimize the dihedral potential for simplest possible molecule. Dihedrals are obtained by ab initio calculations procedure. 
+
+\textbf{Charges} parametrization is also done by ab initio methods. When we are using the classical FF, the charges used to calculate the Coulomb potential remains the same during the simulations. Due to that, it is crucial to obtain the charges from equilibrium state of the molecules in order to avoid any errors from having the charges taken from structures with higher energy. When obtaining the charges, the first step is to optimize the geometry using the appropriate level of theory, meaning the basis set to be better or equal to 6-31G. Commonly used method to achieve the charges is CHELPG (CHarges from ELectrostatic Potentials using a Grid based method), based on adjusting the partial charges at the centers of the nuclei in order to get the best representation of the electrostatic potential given by the wave functions. Calculation of the charges are often done using higher-level methods and basis sets such as B3LYP/cc-pVTZ or HF/6-31G**.
+
+\textbf{Van der Waals} forces are most often represented by the Lennard-Jones (LJ) potential. The functional form with the illustration is in Figure \ref{fig:lj}. Lennard-Jones potential is a combination of two terms, repulsive term describes the Pauli repulsion at short distances and the attractive term describes the London dispersion force. The $\epsilon$ values are adjusted to experimental values of heats of vaporization and $\sigma$ parameters are adjusted to experimental densities and structural data.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/lj.png} 
+	\caption{caption}
+	\label{fig:lj}    
+\end{figure} 
+
+\subsubsection{Charges and dipoles}
+
+\subsubsection{Polarizability}
+
+
+
+\subsection{Periodic boundary conditions}
+Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors due to system boundaries and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
+
+From the preceding paragraphs it is evident that the main problem of time complexity of simulations is the evaluation of non-bonding energies. While the contributions for the coupling parameters increase linearly with the system size, the non-coupling terms show a quadratic increase with the system size. A common tactic to reduce computational time is to set cutoff distances beyond which we no longer consider these contributions. By neglecting the contributions at long distances, we introduce small numerical deviations for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. We chose 12 A as the optimal cutoff in our simulations, however, theory suggests that WDW interactions are negligible beyond about 20 A. 
+
+Translated with DeepL.com (free version)
+\subsubsection{Ewald}
+\subsubsection{PPPM}
+\subsubsection{Cutoff}
+\subsection{Conditions}
+
 
 \subsection{Molecular dynamics}
 The molecular dynamics method is based on solving the equations of motion of classical Newtonian mechanics for atoms. Let us choose the assumption that the interaction potential $U$ is continuous and differentiable. The force acting on the $i$ particle can thus be written as an equation \ref{sila1} 
@@ -104,6 +164,5 @@ where Verlet index comes from previously described Equation \ref{sila4} for Verl
 	\vec{r}_j(t + h) = \vec{r}_{\text{Verlet},j}(t + h) - \lambda \frac{1/m_j}{ 1/m_i + 1/m_j} \vec{r}_{ij}
 \end{equation}
 
-\subsubsection{Periodic}
-\subsubsection{Cutoff}
-\subsubsection{Conditions}
+\subsubsection{MSD}
+\subsubsection{RDF}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  25 MAR 2024 12:03
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  13 APR 2024 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,26 +1177,95 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 72--78
 
 
 ]
-File: img/ff.png Graphic file (type bmp)
-<img/ff.png>
- [6] [7] [8] [9]) [10]
+Overfull \hbox (43.85307pt too wide) detected at line 55
+[][][][][]
+ []
+
+[6]
+File: img/bond_angles.png Graphic file (type bmp)
+<img/bond_angles.png>
+ [7]
+File: img/lj.png Graphic file (type bmp)
+<img/lj.png>
+ [8] [9] [10] [11]) [12]
 \openout2 = `METHODS.aux'.
 
- (./METHODS.tex
-[11
+ (./METHODS.tex [13
 
 
 
-]) [12]
+]) [14]
 \openout2 = `RESULTS.aux'.
 
- (./RESULTS.tex [13
+ (./RESULTS.tex
+File: img/pla_10d_tube.png Graphic file (type bmp)
+<img/pla_10d_tube.png>
+File: img/pla_10g_tube.png Graphic file (type bmp)
+<img/pla_10g_tube.png>
+File: img/pla_100g_tube.png Graphic file (type bmp)
+<img/pla_100g_tube.png>
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 20--26
+[][] [] 
+ []
+
+[15
 
 
 
-] [14]
+]
+File: img/pla_linear_density.png Graphic file (type bmp)
+<img/pla_linear_density.png>
+File: img/pla_glob_density.png Graphic file (type bmp)
+<img/pla_glob_density.png>
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 57--67
+[][] [] 
+ []
+
+[16]
+File: img/pla_linear_konce.png Graphic file (type bmp)
+<img/pla_linear_konce.png>
+File: img/pla_glob_konce.png Graphic file (type bmp)
+<img/pla_glob_konce.png>
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 75--87
+[][] [] 
+ []
+
+File: img/box_90_sim.png Graphic file (type bmp)
+<img/box_90_sim.png>
+File: img/polydisperzita.png Graphic file (type bmp)
+<img/polydisperzita.png>
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 98--110
+[][] [] 
+ []
+
+[17]
+
+Package natbib Warning: Citation `trend_shift' on page 18 undefined on input li
+ne 117.
+
+File: img/polydispersity_occurrences.png Graphic file (type bmp)
+<img/polydispersity_occurrences.png>
+[18]
+File: img/vypocet_tg.png Graphic file (type bmp)
+<img/vypocet_tg.png>
+File: img/glass_temp.png Graphic file (type bmp)
+<img/glass_temp.png>
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 131--137
+[][] [] 
+ []
+
+[19]
+File: img/tabulka_validace.png Graphic file (type bmp)
+<img/tabulka_validace.png>
+ [20] [21]
 File: img/rdf_ibu_s_api_r2.png Graphic file (type bmp)
 <img/rdf_ibu_s_api_r2.png>
+ [22]
 File: img/rdf_nap_api_r1.png Graphic file (type bmp)
 <img/rdf_nap_api_r1.png>
 File: img/coord_nap_r1.png Graphic file (type bmp)
@@ -1205,6 +1274,7 @@ File: img/rdf_nap_api_r2.png Graphic file (type bmp)
 <img/rdf_nap_api_r2.png>
 File: img/coord_nap_r2.png Graphic file (type bmp)
 <img/coord_nap_r2.png>
+ [23]
 File: img/rdf_cbz_api_r1.png Graphic file (type bmp)
 <img/rdf_cbz_api_r1.png>
 File: img/coord_cbz_r1.png Graphic file (type bmp)
@@ -1223,11 +1293,7 @@ File: img/nap1_interakce.png Graphic file (type bmp)
 <img/nap1_interakce.png>
 File: img/nap2_interakce.png Graphic file (type bmp)
 <img/nap2_interakce.png>
- [15] [16]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 140.
-
+ [24]
 File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_2.png>
 File: img/RDF_ibu_s_20_2_r2.png Graphic file (type bmp)
@@ -1245,8 +1311,10 @@ File: img/RDF_indo_2_36.png Graphic file (type bmp)
 File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
 <img/RDF_indo_2_36_r2.png>
 
-LaTeX Warning: Float too large for page by 14.11101pt on input line 156.
+Overfull \vbox (504.64125pt too high) has occurred while \output is active []
 
+
+[25]
 File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_6.png>
 File: img/RDF_ibu_s_20_6_r2.png Graphic file (type bmp)
@@ -1263,11 +1331,11 @@ File: img/RDF_indo_36_6.png Graphic file (type bmp)
 <img/RDF_indo_36_6.png>
 File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
 <img/RDF_indo_36_6_r2.png>
-[17]
-Overfull \vbox (512.64125pt too high) has occurred while \output is active []
+
+Overfull \vbox (14.11101pt too high) has occurred while \output is active []
 
 
-[18] [19]
+[26]
 File: img/msd_ibu_s_api_r2.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r2.png>
 File: img/msd_nap_api_r2.png Graphic file (type bmp)
@@ -1276,10 +1344,10 @@ File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
- [20]
+ [27]
 File: img/d_coeficienty.png Graphic file (type bmp)
 <img/d_coeficienty.png>
- [21]
+ [28]
 File: img/msd_ibu_s_api_r1.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r1.png>
 File: img/msd_nap_api_r1.png Graphic file (type bmp)
@@ -1288,10 +1356,10 @@ File: img/msd_cbz_api_r1.png Graphic file (type bmp)
 <img/msd_cbz_api_r1.png>
 File: img/msd_indo_api_r1.png Graphic file (type bmp)
 <img/msd_indo_api_r1.png>
-) [22]
+) [29]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [23
+ (./CONCLUSION.tex) [30
 
 
 
@@ -1299,72 +1367,71 @@ File: img/msd_indo_api_r1.png Graphic file (type bmp)
 ]
 \openout2 = `lastComponents.aux'.
 
- (./lastComponents.tex
-(./main.bbl
+ (./lastComponents.tex (./main.bbl
 Underfull \hbox (badness 6078) in paragraph at lines 38--45
 []\TU/lmr/m/n/12 Batisai, E. Solubility Enhancement of Antidiabetic Drugs Using
  a
  []
 
-[24
+[31
 
 
 
 ]
-Underfull \hbox (badness 1769) in paragraph at lines 186--197
+Underfull \hbox (badness 1769) in paragraph at lines 198--209
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
 
-[25]) [26] [27] [28] (./main.lot)
+[32]) [33] [34] [35] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [29] (./main.lof
-Overfull \hbox (4.87946pt too wide) in paragraph at lines 6--6
+ [36] (./main.lof
+Overfull \hbox (4.87946pt too wide) in paragraph at lines 14--14
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HOIB 
  []
 
 
-Overfull \hbox (9.12746pt too wide) in paragraph at lines 7--7
+Overfull \hbox (9.12746pt too wide) in paragraph at lines 15--15
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HONP 
  []
 
-
-Overfull \hbox (4.72346pt too wide) in paragraph at lines 8--8
+[37]
+Overfull \hbox (4.72346pt too wide) in paragraph at lines 16--16
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HCZ6 
  []
 
 
-Overfull \hbox (4.72346pt too wide) in paragraph at lines 9--9
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 17--17
+ [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
+een hydrogen atoms 
+ []
+
+
+Overfull \hbox (4.72346pt too wide) in paragraph at lines 18--18
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HCZ6 
  []
 
 
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 10--10
- [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
-een hydrogen atoms 
- []
-
-[30]
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 12--12
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 20--20
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
 een hydrogen atoms 
  []
 
 
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 13--13
+Overfull \hbox (12.2336pt too wide) in paragraph at lines 21--21
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
 m 
  []
 
 
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 15--15
+Overfull \hbox (12.2336pt too wide) in paragraph at lines 23--23
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
 m 
@@ -1374,33 +1441,43 @@ m
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [31]
+) [38]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [32
+ (./appendix.tex) [39
 
 
 
-] (./main.aux (./firstComponents.aux)
-(./INTRODUCTION.aux) (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux)
-(./CONCLUSION.aux) (./lastComponents.aux) (./appendix.aux))
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./main.aux (./firstComponents.aux) (./INTRODUCTION.aux)
+(./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux) (./CONCLUSION.aux)
+(./lastComponents.aux) (./appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3AF0F217E01E6288429B3EB8A354B68C;4755.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 9526D3BA692D7D0C2E4743FB5EBB47EA;6309
+(rerunfilecheck)             After:  D45418D391DBFFAA07FEA8EBBF23FF44;6860.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27477 strings out of 477835
- 557175 string characters out of 5829531
+ 27611 strings out of 477835
+ 560473 string characters out of 5829531
  1860018 words of memory out of 5000000
- 47160 multiletter control sequences out of 15000+600000
- 520181 words of font info for 75 fonts, out of 8000000 for 9000
+ 47279 multiletter control sequences out of 15000+600000
+ 520189 words of font info for 76 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1772b,12328s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1772b,12415s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (39 pages).
+Output written on main.pdf (46 pages).
