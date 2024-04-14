@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{28}
+\begin{mcitethebibliography}{36}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -184,10 +184,38 @@ Vanommeslaeghe,~K.; Guvench,~O.; MacKerell,~A.~D. Molecular {Mechanics}.
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Jorgensen and Tirado-Rives(1988)Jorgensen, and
+  Tirado-Rives]{jorgensen_opls_1988}
+Jorgensen,~W.~L.; Tirado-Rives,~J. The {OPLS} [optimized potentials for liquid
+  simulations] potential functions for proteins, energy minimizations for
+  crystals of cyclic peptides and crambin. \emph{Journal of the American
+  Chemical Society} \textbf{1988}, \emph{110}, 1657–1666\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cornell \latin{et~al.}(1995)Cornell, Cieplak, Bayly, Gould, Merz,
+  Ferguson, Spellmeyer, Fox, Caldwell, and Kollman]{cornell_second_1995}
+Cornell,~W.~D.; Cieplak,~P.; Bayly,~C.~I.; Gould,~I.~R.; Merz,~K.~M.;
+  Ferguson,~D.~M.; Spellmeyer,~D.~C.; Fox,~T.; Caldwell,~J.~W.; Kollman,~P.~A.
+  A {Second} {Generation} {Force} {Field} for the {Simulation} of {Proteins},
+  {Nucleic} {Acids}, and {Organic} {Molecules}. \emph{Journal of the American
+  Chemical Society} \textbf{1995}, \emph{117}, 5179–5197\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Nezbeda \latin{et~al.}(1998)Nezbeda, Kolafa, and Kotrla]{mdskripta}
 Nezbeda,~I.; Kolafa,~J.; Kotrla,~M. \emph{Úvod do počítačových
   simulací:metody Monte Carlo a molekulární dynamiky.}; Karolinum,
   1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shannon(1949)]{shannon_communication_1949}
+Shannon,~C. Communication in the {Presence} of {Noise}. \emph{Proceedings of
+  the IRE} \textbf{1949}, \emph{37}, 10–21\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -265,6 +293,58 @@ McAliley,~J.~H.; Bruce,~D.~A. Development of {Force} {Field} {Parameters} for
   {Amorphous} {Dispersions} of {Model} {Pharmaceuticals} with {Nucleobases}
   from {Molecular} {Dynamics}. \emph{Pharmaceutics} \textbf{2021}, \emph{13},
   1253\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Klajmon and Červinka(2022)Klajmon, and Červinka]{klajmon_does_2022}
+Klajmon,~M.; Červinka,~C. Does {Explicit} {Polarizability} {Improve}
+  {Molecular} {Dynamics} {Predictions} of {Glass} {Transition} {Temperatures}
+  of {Ionic} {Liquids}? \emph{The Journal of Physical Chemistry B}
+  \textbf{2022}, \emph{126}, 2005–2013\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pyda and Wunderlich(2005)Pyda, and Wunderlich]{pyda_reversing_2005}
+Pyda,~M.; Wunderlich,~B. Reversing and {Nonreversing} {Heat} {Capacity} of
+  {Poly}(lactic acid) in the {Glass} {Transition} {Region} by {TMDSC}.
+  \emph{Macromolecules} \textbf{2005}, \emph{38}, 10472–10479\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen \latin{et~al.}(1996)Jorgensen, Maxwell, and
+  Tirado-Rives]{jorgensen_development_1996}
+Jorgensen,~W.~L.; Maxwell,~D.~S.; Tirado-Rives,~J. Development and {Testing} of
+  the {OPLS} {All}-{Atom} {Force} {Field} on {Conformational} {Energetics} and
+  {Properties} of {Organic} {Liquids}. \emph{Journal of the American Chemical
+  Society} \textbf{1996}, \emph{118}, 11225–11236\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Frisch \latin{et~al.}(2016)Frisch, Trucks, Schlegel, Scuseria, Robb,
+  Cheeseman, Scalmani, Barone, Petersson, Nakatsuji, Li, Caricato, Marenich,
+  Bloino, Janesko, Gomperts, Mennucci, Hratchian, Ortiz, Izmaylov, Sonnenberg,
+  Williams-Young, Ding, Lipparini, Egidi, Goings, Peng, Petrone, Henderson,
+  Ranasinghe, Zakrzewski, Gao, Rega, Zheng, Liang, Hada, Ehara, Toyota, Fukuda,
+  Hasegawa, Ishida, Nakajima, Honda, Kitao, Nakai, Vreven, Throssell,
+  Montgomery, Peralta, Ogliaro, Bearpark, Heyd, Brothers, Kudin, Staroverov,
+  Keith, Kobayashi, Normand, Raghavachari, Rendell, Burant, Iyengar, Tomasi,
+  Cossi, Millam, Klene, Adamo, Cammi, Ochterski, Martin, Morokuma, Farkas,
+  Foresman, and Fox]{frisch_gaussian16_2016}
+Frisch,~M.~J. \latin{et~al.}  Gaussian˜16 {Revision} {C}.01. 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Smith \latin{et~al.}(2016)Smith, Burns, Patkowski, and
+  Sherrill]{smith_revised_2016}
+Smith,~D. G.~A.; Burns,~L.~A.; Patkowski,~K.; Sherrill,~C.~D. Revised {Damping}
+  {Parameters} for the {D3} {Dispersion} {Correction} to {Density} {Functional}
+  {Theory}. \emph{The Journal of Physical Chemistry Letters} \textbf{2016},
+  \emph{7}, 2197–2203\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

@@ -42,7 +42,7 @@ According to the level of parameterization, there are 3 basic types of force fie
 
 \subsubsection{OPLS force field}
 
-Optimized Potential for Liquid Simulations (OPLS) force field was developed by William L. Jorgensen at Purdue University and later at Yale University based on previously released Assisted Model Building and Energy Refinement (AMBER) force field developed by Peter Kollman's group. The OPLS force field consists of following terms written in Equation \ref{eq:opls}. 
+Optimized Potential for Liquid Simulations (OPLS) force field was developed by William L. Jorgensen \cite{jorgensen_opls_1988} at Purdue University and later at Yale University based on previously released Assisted Model Building and Energy Refinement (AMBER) force field developed by Peter Kollman's group. \cite{cornell_second_1995} The OPLS force field consists of following terms written in Equation \ref{eq:opls}. 
 	
 	\begin{equation}
 		\begin{aligned}
@@ -94,7 +94,7 @@ Optimized Potential for Liquid Simulations (OPLS) force field was developed by W
 
 
 \subsection{Periodic boundary conditions}
-Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors due to system boundaries and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
+Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors caused by the boundaries of the system and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
 
 From the preceding paragraphs it is evident that the main problem of time complexity of simulations is the evaluation of non-bonding energies. While the contributions for the coupling parameters increase linearly with the system size, the non-coupling terms show a quadratic increase with the system size. A common tactic to reduce computational time is to set cutoff distances beyond which we no longer consider these contributions. By neglecting the contributions at long distances, we introduce small numerical deviations for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. We chose 12 A as the optimal cutoff in our simulations, however, theory suggests that WDW interactions are negligible beyond about 20 A. 
 
@@ -135,34 +135,13 @@ In this formulation, we are able to calculate the new positions at time $t+h$ fr
 	r_i(t_0-h)=r_i(t)-h\dot{r_i}(t_0)+h^2\frac{f_i(t_0)}{2m_i}.
 \end{equation}
 
-\subsubsection{Velocity Verlet}
-
 \subsubsection{Constraint dynamics}
 
-When integrating equations of motion, we often impose constraints on certain aspects of molecular geometries. The main reason is to enable using a longer simulation time step. If we simulate with a too large time step, we introduce large errors into the simulations, leading in extreme cases to a crash of the simulation. The calculated particle positions at time $t+h$ may lead to overlapping of particles, the calculated force acting on the particles may divert from physically reasonable configurations. Conversely, the use of inappropriately short simulation steps reduces the efficiency of the simulations (the most computationally and therefore time consuming element of the simulations is the calculation of the forces when integrating the equations of motion). \cite{mdskripta} The criterion determining the optimal step length is the accuracy of the conservation of total energy. The step length can be determined by an Nyquist sampling theorem that says that the time step must be half or less of the period of the quickest dynamics exhibited in the system. Thus, for systems containing very light hydrogen atoms, we can either artificially increase the mass of the hydrogen atom while redistributing the masses of the other molecules to conserve the overall mass of the molecule, or fix the bond angles or bond lengths terminating in the hydrogen atoms. It is the fixation of hydrogen bond lengths that is most often implemented in the Verlet method, using an algorithm called SHAKE. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
+When integrating equations of motion, we often impose constraints on certain aspects of molecular geometries. The main reason is to enable using a longer simulation time step. If we simulate with a too large time step, we introduce large errors into the simulations, leading in extreme cases to a crash of the simulation. The calculated particle positions at time $t+h$ may lead to overlapping of particles, the calculated force acting on the particles may divert from physically reasonable configurations. Conversely, the use of inappropriately short simulation steps reduces the efficiency of the simulations (the most computationally and therefore time consuming element of the simulations is the calculation of the forces when integrating the equations of motion). \cite{mdskripta} The criterion determining the optimal step length is the accuracy of the conservation of total energy. The step length can be determined by an Nyquist-Shannon \cite{shannon_communication_1949} sampling theorem that says that the time step must be half or less of the period of the quickest dynamics exhibited in the system. Thus, for systems containing very light hydrogen atoms, we can either artificially increase the mass of the hydrogen atom while redistributing the masses of the other molecules to conserve the overall mass of the molecule, or fix the bond angles or bond lengths terminating in the hydrogen atoms. It is the fixation of hydrogen bond lengths that is most often implemented in the Verlet method, using an algorithm called SHAKE. 
 
-\subsubsection{SHAKE algorithm}
+The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
 
-The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length, which we calculate by considering the correct bond length between atoms i and j from the condition 
-TUTO ČÁST UPRAVÍM ABY tam nebyly zbytečné rovnice	
-
-\begin{equation}\label{SHAKE}
-	[\vec{r}_{\text{Verlet},ij}(t + h)-\lambda\vec{r}_{ij}(t)]^2 = \vec{r}_{ij}(t)^2,
-\end{equation}
-where Verlet index comes from previously described Equation \ref{sila4} for Verlet method. When we consider After omitting the we can calculate $\lambda$ as
-
-\begin{equation}\label{SHAKE_lamda}
-	\lambda \approx \frac{|\vec{r}_{\text{Verlet},ij}(t + h)|^2 - |\vec{r}_{ij}(t)|^2}
-	{2\vec{r}_{\text{Verlet},ij}(t + h) \cdot \vec{r}_{ij}(t)}
-\end{equation}
-
-\begin{equation}\label{SHAKE_lamdai}
-	\vec{r}_i(t + h) = \vec{r}_{\text{Verlet},i}(t + h) + \lambda \frac{1/m_i}{ 1/m_i + 1/m_j} \vec{r}_{ij}
-\end{equation}
-
-\begin{equation}\label{SHAKE_lamdaj}
-	\vec{r}_j(t + h) = \vec{r}_{\text{Verlet},j}(t + h) - \lambda \frac{1/m_j}{ 1/m_i + 1/m_j} \vec{r}_{ij}
-\end{equation}
-
+\subsection{Measuring the properties}
 \subsubsection{MSD}
 \subsubsection{RDF}
+\subsubsection{Glass transition temperature}
