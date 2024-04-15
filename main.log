@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  15 APR 2024 14:23
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  15 APR 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,14 +1187,14 @@ File: img/torsion.png Graphic file (type bmp)
  [8]
 File: img/lj.png Graphic file (type bmp)
 <img/lj.png>
- [9] [10] [11]) [12]
+ [9] [10] [11] [12]) [13]
 \openout2 = `METHODS.aux'.
 
- (./METHODS.tex [13
+ (./METHODS.tex [14
 
 
 
-]) [14]
+]) [15]
 \openout2 = `RESULTS.aux'.
 
  (./RESULTS.tex
@@ -1209,7 +1209,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 20--26
 [][] [] 
  []
 
-[15
+[16
 
 
 
@@ -1223,7 +1223,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 57--67
 [][] [] 
  []
 
-[16]
+[17]
 File: img/pla_linear_konce.png Graphic file (type bmp)
 <img/pla_linear_konce.png>
 File: img/pla_glob_konce.png Graphic file (type bmp)
@@ -1233,7 +1233,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 75--87
 [][] [] 
  []
 
-[17]
+[18]
 File: img/box_density_5_50.png Graphic file (type bmp)
 <img/box_density_5_50.png>
 File: img/konce_5_50.png Graphic file (type bmp)
@@ -1243,12 +1243,12 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 96--108
 [][] [] 
  []
 
-[18]
+[19]
 File: img/polydispersity_occurrences.png Graphic file (type bmp)
 <img/polydispersity_occurrences.png>
 File: img/polydisperzita.png Graphic file (type bmp)
 <img/polydisperzita.png>
- [19]
+ [20]
 File: img/vypocet_tg.png Graphic file (type bmp)
 <img/vypocet_tg.png>
 File: img/glass_temp.png Graphic file (type bmp)
@@ -1258,15 +1258,15 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 162--169
 [][] []
  []
 
-[20] [21]
+[21] [22]
 File: img/tabulka_validace.png Graphic file (type bmp)
 <img/tabulka_validace.png>
- [22]
+ [23]
 Overfull \hbox (2.15988pt too wide) in paragraph at lines 206--225
  [][] 
  []
 
-[23] [24]
+[24] [25]
 File: img/rdf_ibu_s_api_r1.png Graphic file (type bmp)
 <img/rdf_ibu_s_api_r1.png>
 File: img/rdf_ibu_s_api_r2.png Graphic file (type bmp)
@@ -1279,7 +1279,7 @@ File: img/rdf_nap_api_r2.png Graphic file (type bmp)
 <img/rdf_nap_api_r2.png>
 File: img/coord_nap_r2.png Graphic file (type bmp)
 <img/coord_nap_r2.png>
- [25]
+ [26]
 File: img/rdf_cbz_api_r1.png Graphic file (type bmp)
 <img/rdf_cbz_api_r1.png>
 File: img/coord_cbz_r1.png Graphic file (type bmp)
@@ -1298,7 +1298,7 @@ File: img/nap1_interakce.png Graphic file (type bmp)
 <img/nap1_interakce.png>
 File: img/nap2_interakce.png Graphic file (type bmp)
 <img/nap2_interakce.png>
- [26] [27]
+ [27] [28]
 File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_2.png>
 File: img/RDF_ibu_s_20_2_r2.png Graphic file (type bmp)
@@ -1319,7 +1319,7 @@ File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
 Overfull \vbox (378.42685pt too high) has occurred while \output is active []
 
 
-[28]
+[29]
 File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_6.png>
 File: img/RDF_ibu_s_20_6_r2.png Graphic file (type bmp)
@@ -1340,7 +1340,7 @@ File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
 Overfull \vbox (504.64125pt too high) has occurred while \output is active []
 
 
-[29]
+[30]
 File: img/msd_ibu_s_api_r2.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r2.png>
 File: img/msd_nap_api_r2.png Graphic file (type bmp)
@@ -1349,10 +1349,10 @@ File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
- [30]
+ [31]
 File: img/d_coeficienty.png Graphic file (type bmp)
 <img/d_coeficienty.png>
- [31]
+ [32]
 File: img/msd_ibu_s_api_r1.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r1.png>
 File: img/msd_nap_api_r1.png Graphic file (type bmp)
@@ -1361,10 +1361,10 @@ File: img/msd_cbz_api_r1.png Graphic file (type bmp)
 <img/msd_cbz_api_r1.png>
 File: img/msd_indo_api_r1.png Graphic file (type bmp)
 <img/msd_indo_api_r1.png>
-) [32]
+) [33]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [33
+ (./CONCLUSION.tex) [34
 
 
 
@@ -1378,7 +1378,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
  a
  []
 
-[34
+[35
 
 
 
@@ -1388,17 +1388,17 @@ Underfull \hbox (badness 1769) in paragraph at lines 244--255
 S.;
  []
 
-[35]) [36] [37] [38] (./main.lot)
+[36]) [37] [38] [39] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [39] (./main.lof
+ [40] (./main.lof
 Overfull \hbox (4.87946pt too wide) in paragraph at lines 16--16
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HOIB 
  []
 
-[40]
+[41]
 Overfull \hbox (9.12746pt too wide) in paragraph at lines 17--17
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HONP 
@@ -1446,10 +1446,10 @@ m
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [41] [42]
+) [42] [43]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [43
+ (./appendix.tex) [44
 
 
 
@@ -1457,7 +1457,7 @@ m
 (./INTRODUCTION.aux) (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux)
 (./CONCLUSION.aux) (./lastComponents.aux) (./appendix.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 60B8AE32EBE0C09BC3F1E2D4B6B7D37D;6575.
+(rerunfilecheck)             Checksum: D2D2F68B543359300356A453DD11FFF8;6802.
  )
 (\end occurred inside a group at level 1)
 
@@ -1470,6 +1470,6 @@ Here is how much of TeX's memory you used:
  47345 multiletter control sequences out of 15000+600000
  520189 words of font info for 76 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1624b,12396s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1624b,12402s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (50 pages).
+Output written on main.pdf (51 pages).

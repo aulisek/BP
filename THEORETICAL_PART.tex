@@ -93,11 +93,13 @@ Proper \textbf{dihedral angle} $\phi$ between atoms i,j,k,l is represented in Fi
 \subsection{Periodic boundary conditions}
 Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors caused by the boundaries of the system and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. 
 
-%The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
-%
-From the preceding paragraphs it is evident that the main problem in time complexity of the simulations is the evaluation of non-bonding energies. While the number of bonded terms increase linearly with the system size, the non-bonded terms show a quadratic increase in the number of contributions. A common strategy for reducing the computational time is to set specific cutoff distance, beyond which we no longer consider the energetic contribution of van der Waals forces. By neglecting the contributions at long distances, we introduce only a small numerical deviation for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. We chose 12 \AA as the optimal cutoff in our simulations, however, theory suggests that van der Waals interactions are negligible beyond about 20 A. 
+\subsubsection{Setting the cutoff}
+From the preceding paragraphs it is evident that the main problem in time complexity of the simulations is the evaluation of non-bonding energies. While the number of bonded terms increase linearly with the system size, the non-bonded terms show a quadratic increase in the number of contributions. A common strategy for reducing the computational time is to set specific cutoff distance, beyond which we neglect or estimate the non-bonded interaction energy contribution. We distinguish two type of interactions based on their decay with distance. First the so-called short-range interactions decreasing faster than $1/r^3$ such as van der Waals ($1/r^6$) that could be neglected on relatively short distance. By neglecting the van der Waals contributions at long distances, we introduce only a small numerical deviation for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. Theory says that van der Waals interactions are negligible beyond about 20 \AA, we choose 12 \AA~as the optimal cutoff in this work because of the optimal computational complexity. 
+
+For the long-range interactions, such as Coulombic interactions ($1/r$) the situation is not that easy and they require larger cutoff than van der Waals due to their long-range nature. The easiest option, as mentioned above, is to solve this issue by neglecting any contributions beyond the cutoff distance. The problem in that approach is that we introduce discontinuities in the potential and its derivatives. Better and more effective approach, especially for periodic systems is called Ewald summation.
 
 \subsubsection{Ewald summation}
+
 \subsubsection{PPPM}
 
 
@@ -138,6 +140,14 @@ When integrating equations of motion, we often impose constraints on certain asp
 The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
 
 \subsection{Measuring the properties}
-\subsubsection{Ensembles}
+\subsubsection{Statistical ensembles}
+MD gives us insight into the total energy of the system, which is naturally conserved in simulations. However, real systems are rarely thermodynamically closed and we often expose the system to external pressure or heat exchange. Thus we speak of different statistical ensembles depending on the conservation of quantities.
+
+As already mentioned, the natural ensemble is the so-called microcanonical ensemble, \textbf{NVE}. Thermodynamically it is an adiabatic system, there is no heat exchange while maintaining the total number of particles, total energy and volume. 
+
+Another ensemble is isothermal, or sometimes called the canonical ensemble \textbf{NVT}. As the name implies, the thermodynamic temperature and volume are constant, heat exchange occurs with the thermostat. It is used for applications where we are not interested in pressure or pressure is not definable.
+
+For chemists, the most interesting is the \textbf{NPT} ensemble where temperature and pressure are constant.
+
 \subsubsection{MSD}
 \subsubsection{RDF}
