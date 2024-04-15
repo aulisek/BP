@@ -47,23 +47,14 @@ Optimized Potential for Liquid Simulations (OPLS) force field was developed by W
 	\begin{equation}
 		\begin{aligned}
 			U_{\text{OPLS}} = & \sum_{\text{bonds}} \frac{1}{2} k_b(r-r_0)^2 + \sum_{\text{angles}} k_{\theta} (\theta-\theta_0)^2 \\
-			& + \sum_{\text{dihedrals}} \Biggl( \frac {V_1} {2} \left [ 1 + \cos (\phi) \right ] + \frac {V_2} {2} \left [ 1 - \cos (2\phi) \right ] 
+			& + \sum_{\text{torsions}} \Biggl( \frac {V_1} {2} \left [ 1 + \cos (\phi) \right ] + \frac {V_2} {2} \left [ 1 - \cos (2\phi) \right ] 
 			+ \frac {V_3} {2} \left [ 1 + \cos (3\phi) \right ] + \frac {V_4} {2} \left [ 1 - \cos (4\phi) \right ] \Biggr) \\
-			& + \sum_{i<j}^N 4\epsilon_{ij} \left[ \left( \frac{\sigma_{ij}}{r_{ij}} \right)^{12} - \left( \frac{\sigma_{ij}}{r_{ij}} \right)^6 \right] + \sum_{i<j}^N k_{ij} \left( \frac{1}{r_{ij}^m} - \frac{1}{r_{ij}^n} \right)
+			& + \sum_{i=1}^{N-1} \sum_{j=i+1}^N \left\lbrace 4\epsilon_{ij} \left[ \left( \frac{\sigma_{ij}}{r_{ij}} \right)^{12} - \left( \frac{\sigma_{ij}}{r_{ij}} \right)^6 \right] + \frac{q_iq_je^2}{r_{ij}} \right\rbrace f_{ij}
 		\end{aligned}
 		\label{eq:opls}
 	\end{equation}
 	
-	where,
-	\begin{itemize}
-		\item $U_{\text{OPLS}}$ is the total OPLS potential energy,
-		\item $i$ and $j$ denote different atom types,
-		\item $N$ is the total number of atom pairs,
-		\item $\epsilon_{ij}$ is the depth of the potential well,
-		\item $\sigma_{ij}$ is the finite distance at which the inter-particle potential is zero,
-		\item $r_{ij}$ is the distance between atoms $i$ and $j$,
-		\item $k_{ij}$, $m$, and $n$ are additional parameters.
-	\end{itemize}
+$i$ and $j$ denote different atom types, $N$ is the total number of atom pairs, $\epsilon_{ij}$, $\sigma_{ij}$ are LJ parameters, $r_{ij}$ is the distance between atoms $i$ and $j$, and $f_{ij}$ is scaling factor equals 0.5 for 1-4 interactions ($i,j$=1,4) and 1 otherwise.
 	
 \textbf{Bonds and angles} are described as harmonic oscillators in OPLS FF. The equilibrium parameters are obtained by structural methods, such as x-ray diffraction NMR experiments. The values for force constants are then fitted to experimental data taken from vibrational spectroscopy. In Figure \ref{fig:bond} is the visualization of the constants.
 
@@ -74,11 +65,18 @@ Optimized Potential for Liquid Simulations (OPLS) force field was developed by W
 	\label{fig:bond}    
 \end{figure}   
 
-\textbf{Dihedral angles} could be calculated by two different approaches. First option is to obtain the dihedrals in large molecules from optimization the potential in small molecules containing the same dihedral. calculate and optimize the dihedral potential for simplest possible molecule. Dihedrals are obtained by ab initio calculations procedure. 
+Proper \textbf{dihedral angle} $\phi$ between atoms i,j,k,l is represented in Figure \ref{fig:torsion}. The torsional energy is described as a cosine expansion, where the first term corresponds to the rotation periodic after 360$^\circ$, second term by 180$^\circ$, the third term by 120$^\circ$ and the fourth term by 90$^\circ$. Each of this term has the $V_n$ constant, representing the barrier for rotation along the proper dihedral angle, which is dependent both on the torsional energy and non-bonded forces. Different approaches could be chosen, one of them is obtaining the parameters by QM calculations. \cite{mackerell_empirical_2004} We first optimize the molecular geometry using QM methods and then we run scanning of dihedral angle of interest. At each step, we optimize geometry and calculate the change in potential energy.  Then we compute potential energy of each optimized geometry using MD with dihedral parameters set to zero. Then we can fit the parameters by subtracting the results of MD from QM, this corresponds exactly to the influence of dihedrals. To do this procedure first all the other FF parameters should be known. 
 
-\textbf{Charges} parametrization is also done by ab initio methods. When we are using the classical FF, the charges used to calculate the Coulomb potential remains the same during the simulations. Due to that, it is crucial to obtain the charges from equilibrium state of the molecules in order to avoid any errors from having the charges taken from structures with higher energy. When obtaining the charges, the first step is to optimize the geometry using the appropriate level of theory, meaning the basis set to be better or equal to 6-31G. Commonly used method to achieve the charges is CHELPG (CHarges from ELectrostatic Potentials using a Grid based method), based on adjusting the partial charges at the centers of the nuclei in order to get the best representation of the electrostatic potential given by the wave functions. Calculation of the charges are often done using higher-level methods and basis sets such as B3LYP/cc-pVTZ or HF/6-31G**.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/torsion.png} 
+	\caption{caption}
+	\label{fig:torsion}    
+\end{figure}   
 
-\textbf{Van der Waals} forces are most often represented by the Lennard-Jones (LJ) potential. The functional form with the illustration is in Figure \ref{fig:lj}. Lennard-Jones potential is a combination of two terms, repulsive term describes the Pauli repulsion at short distances and the attractive term describes the London dispersion force. The $\epsilon$ values are adjusted to experimental values of heats of vaporization and $\sigma$ parameters are adjusted to experimental densities and structural data.
+\textbf{Charges} parametrization is also done by ab initio methods. When we are using the classical FF, the charges used to calculate the Coulomb potential remains the same during the simulations. Due to that, it is crucial to obtain the charges from equilibrium state of the molecules in order to avoid any errors from having the charges taken from structures with higher energy. When obtaining the charges, the first step is to optimize the geometry using the appropriate level of theory, meaning the basis set to be better or equal to 6-31G. Commonly used method to achieve the charges is CHELPG (CHarges from ELectrostatic Potentials using a Grid based method) \cite{breneman_determining_1990}, based on adjusting the partial charges at the centers of the nuclei in order to get the best representation of the electrostatic potential given by the wave functions. Calculation of the charges are often done using higher-level methods and basis sets such as B3LYP/cc-pVTZ or HF/6-31G**.
+
+\textbf{Van der Waals} forces are most often represented by the Lennard-Jones (LJ) potential. The functional form with the illustration is in Figure \ref{fig:lj}. Lennard-Jones potential is a combination of two terms, repulsive term describes the Pauli repulsion at short distances and the attractive term describes the London dispersion force. The $\epsilon$ values are adjusted to experimental values of heats of vaporization and $\sigma$ parameters are adjusted to experimental densities and structural data. 
 
 \begin{figure}[htb!]
 	\centering
@@ -87,22 +85,20 @@ Optimized Potential for Liquid Simulations (OPLS) force field was developed by W
 	\label{fig:lj}    
 \end{figure} 
 
-\subsubsection{Charges and dipoles}
 
 \subsubsection{Polarizability}
 
 
 
 \subsection{Periodic boundary conditions}
-Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors caused by the boundaries of the system and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
+Due to the computational complexity, we are focused on only small region of a very complex real system.  In order not to introduce errors caused by the boundaries of the system and interaction on them, we introduce periodic boundary conditions (PBC). This method is based on surrounding the simulated system with periodic images, thus achieving an approximation by a surface less system. We choose a shape of the simulation box that can be used to fill the space without problems, in our case a cubic box. For simulations in three dimensions, we usually introduce PBCs in the direction of all axes, which means that our simulated box is surrounded on all sides by a total of 26 replicas of the system. The behavior of the system is the same in all replicas, so we must include all the particles appearing in the replicas when calculating the pair interactions. 
 
-From the preceding paragraphs it is evident that the main problem of time complexity of simulations is the evaluation of non-bonding energies. While the contributions for the coupling parameters increase linearly with the system size, the non-coupling terms show a quadratic increase with the system size. A common tactic to reduce computational time is to set cutoff distances beyond which we no longer consider these contributions. By neglecting the contributions at long distances, we introduce small numerical deviations for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. We chose 12 A as the optimal cutoff in our simulations, however, theory suggests that WDW interactions are negligible beyond about 20 A. 
+%The calculations of such interactions are very demanding, but due to their nature they do not need to be calculated over large distances, so we introduce a reasonable cut-off distance beyond which we no longer consider those pair interactions.
+%
+From the preceding paragraphs it is evident that the main problem in time complexity of the simulations is the evaluation of non-bonding energies. While the number of bonded terms increase linearly with the system size, the non-bonded terms show a quadratic increase in the number of contributions. A common strategy for reducing the computational time is to set specific cutoff distance, beyond which we no longer consider the energetic contribution of van der Waals forces. By neglecting the contributions at long distances, we introduce only a small numerical deviation for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. We chose 12 \AA as the optimal cutoff in our simulations, however, theory suggests that van der Waals interactions are negligible beyond about 20 A. 
 
-Translated with DeepL.com (free version)
-\subsubsection{Ewald}
+\subsubsection{Ewald summation}
 \subsubsection{PPPM}
-\subsubsection{Cutoff}
-\subsection{Conditions}
 
 
 \subsection{Molecular dynamics}
@@ -142,6 +138,6 @@ When integrating equations of motion, we often impose constraints on certain asp
 The SHAKE algorithm is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
 
 \subsection{Measuring the properties}
+\subsubsection{Ensembles}
 \subsubsection{MSD}
 \subsubsection{RDF}
-\subsubsection{Glass transition temperature}

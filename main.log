@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  14 APR 2024 19:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.2.28)  15 APR 2024 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,7 +1174,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 72--78
 
 
 ]
-Overfull \hbox (43.85307pt too wide) detected at line 55
+Overfull \hbox (39.18106pt too wide) detected at line 55
 [][][][][]
  []
 
@@ -1182,9 +1182,12 @@ Overfull \hbox (43.85307pt too wide) detected at line 55
 File: img/bond_angles.png Graphic file (type bmp)
 <img/bond_angles.png>
  [7]
+File: img/torsion.png Graphic file (type bmp)
+<img/torsion.png>
+ [8]
 File: img/lj.png Graphic file (type bmp)
 <img/lj.png>
- [8] [9] [10] [11]) [12]
+ [9] [10] [11]) [12]
 \openout2 = `METHODS.aux'.
 
  (./METHODS.tex [13
@@ -1380,7 +1383,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
 
 
 ]
-Underfull \hbox (badness 1769) in paragraph at lines 226--237
+Underfull \hbox (badness 1769) in paragraph at lines 244--255
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
@@ -1390,50 +1393,50 @@ S.;
 \openout6 = `main.lot'.
 
  [39] (./main.lof
-Overfull \hbox (4.87946pt too wide) in paragraph at lines 15--15
+Overfull \hbox (4.87946pt too wide) in paragraph at lines 16--16
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HOIB 
  []
 
 [40]
-Overfull \hbox (9.12746pt too wide) in paragraph at lines 16--16
+Overfull \hbox (9.12746pt too wide) in paragraph at lines 17--17
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HONP 
  []
 
 
-Overfull \hbox (4.72346pt too wide) in paragraph at lines 17--17
+Overfull \hbox (4.72346pt too wide) in paragraph at lines 18--18
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HCZ6 
  []
 
 
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 18--18
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 19--19
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
 een hydrogen atoms 
  []
 
 
-Overfull \hbox (4.72346pt too wide) in paragraph at lines 19--19
+Overfull \hbox (4.72346pt too wide) in paragraph at lines 20--20
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the API-API interact
 ion between HCZ6 
  []
 
 
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 21--21
+Overfull \hbox (6.16475pt too wide) in paragraph at lines 22--22
  [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
 een hydrogen atoms 
  []
 
 
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 22--22
+Overfull \hbox (12.2336pt too wide) in paragraph at lines 23--23
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
 m 
  []
 
 
-Overfull \hbox (12.2336pt too wide) in paragraph at lines 24--24
+Overfull \hbox (12.2336pt too wide) in paragraph at lines 25--25
  \TU/lmr/m/n/12 (\TU/lmr/bx/n/12 top right\TU/lmr/m/n/12 ), carbamazepine (\TU/
 lmr/bx/n/12 bottom left\TU/lmr/m/n/12 ) and indomethacin (\TU/lmr/bx/n/12 botto
 m 
@@ -1454,19 +1457,19 @@ m
 (./INTRODUCTION.aux) (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux)
 (./CONCLUSION.aux) (./lastComponents.aux) (./appendix.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 74645A0610DE9B9F8C01385E0BA56DB5;6998.
+(rerunfilecheck)             Checksum: 60B8AE32EBE0C09BC3F1E2D4B6B7D37D;6575.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27664 strings out of 477835
- 562004 string characters out of 5829531
+ 27680 strings out of 477835
+ 562435 string characters out of 5829531
  1861018 words of memory out of 5000000
- 47330 multiletter control sequences out of 15000+600000
+ 47345 multiletter control sequences out of 15000+600000
  520189 words of font info for 76 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1624b,12422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1624b,12396s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (50 pages).

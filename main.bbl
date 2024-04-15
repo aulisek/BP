@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{36}
+\begin{mcitethebibliography}{38}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -201,6 +201,24 @@ Cornell,~W.~D.; Cieplak,~P.; Bayly,~C.~I.; Gould,~I.~R.; Merz,~K.~M.;
   A {Second} {Generation} {Force} {Field} for the {Simulation} of {Proteins},
   {Nucleic} {Acids}, and {Organic} {Molecules}. \emph{Journal of the American
   Chemical Society} \textbf{1995}, \emph{117}, 5179–5197\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mackerell(2004)]{mackerell_empirical_2004}
+Mackerell,~A.~D. Empirical force fields for biological macromolecules:
+  {Overview} and issues. \emph{Journal of Computational Chemistry}
+  \textbf{2004}, \emph{25}, 1584–1604\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Breneman and Wiberg(1990)Breneman, and
+  Wiberg]{breneman_determining_1990}
+Breneman,~C.~M.; Wiberg,~K.~B. Determining atom‐centered monopoles from
+  molecular electrostatic potentials. {The} need for high sampling density in
+  formamide conformational analysis. \emph{Journal of Computational Chemistry}
+  \textbf{1990}, \emph{11}, 361–373\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
