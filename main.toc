@@ -12,33 +12,33 @@
 \contentsline {subsection}{\numberline {2.2}Periodic boundary conditions}{9}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Setting the cutoff}{10}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Ewald summation}{10}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}PPPM}{10}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Molecular dynamics}{10}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Verlet integration}{11}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Constraint dynamics}{12}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Measuring the properties}{12}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Statistical ensembles}{12}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}MSD}{13}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}RDF}{13}{subsubsection.2.4.3}%
-\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Simulations of neat PLA}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Simulations of neat APIs and mixtures with PLA}{15}{subsection.3.2}%
-\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Simulations of neat PLA}{16}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Structural properties}{16}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Polydispersity effect}{19}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Glass transition modeling}{21}{subsubsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.2}Simulations of neat API}{23}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Sulfathiazole FF parametrization}{23}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}Simulations of mixtures of APIs and PLA}{24}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Calculated properties of mixtures}{24}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Glass transition temperature}{25}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Radial distribution functions}{26}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Diffusion coefficients}{31}{subsubsection.4.3.4}%
-\contentsline {section}{\numberline {5}CONCLUSION}{34}{section.5}%
-\contentsline {section}{REFERENCES}{35}{section.5}%
-\contentsline {section}{List of Abbreviations}{38}{section.5}%
-\contentsline {section}{List of Symbols}{39}{section.5}%
-\contentsline {section}{List of Tables}{40}{section.5}%
-\contentsline {section}{List of Figures}{41}{section.5}%
-\contentsline {section}{Appendix \numberline {A}Headline}{44}{appendix.1.A}%
+\contentsline {subsubsection}{\numberline {2.2.3}Particle-Particle Particle-Mesh}{11}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Molecular dynamics}{13}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Verlet integration}{14}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Constraint dynamics}{14}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Measuring the properties}{15}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Statistical ensembles}{15}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}MSD}{15}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}RDF}{15}{subsubsection.2.4.3}%
+\contentsline {section}{\numberline {3}COMPUTATIONAL METHODS}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Simulations of neat PLA}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Simulations of neat APIs and mixtures with PLA}{17}{subsection.3.2}%
+\contentsline {section}{\numberline {4}RESULTS AND DISCUSSION}{18}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Simulations of neat PLA}{18}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Structural properties}{18}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Polydispersity effect}{21}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Glass transition modeling}{22}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Simulations of neat API}{25}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Sulfathiazole FF parametrization}{25}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Simulations of mixtures of APIs and PLA}{26}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Excess properties}{27}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Radial distribution functions}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Diffusion coefficients}{32}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Glass transition temperature}{37}{subsubsection.4.3.4}%
+\contentsline {section}{\numberline {5}CONCLUSION}{39}{section.5}%
+\contentsline {section}{REFERENCES}{40}{section.5}%
+\contentsline {section}{List of Abbreviations}{43}{section.5}%
+\contentsline {section}{List of Symbols}{44}{section.5}%
+\contentsline {section}{List of Tables}{45}{section.5}%
+\contentsline {section}{List of Figures}{46}{section.5}%
+\contentsline {section}{Appendix \numberline {A}Headline}{49}{appendix.1.A}%
