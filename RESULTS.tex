@@ -295,7 +295,7 @@ where $E_{\text{m}}^{\text{MIX}}$ is the average molar energy of the simulation 
 	\label{tab:vobjemy} 
 \end{table}
 
-For higher temperature of 500~K all excess energies are positive, this indicate creating new intermolecular interactions between API and PLA in the mixtures. We can see, that for higher concentration of API in the mixture ($x_{\text{API}}$) the values of $E^\text{E}$ are decreasing also with their uncertainties. The reason could be that more interactions of API-API are still presented resulting in less populated API-PLA interactions that do not compensate the API-API cohesion. The analysis of radial distribution functions of the most favorable interactions between API-API and API-PLA was performed in order to see the which specific interactions are forming. Same trend was observed for the height of the first peak for different concentrations. Complete results are given in following section.
+For higher temperature of 500~K all excess energies are positive, this indicate that addition of the polymer can attenuate the API-API interactions, but those are not fully compensated by creating new intermolecular interactions between API and PLA in the mixtures. We can see, that for higher concentration of API in the mixture ($x_{\text{API}}$) the values of $E^\text{E}$ are decreasing also with their uncertainties. The reason could be that more interactions of API-API are still presented resulting in less populated API-PLA interactions that do not fully compensate the API-API cohesion. The analysis of radial distribution functions of the most favorable interactions between API-API and API-PLA was performed in order to see the which specific interactions are forming. Same trend was observed for the height of the first peak for different concentrations. Complete results are given in following section.
 
 The excess volumes are also decreasing with higher concentration of API in the mixture. For carbamazepine and naproxen the $V^\text{E}$ values are positive, meaning less advantageous arrangement of molecules in space. For indomethacine all values are negative, more advantageous arrangement is observed. For ibuprofen the values are close to zero, for the highest API concentration the value is negative.
 
@@ -357,7 +357,7 @@ The RDFs of the interaction in carboxyl groups of naproxen and ibuprofen are sho
 \end{figure}
 
 \newpage
-The RDF of the hydrogen bonding interaction of carbamazepine is shown in Figure \ref{fig:cbz_RDF_}. There are two peaks presented, that correspond to interactions of 2 equivalent hydrogen atoms bonded on nitrogen, each participating the same linking the dimer with 2 hydrogen bonds. The contact distance O-H$\cdots$O is 2.25 \AA. The shape and signal response of the peaks is similar for neat API and  mixtures for both temperatures. There is almost no change between different concentration of API, meaning that the impact of PLA on the cohesion of carbamazepine in the mixture is very low.
+The RDF of the hydrogen bonding interaction of carbamazepine is shown in Figure \ref{fig:cbz_RDF_}. There are two peaks presented, that correspond to interactions of 2 equivalent hydrogen atoms bonded on nitrogen, each participating the same linking the dimer with 2 hydrogen bonds. The contact distance O-H$\cdots$O is 2.25 \AA. The shape and signal response of the peaks is similar for neat API and  mixtures for both temperatures. There is almost no change between different concentration of API, meaning that the impact of PLA on the cohesion of carbamazepine in the mixture is very low. The strength of API-API intermolecular interactions decreases in order of the APIs were discussed, indo < nap < ibu < cbz.
 
 
 \begin{figure}[htb]
@@ -386,13 +386,15 @@ In this part we are focusing on the hydrogen bonding between API and PLA, where 
 \end{figure}
 
 
-The RDF of hydrogen bonding with the carbonyl group in PLA (OC) is shown in Figure \ref{fig:carbonyl}. The RDF value converges to one in a long distance for all API-PLA interactions, which is in good agreement with theory. For indomethacine, the amplitude of the peak decrease with lower PLA molecules presented in the mixture. This correspond with the observation for trends in INDO-INDO interactions. The contact distance in dimer obtained from quantum optimization is 1.76 \AA, from MD simulation we obtained the value of \AA.
+The RDF of hydrogen bonding with the carbonyl group in PLA (OC) is shown in Figure \ref{fig:carbonyl}. The RDF value converges to one in a long distance for all API-PLA interactions, which is in good agreement with theory. For indomethacine, the amplitude of the peak decrease with lower PLA molecules presented in the mixture. This correspond with the observation for trends in INDO-INDO interactions. The contact distance in dimer obtained from quantum optimization is 1.76 \AA, from MD simulation we obtained the value of ? \AA.
 
+In case of naproxen, the RDF data shows one peak at distance of ? \AA, the value obtained by quantum simulation is ? \AA. The peak amplitude is relatively high compared to other APIs. The RDF data for ibuprofen exhibit similar behavior, with slightly higher peak amplitude. For the temperature 300~K, there is different order of heights of the peaks. The peak corresponding to $x_\text{API}=0.85$ is switched with the one corresponding to $x_\text{API}=0.92$. The difference between those peaks is small, but it strange compared to trend observed in IBU-IBU RDF. The shift on $x$-axis is same as for naproxen, the calculated QM value is 1.77 \AA~for IBU.
 
 For carbamazepine, there are two peaks in the RDF function. The peaks corresponding to those interactions are weak, we can see that the intensity of the peaks is really low. Under temperature 300 K the intensity of the first peak is slightly above one, but for 500 K the first peak is below one, meaning that this interaction occurs less at a small distance than in the rest of the system. The impact of the PLA concentration change is not that visible, especially for higher temperature of 500~K. This also correspond to we saw in the CBZ-CBZ interactions. The contact distance value from quantum calculations is 2.01 \AA, which is the same as the distance of first RDF obtained by MD.
 
 
-The hydrogen bonds with the oxygen bonded by ether bond in PLA structure are shown in Figure \ref{fig:ether}. All values also converge to 1 in a long distance for all APIs. Generally, those interactions are much weaker than those with oxygen from carbonyl group. 
+The hydrogen bonds with the oxygen bonded by ether bond in PLA structure are shown in Figure \ref{fig:ether}. All values also converge to 1 in a long distance for all APIs. Generally, those interactions are much weaker than those with oxygen from carbonyl group. For indomethacine and carbamazepin the value is below one at short distance, with the dimer contact distance obtained from QM 2.55 and 4.19 \AA~respectively. For ibuprofen the order of peaks amplitude for 300~K is also different with the peak for $x_\text{API}=0.92$ having the biggest value. For the temperature of 500~K the change in order is no longer visible. The QM distance between API hydrogen and ether-bonded oxygen in PLA for ibuprofen is 2.48 \AA.
+
 
 \newpage
 \begin{figure}[H]
@@ -434,14 +436,20 @@ The hydrogen bonds with the oxygen bonded by ether bond in PLA structure are sho
 
 \newpage
 \subsubsection{Diffusion coefficients}
-The MSDs were sampled from the 10~ns long run simulations every 1000 fs (integration step 1 fs). At each sampled time step, obtained MSD data were averaged over all API molecules and then plotted as a function of the simulation time. The MSD dependencies were then interpolated by linear functions and related self-diffusivities of the API in the mixtures were evaluated from the slope of the line using the following Equation \ref{eq:D} obtained by modifying the Einstain equation from the theoretical part.
-
+The MSDs were sampled from the 10~ns long run simulations every 1000 fs (integration step 1 fs). At each sampled time step, obtained MSD data were averaged over all API molecules and then plotted as a function of the simulation time. The MSD dependencies were then interpolated by linear functions and related self-diffusivities of the API in the mixtures were evaluated from the slope of the line using the following Equation \ref{eq:D} obtained by modifying the Einstein equation from the theoretical part.
+\vspace{-0.25cm}
 \begin{equation}\label{eq:D}
 	D_{\text{API}} = \frac{a}{6}, 
 \end{equation}
 where $D$ is the diffusion coefficient, $a$ is the slope of the line.
 
-The MSD data for APIs in mixtures with PLA for $T$=500~K are plotted in Figure \ref{fig:msd_r2}. For ibuprofen, there is a significant difference between mobility of neat API and API mixed within the polymer. This could be result of very strong API-PLA interaction forming in the mixture. The data of carbamazepine shows that with increasing API concentration, mobility also increases. There is also not that enormous difference between neat API. For naproxen, it seems that there is no change for different concentrations of mixtures, also in neat API the mobility is higher. The situation for indometacine is completely different. For neat API the mobility is really low compared to mixtures with PLA. This behaviour seems strange, the reason could be, that in pure API, there are really strong API-API interactions that decrease the mobility. Also the MSD values are much lower.
+The MSD data for APIs in mixtures with PLA for $T$=500~K are plotted in Figure \ref{fig:msd_r2}. The data of carbamazepine shows that with increasing API concentration, the diffusivity also increases, the polymer is able to attenuate the diffusivity of neat Cbz. This behavior could stem from the intermolecular interactions between API-PLA, but this trend was not visible in analysis of RDFs. However, the dominating factor for diffusivity at higher temperatures is the shape of the molecules. This could be the case why PLA slows down relatively big carbamazepine molecules, even the strong interaction between API-PLA were not observed. 
+
+For naproxen, it seems that there is no change for different concentrations of mixtures, but the diffusivity is again slightly higher for neat API. Here we can describe it by forming API-PLA interaction and linking Nap to PLA molecule, which diffusivity is lower. This is in agreement with RDF analysis. We should also have a look at the data for lower temperature.
+
+For ibuprofen, there is a significant difference between mobility of neat API and API mixed within the polymer, note the values on $y$-axis. This could be result of very strong API-PLA interaction forming in the mixtures. Analysis of RDF showed that ibuprofen had the strongest API-PLA interactions compared to other APIs.
+
+The situation for indomethacine is completely different, the MSD values are much lower. For neat API the mobility is really low compared to mixtures with PLA. This behaviour seems strange in context of other API. The reason could be that in pure API, there are really strong API-API interactions that decrease the mobility. The number of those interactions is lower after adding the polymer. This was visible from RDFs, where indomethacine had the strongest intermolecular interactions decreasing with API concentration. 
 
 \begin{figure}[]
 	\centering
@@ -449,28 +457,32 @@ The MSD data for APIs in mixtures with PLA for $T$=500~K are plotted in Figure \
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_nap_api_r2.png}}\\
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_ibu_s_api_r2.png}}
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_indo_api_r2.png}} 
-	\caption{MSD from simulations under 500 K, ibuprofen (\textbf{top left}), naproxen (\textbf{top right}), carbamazepine (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
+	\caption{MSD from simulations under 500 K, carbamazepine (\textbf{top left}), naproxen (\textbf{top right}), ibuprofen (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
 	\label{fig:msd_r2}    
 \end{figure}
 
 \newpage
-Self-diffusivities were evaluated from the above data and plotted in Figure \ref{fig:d}. The data reveal that in pure liquid carbamazepine the diffusion is faster than in naproxen. For higher temperatures, the main factor affecting diffusion is the shape of the molecules, not the strength of the intermolecular interactions. This is caused because the kinetic energy is higher than the potential for higher temperatures.
+Self-diffusivities were evaluated from the above data and plotted in Figure \ref{fig:d}. 
+
+%The data reveal that in pure liquid carbamazepine the diffusion is faster than in naproxen. For higher temperatures, the main factor affecting diffusion is the shape of the molecules, not the strength of the intermolecular interactions. This is caused because the kinetic energy is higher than the potential for higher temperatures.
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{img/d_coeficienty.png} 
-	\caption{Self-diffusivities for carbamazepine and naproxen as a function of their concentration in the mixtures, temperature 500 K.}
+	\includegraphics[width=0.6\linewidth]{img/d.png} 
+	\caption{Self-diffusivities ($D$) for carbamazepine, naproxen, ibuprofen and indomethacine as a function of their concentration in the mixtures, temperature 500 K. Data shown in logarithmic scale}
 	\label{fig:d}    
 \end{figure}  
 
-MSD was also evaluated at a lower temperature of 300 K, Figure \ref{fig:msd_r1}. There is the opposite trend. From these data sets, we can assume that carbamazepine has lower interactions with polymer because the mobility in the mixtures is higher than that in the pure state. The mobility of naproxen is always lower in mixtures, which is related to its stronger interactions with the polymer. The strength of the intermolecular interactions has a greater impact, meaning that paired molecules NAP-API slow the diffusion of other particles.
+MSD was also evaluated at a lower temperature of 300 K, Figure \ref{fig:msd_r1}. For carbamazepine there is no visible trend for change of the concentration and neat API has the signal lower than the mixtures. From that we can definitely say, that addition of PLA has minimal effect on the pure API.
 
-\begin{figure}[]
+The diffusivity of naproxen is always lower in mixtures, which is related to its stronger interactions with the polymer. The strength of the intermolecular interactions has a greater impact, meaning that paired molecules NAP-API slow the diffusion of other particles. The addition of polymer to ibuprofen results in decrease in diffusivity. 
+
+\begin{figure}[H]
 	\centering
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_cbz_api_r1.png}}
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_nap_api_r1.png}}\\
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_ibu_s_api_r1.png}}
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_indo_api_r1.png}} 
-	\caption{MSD from simulations under 300 K, ibuprofen (\textbf{top left}), naproxen (\textbf{top right}), carbamazepine (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
+	\caption{MSD from simulations under 300 K, carbamazepine (\textbf{top left}), naproxen (\textbf{top right}), ibuprofen (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
 	\label{fig:msd_r1}    
 \end{figure}
 
@@ -481,7 +493,7 @@ The glass transition temperatures of the mixtures were evaluated from the simula
 	\rho(T)=\rho_0-a\left(T-T_0\right)-b\left[\frac{1}{2}\left(T-T_0\right)+\sqrt{\frac{\left(T-T_0\right)^2}{4}+e^c}\right].
 \end{equation}
 
-Since this method is sensitive to the initial state of the simulated box, more simulated data starting from different conformations must be provided to evaluate $T_\text{g}$ with the information about its uncertainty. In this work we used 5 simulations from different initial states obtained from 5~ns long run sampled each nanosecond.
+Since this method is sensitive to the initial state of the simulated box, more simulated data starting from different conformations must be provided to evaluate $T_\text{g}$ with the information about its uncertainty as it was described in methods section. We used data from 5 simulations from different initial states. The average value and its uncertainty for each API is given in Table \ref{tab:Tg_mix}.
 
 TO DO: DOPOČÍTAT PRO NOVÉ SIMULACE
 \begin{table}[htb!]

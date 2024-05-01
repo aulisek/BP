@@ -105,17 +105,17 @@ In periodic systems, particles interact not only with nearby particles but also 
 The idea of Ewald summation is based on a mathematical trick where we divide a three-dimensional very slowly and only relatively converging infinite series into two series that converge much faster. In practice, this trick means surrounding each of the point charges with a shielding diffusion cloud of opposite charge, which shape is described by Gaussian function. This shadow cloud is then compensated by a charge of identical shape but opposite sign, illustration is in Figure \ref{fig:ewald}. Next, the contributions from the shadow cloud are summed in real space and the contributions of the compensation potential are summed in reciprocal space using Fourier transforms. Due to the smoothness of the charge distribution using Gaussian functions this converge really fast in Fourier space. Width of the Gaussian peak is optimized   
 
 
-Short-range interactions: The short-range interactions involve particles that are close to each other within a cutoff distance. These interactions are usually computed directly using standard pairwise interaction potentials, such as the Lennard-Jones potential for van der Waals interactions and Coulomb's law for electrostatic interactions. These calculations are straightforward and computationally efficient.
-
-The challenge lies in accurately computing the long-range interactions between particles that are far apart but still interact due to their charges. Ewald summation handles this by representing the charge distribution as a sum of periodic images of point charges, which interact with each other through the Coulomb potential.
-
-Fourier transformation: Ewald summation involves Fourier transforming the charge distribution into reciprocal space. This transformation simplifies the computation of long-range interactions because the Coulomb potential becomes a simple exponential decay in reciprocal space.
-
-Real and reciprocal space summation: Ewald summation combines computations in real space (direct space) and reciprocal space (Fourier space). In real space, the short-range interactions are calculated directly, while in reciprocal space, the long-range interactions are computed efficiently using Fourier transforms.
-
-Summation: Finally, the short-range and long-range components are summed to obtain the total electrostatic energy and forces on each particle in the system.
-
-Ewald summation is advantageous because it accurately accounts for long-range interactions while maintaining computational efficiency, especially in systems with periodic boundary conditions. However, it comes with its own computational cost, particularly in systems with a large number of particles. Nonetheless, its accuracy and versatility make it a widely used method in molecular dynamics simulations, enabling researchers to explore the behavior of complex systems in various fields of science and engineering.
+%Short-range interactions: The short-range interactions involve particles that are close to each other within a cutoff distance. These interactions are usually computed directly using standard pairwise interaction potentials, such as the Lennard-Jones potential for van der Waals interactions and Coulomb's law for electrostatic interactions. These calculations are straightforward and computationally efficient.
+%
+%The challenge lies in accurately computing the long-range interactions between particles that are far apart but still interact due to their charges. Ewald summation handles this by representing the charge distribution as a sum of periodic images of point charges, which interact with each other through the Coulomb potential.
+%
+%Fourier transformation: Ewald summation involves Fourier transforming the charge distribution into reciprocal space. This transformation simplifies the computation of long-range interactions because the Coulomb potential becomes a simple exponential decay in reciprocal space.
+%
+%Real and reciprocal space summation: Ewald summation combines computations in real space (direct space) and reciprocal space (Fourier space). In real space, the short-range interactions are calculated directly, while in reciprocal space, the long-range interactions are computed efficiently using Fourier transforms.
+%
+%Summation: Finally, the short-range and long-range components are summed to obtain the total electrostatic energy and forces on each particle in the system.
+%
+%Ewald summation is advantageous because it accurately accounts for long-range interactions while maintaining computational efficiency, especially in systems with periodic boundary conditions. However, it comes with its own computational cost, particularly in systems with a large number of particles. Nonetheless, its accuracy and versatility make it a widely used method in molecular dynamics simulations, enabling researchers to explore the behavior of complex systems in various fields of science and engineering.
 
 \begin{figure}[htb!]
 	\centering
@@ -126,17 +126,17 @@ Ewald summation is advantageous because it accurately accounts for long-range in
 \subsubsection{Particle-Particle Particle-Mesh}
 Like the Ewald summation method, particle-particle particle-mesh (PPPM) addresses the challenge of accurately modeling interactions between charged particles that extend over long distances while accounting for periodic boundary conditions. PPPM is particularly well-suited for systems with a large number of particles, where the computational cost of traditional methods like Ewald summation becomes prohibitive.
 
-Particle-Particle Interactions: PPPM divides the electrostatic interactions into short-range (particle-particle) and long-range (particle-mesh) components. The short-range interactions involve direct pairwise interactions between particles within a specified cutoff distance. These interactions are computed using standard techniques such as the Coulomb potential or other appropriate force fields.
-
-Particle-Mesh Interactions: The long-range interactions are calculated using a mesh-based approach. PPPM discretizes the charge distribution onto a grid (mesh) using interpolation techniques. The charge density is spread onto the mesh, and then the electric field due to this charge distribution is calculated using Fast Fourier Transform (FFT) techniques.
-
-FFT computation: FFT is used to transform the charge density from real space to reciprocal space (Fourier space), where the long-range interactions can be efficiently computed. In reciprocal space, the electric field due to the charge distribution can be expressed as a convolution between the charge density and the Green's function for the electrostatic potential.
-
-Force calculation: Once the electric field in reciprocal space is computed, it is transformed back to real space using inverse FFT. Then, the forces on particles due to long-range interactions are calculated based on the interpolated electric field at the positions of the particles.
-
-Combining short-range and long-range interactions: The short-range and long-range forces are then combined to obtain the total force acting on each particle in the system. These forces are used to update the positions and velocities of the particles over the course of the simulation.
-
-PPPM offers significant computational advantages compared to direct summation methods, especially for systems with a large number of particles, as it scales more efficiently with system size. However, PPPM requires careful tuning of parameters such as grid spacing and interpolation methods to achieve accurate results. Despite this, PPPM remains a widely used method in MD simulations, enabling researchers to study complex systems with long-range electrostatic interactions efficiently and accurately.
+%Particle-Particle Interactions: PPPM divides the electrostatic interactions into short-range (particle-particle) and long-range (particle-mesh) components. The short-range interactions involve direct pairwise interactions between particles within a specified cutoff distance. These interactions are computed using standard techniques such as the Coulomb potential or other appropriate force fields.
+%
+%Particle-Mesh Interactions: The long-range interactions are calculated using a mesh-based approach. PPPM discretizes the charge distribution onto a grid (mesh) using interpolation techniques. The charge density is spread onto the mesh, and then the electric field due to this charge distribution is calculated using Fast Fourier Transform (FFT) techniques.
+%
+%FFT computation: FFT is used to transform the charge density from real space to reciprocal space (Fourier space), where the long-range interactions can be efficiently computed. In reciprocal space, the electric field due to the charge distribution can be expressed as a convolution between the charge density and the Green's function for the electrostatic potential.
+%
+%Force calculation: Once the electric field in reciprocal space is computed, it is transformed back to real space using inverse FFT. Then, the forces on particles due to long-range interactions are calculated based on the interpolated electric field at the positions of the particles.
+%
+%Combining short-range and long-range interactions: The short-range and long-range forces are then combined to obtain the total force acting on each particle in the system. These forces are used to update the positions and velocities of the particles over the course of the simulation.
+%
+%PPPM offers significant computational advantages compared to direct summation methods, especially for systems with a large number of particles, as it scales more efficiently with system size. However, PPPM requires careful tuning of parameters such as grid spacing and interpolation methods to achieve accurate results. Despite this, PPPM remains a widely used method in MD simulations, enabling researchers to study complex systems with long-range electrostatic interactions efficiently and accurately.
 
 
 \subsection{Molecular dynamics}
