@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{38}
+\begin{mcitethebibliography}{39}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -238,6 +238,26 @@ Shannon,~C. Communication in the {Presence} of {Noise}. \emph{Proceedings of
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Ryckaert \latin{et~al.}(1977)Ryckaert, Ciccotti, and
+  Berendsen]{ryckaert_numerical_1977}
+Ryckaert,~J.-P.; Ciccotti,~G.; Berendsen,~H.~J. Numerical integration of the
+  cartesian equations of motion of a system with constraints: molecular
+  dynamics of n-alkanes. \emph{Journal of Computational Physics} \textbf{1977},
+  \emph{23}, 327–341\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Braun \latin{et~al.}(2019)Braun, Gilmer, Mayes, Mobley, Monroe,
+  Prasad, and Zuckerman]{braun_best_2019}
+Braun,~E.; Gilmer,~J.; Mayes,~H.~B.; Mobley,~D.~L.; Monroe,~J.~I.; Prasad,~S.;
+  Zuckerman,~D.~M. Best {Practices} for {Foundations} in {Molecular}
+  {Simulations} [{Article} v1.0]. \emph{Living Journal of Computational
+  Molecular Science} \textbf{2019}, \emph{1}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Thompson \latin{et~al.}(2022)Thompson, Aktulga, Berger, Bolintineanu,
   Brown, Crozier, {In 'T Veld}, Kohlmeyer, Moore, Nguyen, Shan, Stevens,
   Tranchida, Trott, and Plimpton]{thompson_lammps_2022}
@@ -271,16 +291,6 @@ Padua,~A. ENS Lyon, France. \url{https://github.com/paduagroup/fftool}\relax
   Eastwood]{hockney_computer_2021}
 Hockney,~R.; Eastwood,~J. \emph{Computer {Simulation} {Using} {Particles}}, 0th
   ed.; CRC Press, 2021; p 540\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ryckaert \latin{et~al.}(1977)Ryckaert, Ciccotti, and
-  Berendsen]{ryckaert_numerical_1977}
-Ryckaert,~J.-P.; Ciccotti,~G.; Berendsen,~H.~J. Numerical integration of the
-  cartesian equations of motion of a system with constraints: molecular
-  dynamics of n-alkanes. \emph{Journal of Computational Physics} \textbf{1977},
-  \emph{23}, 327–341\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

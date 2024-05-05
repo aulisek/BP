@@ -199,36 +199,44 @@ The parameters of API simulation boxes after the equilibration run ($T$=500 K) a
 	\end{figure}
 
 \subsubsection{Sulfathiazole FF parametrization}
-A newly parametrized force field \cite{jorgensen_development_1996} was used for sulfathiazole. The charges on the atoms were calculated by quantum-chemical calculations using the Gaussian code \cite{frisch_gaussian16_2016}. At first, the structure was optimized using the B3LYP functional with the aug-cc-pVTZ basis set with the dispersion correction GD3BJ \cite{smith_revised_2016}. After finding the optimal geometric structure of the molecule, the charges on the atoms were fitted through the CHELPG (Charges from ELectrostatic Potentials using a Grid-based method) method and inserted into force field file.
+A newly parametrized force field \cite{jorgensen_development_1996} was used for sulfathiazole. The charges on the atoms were calculated by quantum-chemical calculations using the Gaussian 16 code \cite{frisch_gaussian16_2016}. At first, the structure was optimized using the B3LYP functional with the aug-cc-pVTZ basis set with the dispersion correction GD3BJ \cite{smith_revised_2016}. After finding the optimal geometric structure of the molecule, the charges on the atoms were fitted through the CHELPG (Charges from ELectrostatic Potentials using a Grid-based method)\cite{breneman_determining_1990} method and inserted into force field file.
  
-The MD simulations of the sulfathiazole crystal were performed to validate the force field file parameters. The triclinic simulation box and barostat setting was used to account for the anisotropic character of the molecular crystal, other settings are similar to that with the PLA instead of calculating long-range interactions. The sulfathiazole crystal was simulated for three temperatures of 100, 200 and 300 K at 1 bar. The simulation results and experimental data obtained from literature \cite{drebushchak_crystal_2008} are given in the Table \ref{tab:sulfathiazol}.
+The MD simulations of the sulfathiazole crystal (polymorph II) were performed to validate the force field file parameters. The triclinic simulation box and barostat setting was used to account for the anisotropic character of the molecular crystal, other settings are similar to that with the PLA instead of calculating long-range interactions. The sulfathiazole crystal was simulated for three temperatures of 100, 200 and 300 K at 1 bar. The simulation results and experimental data obtained from literature \cite{drebushchak_crystal_2008} are given in the Table \ref{tab:sulfathiazol}. The MD simulations were performed with two different FF. First simulation was performed with FF field taken from literature (index MD1), second simulation with newly parametrized FF (CHELPG index). 
  
-    \begin{table}[htb]       
+    \begin{table}[htb]   
+    \caption{Comparison of simulated and experimental \cite{drebushchak_crystal_2008} crystallographic parameters for II polymorph of sulfathiazole. The index MD1 corresponds to force field taken from literature, index CHELPG to newly parametrized FF.}    
 	\centering
 	\begin{tabular}{lccc}
 		\toprule
-		Temperature, K & 100 & 200 & 300\\
+		$T$, K & 100 & 200 & 300\\
 		\midrule
-		Experimental density $\rho_\mathrm{exp}$, g cm$^{-3}$  & $1.575 \pm 0.002$ & $1.560 \pm 0.002$ & $1.540 \pm 0.002$\\
-		Calculated density $\rho_\mathrm{MD}$, g cm$^{-3}$ & $1.552 \pm 0.001$ & $1.534 \pm 0.002$ & $1.515 \pm 0.002$\\
-		100($\rho_\mathrm{MD}/\rho_\mathrm{exp}-1$) & $-1.5$ & $-1.7$ & $-1.6$\\
+		$\rho_\mathrm{exp}$, g cm$^{-3}$  & $1.575(2)$ & $1.560(2)$ & $1.540(2)$\\
+		$\rho_\mathrm{MD1}$, g cm$^{-3}$ & $1.552(1)$ & $1.534(2)$ & $1.515(2)$\\
+		100($\rho_\mathrm{MD1}/\rho_\mathrm{exp}-1$) & $-1.5$ & $-1.7$ & $-1.6$\\
+		$\rho_\mathrm{CHELPG}$, g cm$^{-3}$ & 1.525(1) & 1.538(2) & 1.495(2)  \\
+		100($\rho_\mathrm{CHELPG}/\rho_\mathrm{exp}-1$) & $-3.2$ & $-1.4$ & $-2.9$\\
 		\midrule
-		Experimental $\beta$ angle, $^{\circ}$ & $94.14$ & $93.905$ & $93.674$\\
-		
-		Calculated $\beta$ angle, $^{\circ}$ & $91.56$ & $91.64$ & $91.67$\\
-		
-		Calculated cell a length, \AA & 8.302 & 8.325 & 16.701\\
-		
-		Calculated cell b length, \AA & 8.236 & 8.275 & 16.625\\
-		
-		Calculated cell c length, \AA & 7.995 & 8.027 & 16.133\\
+		$\beta_\mathrm{exp}$, $^{\circ}$ & $94.14(2)$ & $93.905(7)$ & $93.674(8)$\\
+		$\beta_\mathrm{MD1}$, $^{\circ}$ & $91.56(7)$ & $91.6(1)$ & $91.7(1)$\\
+		$\beta_\mathrm{CHELPG}$, $^{\circ}$ & 97.78(6) & 96.79(8) & 97.0(1)\\
+		\midrule
+		$a_\mathrm{exp}$, \AA & 8.1896(17) & 8.2122(7) & 8.2427(8)\\
+		$a_\mathrm{MD1}$, \AA & 8.302(4) & 8.325(5) & 8.351(7) \\
+		$a_\mathrm{CHELPG}$, \AA & 6.739(5) & 6.648(9) & 6.84(1) \\
+		\midrule
+		$b_\mathrm{exp}$, \AA & 8.532(2) & 8.5604(9) & 8.599(1) \\
+		$b_\mathrm{MD1}$, \AA & 8.236(5) & 8.275(7) & 8.313(9) \\
+		$b_\mathrm{CHELPG}$, \AA & 8.267(9) & 8.00(1) &	8.22(2) \\
+		\midrule
+		$c_\mathrm{exp}$, \AA  & 15.447(4) & 15.497(2) & 15.563(2) \\
+		$c_\mathrm{MD1}$, \AA & 15.99(1) & 16.06(2) & 16.13(2) \\
+		$c_\mathrm{CHELPG}$, \AA & 20.15(2) & 20.88(3) & 20.35(5)\\
 		\bottomrule
 	\end{tabular}
-	\caption{Comparison of simulated and experimental crystallographic parameters for sulfathiazole.}
 	\label{tab:sulfathiazol}
 \end{table}
 
-There is a good match between the experimental and computed quantities. The relative deviations of experimental and calculated densities are very low. Other parameters do not indicate any notable deviations in the simulation box during the simulation, the crystallographic parameters of the unit cell are $a$ = 8.1896 \AA, $b$ = 8.532 \AA~and  $c$ = 15.447 \AA. 
+There is good agreement between the experimental and computed densities, the relative deviations low for both FF. Other parameters differs more between the two FF used. Generally, the MD1 FF describes better the $\beta$ angle and the parameters of the unit cell within all simulated temperatures.
 
 \subsection{Simulations of mixtures of APIs and PLA}
 The simulations of mixtures of 4 APIs with PLA were performed following the scheme described in previous section. The images of the simulation boxes for mixtures with the least amount of API ($x_{\text{API}}=0.85$) for temperature 500~K are in figure \ref{fig:mix_boxes}. The polymer was represented by quicksurf drawing method and diffused in the background, the API molecules are represented with balls and stick above the PLA molecules.
@@ -330,7 +338,7 @@ The RDF of the hydrogen bonding interaction in carboxyl group of indomethacin is
 \end{figure}
 
 
-The RDFs of the interaction in carboxyl groups of naproxen and ibuprofen are shown in Figure \ref{fig:nap_RDF_} and \ref{fig:ibu_s_RDF_}. The contact distance of O-H$\cdots$O is 1.75 \AA~in both cases. We can observe interesting trend for both API. In pure API, the dimer is linked by two hydrogen bonds, corresponding to two massive peaks of the function. With the higher concentration of PLA in the mixture, the shape of the RDF is changing. This change resulted in higher probability of the contact at longer distances, meaning that APIs prefer looser contact of their COOH dimers. The reason for that could be that first sphere is taken by interaction of hydrogen from API with oxygens from PLA which happen on distances 2 and 4 \AA. This contact is described further in the next paragraphs. 
+The RDFs of the interaction in carboxyl groups of naproxen and ibuprofen are shown in Figure \ref{fig:nap_RDF_} and \ref{fig:ibu_s_RDF_}. The contact distance of O-H$\cdots$O is 1.75 \AA~in both cases. We can observe interesting trend for both API. In pure API, the dimer is linked by two hydrogen bonds, corresponding to two massive peaks of the function. With the higher concentration of PLA in the mixture, the shape of the RDF is changing. This change resulted in higher probability of the contact at longer distances, meaning that APIs prefer looser contact of their COOH dimers. The reason for that could be that first sphere is taken by interaction of hydrogen from API with oxygens from PLA which happen on distances 2 and 4 \AA. This contact is described further in the PLA-API interaction part. 
 
 
 \newpage
