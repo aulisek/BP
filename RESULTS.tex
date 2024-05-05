@@ -105,7 +105,7 @@ To investigate the effect of the box size on the molecular simulations, the simu
 		\caption{}
 		\label{fig:box_konce}
 	\end{subfigure}   	
-	\caption{(a) dependence of density on the number of PLA chains containing 90 dimer units in the box on the left and (b) density of PLA at 500 K and 1 bar extracted from MD simulations depending on the polydispersity coefficients on the right.}
+	\caption{(a) dependence of density on the number of PLA polymer chains containing 90 dimer units in the box on the left and (b) dependence of root mean square distances of the polymer chain termini with their standard deviations on the right}
 	\vspace{-0.2cm}
 \end{figure}
 
@@ -114,17 +114,19 @@ To assess the accuracy of the calculated densities, the corresponding experiment
 \begin{table}[htbp]
 	\centering
 	\caption{Comparison of calculated and experimental PLA denstities taken from \cite{klajmon_glass_2023}.}
-	\begin{tabular}{ccc}
+	\begin{tabular}{cccc}
 		\toprule
-		$T$, K & $\rho_{\text{exp}},  \text{g cm}^{-3}$ & $\rho_{\text{calc}}, \text{g cm}^{-3}$ \\
+		$T$, K & $\rho_{\text{exp}},  \text{g cm}^{-3}$ & $\rho_{\text{MD}}, \text{g cm}^{-3}$ & $100(\rho_{\text{MD}}/\rho_{\text{exp}}-1)$\\
 		\midrule
-		 300   & $1.373 \pm 0.003$ & $1.193 \pm 0.001$ \\
-		 500   & $1.181 \pm 0.003$ & $1.086 \pm 0.001$ \\
+		 300   & $1.373 \pm 0.003$ & $1.193 \pm 0.001$ & $-13$\\
+		 500   & $1.181 \pm 0.003$ & $1.086 \pm 0.001$ & $-8.0$ \\
 		\bottomrule
 	\end{tabular}%
 	\label{tab:PLA_dens}%
 \end{table}%
 
+The experimental density value for 300 K is 13 \% above the computed, for 500~K the value is 8 \% above the computed density. In both cases, the value is higher than our limit value for the longest PLA polymer chain composed of 200 units.
+ 
 \subsubsection{Polydispersity effect}
 Under real conditions, it is hardly possible to experimentally prepare a monodisperse polymer containing only one selected chain length. For this reason, we simulated several polydisperse systems, each exhibiting a different distribution of molar masses of individual molecular chains, containing a total number of 50 chains. Their lengths come from an interval 8-244 units. Polydispersity index PDI~=~1 corresponds to 50 chains of length 124 units, the other values were calculated using the equation \ref{eq:PDI}. We than build composition of the other systems using the Gaussian distribution with the mean value of 124 units. By this procedure, we were able to obtain the PDI up to 1.3. To reach PDI 1.4 and 1.5, we had to increase the numbers of very short and long polymer chains present in the box to get the desired PDI. Designed compositions of systems based on PDI values are displayed in the Figure \ref{fig:polydisperzita_vyskyt}. The density was again evaluated from the simulations, in this case as a function of the PDI.
 
@@ -155,9 +157,11 @@ Understanding the glass transition temperature of pharmaceutical materials is cr
 
 To obtain the glass transition temperature of PLA ($T_\mathrm{g}$), we started by simulating ten different polymer chain lengths for a set of temperatures in a range 140-485 K with a step of 15 K. For the system equilibration, each polymer chain simulation ran for 1 ns with a step of 1 fs. After the equilibration, the temperature interval for the following simulations was limited to the range of 200-485 K with a step of 15 K. Then, we run a $NpT$ production simulation for each temperature with this limited interval for 10 ns with a step of 1 fs from which the equilibrium bulk phase densities were calculated and displayed as a function of temperature. To get the glass transition temperature ($T_\mathrm{g}$) for PLA from volumetric data, the trend shift method was used \cite{klajmon_does_2022}. 
 
-The trend shift method is illustrated for one length of the polymer chain in the Figure \ref{fig:glass}. When we plot the bulk phase densities as a function of temperature, there is a visible trend shift which has the meaning of the transition between the glassy state and the rubbery state of a polymer. The point of the transition divides the density dataset into two intervals. Coordinates of the breakpoint and one surrounding point from each side were excluded from the further processing and the two resulting intervals were interpolated by a linear function. The $x$-coordinate of the intersection of these two lines determines the glass transition temperature. For this purpose a script in Maple software solving the system of linear equations was created to get the $T_\mathrm{g}$.
+The trend shift method is illustrated for two different lengths of the polymer chains in the Figure \ref{fig:illust}. When we plot the bulk phase densities as a function of temperature, there is a visible trend shift which has the meaning of the transition between the glassy state and the rubbery state of a polymer. The point of the transition divides the density dataset into two intervals. Coordinates of the breakpoint and one surrounding point from each side were excluded from the further processing and the two resulting intervals were interpolated by a linear function. The $x$-coordinate of the intersection of these two lines determines the glass transition temperature. For this purpose a script in Maple software solving the system of linear equations was created to get the $T_\mathrm{g}$.
 
-Available experimental $T_\mathrm{g}$ of L-PLA varies in the literature, the value  of $T_\mathrm{g}$ = 333 $\pm$ 4~K \cite{pyda_reversing_2005} was chosen. Our obtained PLA $T_\mathrm{g}$ = 337 $\pm$ 10~K as an arithmetic mean of the values for all polymer chain lengths. The calculated $T_\mathrm{g}$ for each polymer chain are displayed as function of polymer chain weight in the Figure \ref{fig:glass} with their arithmetic mean value drawn as a blue line. The calculated $T_\mathrm{g}$ value is very close to the experimental one. There is no significant trend in $T_\mathrm{g}$ of PLA from the calculated data. 
+Available experimental $T_\mathrm{g}$ of L-PLA varies in the literature, the value  of $T_\mathrm{g}$ = 333 $\pm$ 4~K \cite{pyda_reversing_2005} was chosen as a reference value. The variation of experimental $T_\mathrm{g}$ data is caused by the stereo-configuration along the PLA chains, crystallinity of bulk PLA and the polydispersity. \cite{klajmon_glass_2023} The $T_\mathrm{g}$ value obtained in this work as an arithmetic mean of the values for all polymer chain lengths  is $T_\mathrm{g}$ = 337 $\pm$ 10~K. The calculated $T_\mathrm{g}$ for each polymer chain are displayed as function of polymer chain weight in the Figure \ref{fig:glass} with their arithmetic mean value drawn as a blue line. For each length of the polymer chain the regions for fitting were set manually. In the paper written by Klajmon et al\cite{klajmon_glass_2023}, the data value was obtained from the same data sets using automated script. Their resulted value is $T_\mathrm{g}$ = 351 $\pm$ 11~K. This corresponds with the fact that trend shift method is really sensitive to the intervals we determine, this is also illustrated in Figure \ref{fig:illust}. In this paper, there is also comparison with other methods used to determine in $T_\mathrm{g}$ and also with results for other polymers. 
+
+The calculated $T_\mathrm{g}$ value is very close to the experimental one, there is no significant trend in $T_\mathrm{g}$ of polymer chain length of PLA from the calculated data. However, that small deviation between calculated and experimental value is more luck, when we compare the data for other polymers the difference is much larger.
 
 
 \begin{figure}[H]
@@ -168,7 +172,14 @@ Available experimental $T_\mathrm{g}$ of L-PLA varies in the literature, the val
 		\includegraphics[width=1.0\linewidth]{img/tg_ukazka_30.png} 
 	\end{subfigure}   	
 	\vspace{-1cm}
-	\caption{Illustration of the trend shift method for one polymer chain length on the left, and calculated $T_\mathrm{g}$ for all lengths of polymer chains by this method where blue line represents mean value on the right.}
+	\caption{Illustration of the trend shift method for one polymer chain length on the left and for length of TO DO: zjistit pocet retezcu on the right.}
+	\label{fig:illust}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/glass_temp.png}
+	\caption{Calculated $T_\mathrm{g}$ for all lengths of polymer chains using trend shift method, where blue line represents mean value.}
 	\label{fig:glass}
 \end{figure}
 
@@ -236,7 +247,7 @@ The MD simulations of the sulfathiazole crystal (polymorph II) were performed to
 	\label{tab:sulfathiazol}
 \end{table}
 
-There is good agreement between the experimental and computed densities, the relative deviations low for both FF. Other parameters differs more between the two FF used. Generally, the MD1 FF describes better the $\beta$ angle and the parameters of the unit cell within all simulated temperatures.
+There is good agreement between the experimental and computed densities, the relative deviations low for both FF. Other parameters differs more between the two FF used. Generally, the MD1 FF describes better the $\beta$ angle and the parameters of the unit cell within all simulated temperatures. It would be also useful to obtain the data for liquid state and compare them with experiments.
 
 \subsection{Simulations of mixtures of APIs and PLA}
 The simulations of mixtures of 4 APIs with PLA were performed following the scheme described in previous section. The images of the simulation boxes for mixtures with the least amount of API ($x_{\text{API}}=0.85$) for temperature 500~K are in figure \ref{fig:mix_boxes}. The polymer was represented by quicksurf drawing method and diffused in the background, the API molecules are represented with balls and stick above the PLA molecules.
@@ -253,8 +264,7 @@ The simulations of mixtures of 4 APIs with PLA were performed following the sche
 	\caption{Image of the simulation box for $x_{\text{API}}=0.85$ and $T=500~K$ for ibuprofen (\textbf{top left}), naproxen (\textbf{top right}), carbamazepine (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
 	\label{fig:mix_boxes}
 \end{figure}
-
-\newpage
+\vspace{-0.5cm}
 \subsubsection{Excess properties}
 Excess molar energy and excess molar volume are thermodynamic quantities that quantify deviations from ideal behavior in solutions. Ideal solutions exhibit no interactions between components, resulting in linear relationships between the properties of the mixture and its composition. However, real solutions often deviate from ideal behavior due to the interactions between molecules such as hydrogen bonding or their steric composition.
 
@@ -262,22 +272,27 @@ The excess molar energy represents the additional energy per mole of mixture com
 
 Similarly, the excess molar volume quantifies the deviation in volume per mole of mixture from that of an ideal solution. It reflects the changes in volume resulting from interactions between molecules, such as volume contraction due to strong molecular association or volume expansion due to repulsive interactions.
 
-Excess molar volumes ($V^{E})$ of the mixtures were evaluated from the simulations for each concentration using the Equation \ref{eq:VM}. For this reason, the average molar volumes of the simulation boxes were evaluated from simulations of pure API ($V_{\text{m}}^{\text{API}} $) and pure polymer ($V_{\text{m}}^{\text{PLA}}$) and from a mixture ($V_{\text{m}}^{\text{MIX}}$) of API and PLA. To obtain the uncertainties block averaging scheme and error propagation law was used.  
+Excess molar volumes ($V^{E})$ of the mixtures were evaluated from the simulations for each concentration using the Equation \ref{eq:VM}. For this reason, the average molar volumes of the simulation boxes were evaluated from simulations of pure API ($V_{\text{m}}^{\text{API}} $) and pure polymer ($V_{\text{m}}^{\text{PLA}}$) and from a mixture ($V_{\text{m}}^{\text{MIX}}$) of API and PLA. To obtain the uncertainties block averaging scheme and error propagation law was used. 
+ 
+%\vspace{-0.2cm}
 
 \begin{equation}\label{eq:VM}
 	V^{E} = V_{\text{m}}^{\text{MIX}} - x_{\text{API}} V_{\text{m}}^{\text{API}} - x_{\text{PLA}} V_{\text{m}}^{\text{PLA}}
 \end{equation}
 
-Excess molar energies of the mixtures were evaluated in a similar way. The following Equation \ref{eq:EM} was used
-
+Excess molar energies of the mixtures were evaluated in a similar way by the Equation \ref{eq:EM}
+%\vspace{-0.1cm}
 \begin{equation}\label{eq:EM}
 	E^\text{E} = E_{\text{m}}^{\text{MIX}} - x_{\text{API}} E_{\text{m}}^{\text{API}} - x_{\text{PLA}} E_{\text{m}}^{\text{PLA}},
 \end{equation}
+
+%\vspace{-0.2cm}
 
 where $E_{\text{m}}^{\text{MIX}}$ is the average molar energy of the simulation box of the mixture, $E_{\text{m}}^{\text{API}}$ is the average molar energy of pure API, and $E_{\text{m}}^{\text{PLA}}$ is the averaged molar energy of pure PLA obtained from simulation. Mixing energies and volumes were calculated for all systems and both temperatures (300, 500~K), and the comparison is shown in Table \ref{tab:vobjemy}.  
 
 \begin{table}[htb]
 	\caption{Calculated excess energies (kJ mol$^{-1}$) and volumes (in cm$^3$ mol$^{-1}$) for API mixtures of different concentrations from simulations under 300~K ($V_{300}^\text{E}$, $E_{300}^\text{E}$) and 500~K ($V_{500}^\text{E}$, $E_{500}^\text{E}$) with their standard uncertainties (k=1).}
+	\vspace{-0.2cm}
 	\centering
 	\begin{tabular}{lSSSSSSSSS}
 	\toprule
@@ -302,22 +317,26 @@ where $E_{\text{m}}^{\text{MIX}}$ is the average molar energy of the simulation 
 	\end{tabular}
 	\label{tab:vobjemy} 
 \end{table}
-
+\vspace{-0.2cm}
 For higher temperature of 500~K all excess energies are positive, this indicate that addition of the polymer can attenuate the API-API interactions, but those are not fully compensated by creating new intermolecular interactions between API and PLA in the mixtures. We can see, that for higher concentration of API in the mixture ($x_{\text{API}}$) the values of $E^\text{E}$ are decreasing also with their uncertainties. The reason could be that more interactions of API-API are still presented resulting in less populated API-PLA interactions that do not fully compensate the API-API cohesion. The analysis of radial distribution functions of the most favorable interactions between API-API and API-PLA was performed in order to see the which specific interactions are forming. Same trend was observed for the height of the first peak for different concentrations. Complete results are given in following section.
 
 The excess volumes are also decreasing with higher concentration of API in the mixture. For carbamazepine and naproxen the $V^\text{E}$ values are positive, meaning less advantageous arrangement of molecules in space. For indomethacine all values are negative, more advantageous arrangement is observed. For ibuprofen the values are close to zero, for the highest API concentration the value is negative.
 
-\subsubsection{Radial distribution functions}
+\vspace{-0.1cm}
 
+\subsubsection{Radial distribution functions}
+\vspace{-0.2cm}
 Sampling the radial distribution function from the simulations was done to explore the interactions that are having the highest impact on material cohesion. The hydrogen bonds were mostly studied as the most important cohesive features. First the API-API contacts are discussed, then API-PLA interactions are studied.
 
 The strongest API-API interaction was chosen and plotted to study the change between neat API and simulations of mixtures with different concentrations of PLA. For ibuprofen, naproxen and indomethacine the interaction between the oxygen and hydrogen atoms from carboxyl group was studied. However, carbamazepine does not contain complete carboxyl group, the hydrogen bonding was studied between the N$\text{H}_\text{2}$ and OC group. The selected atom types involved in interactions are visualised in the introduction section in Figure \ref{fig:APIs}. 
 
-All RDFs of mixtures containing the API-API interaction were scaled onto the pure API RDF signal enabling us direct comparison of amplitudes of individual signals. The following Equation \ref{eq:RDF_formula} was used.
+All RDFs of mixtures containing the API-API interaction were scaled onto the pure API RDF signal enabling us direct comparison of amplitudes of individual signals. The following Equation \ref{eq:RDF_formula} was used.\vspace{-0.5cm}
 
 \begin{equation}\label{eq:RDF_formula}
 	\text{RDF}_{\text{scaled}} = \text{RDF} \cdot \frac{V_{\text{API}}}{N_{\text{API}}} \frac{N_{\text{mix}}}{V_{\text{mix}}},
 \end{equation}
+
+\vspace{-0.2cm}
 
 where $V_{\text{API}}$ is the average volume of the pure API simulation box, $N_{\text{API}}$ is the number of molecules in the pure API simulation box and analogously for mixtures.
 
@@ -396,12 +415,12 @@ In this part we are focusing on the hydrogen bonding between API and PLA, where 
 
 The RDF of hydrogen bonding with the carbonyl group in PLA (OC) is shown in Figure \ref{fig:carbonyl}. The RDF value converges to one in a long distance for all API-PLA interactions, which is in good agreement with theory. For indomethacine, the amplitude of the peak decrease with lower PLA molecules presented in the mixture. This correspond with the observation for trends in INDO-INDO interactions. The contact distance in dimer obtained from quantum optimization is 1.76 \AA, from MD simulation we obtained the value of ? \AA.
 
-In case of naproxen, the RDF data shows one peak at distance of ? \AA, the value obtained by quantum simulation is ? \AA. The peak amplitude is relatively high compared to other APIs. The RDF data for ibuprofen exhibit similar behavior, with slightly higher peak amplitude. For the temperature 300~K, there is different order of heights of the peaks. The peak corresponding to $x_\text{API}=0.85$ is switched with the one corresponding to $x_\text{API}=0.92$. The difference between those peaks is small, but it strange compared to trend observed in IBU-IBU RDF. The shift on $x$-axis is same as for naproxen, the calculated QM value is 1.77 \AA~for IBU.
+In case of naproxen, the RDF data shows one peak at distance of ? \AA, the value obtained by quantum simulation is 1.76 \AA. The peak amplitude is relatively high compared to other APIs. The RDF data for ibuprofen exhibit similar behavior, with slightly higher peak amplitude. For the temperature 300~K, there is different order of heights of the peaks. The peak corresponding to $x_\text{API}=0.85$ is switched with the one corresponding to $x_\text{API}=0.92$. The difference between those peaks is small, but it strange compared to trend observed in IBU-IBU RDF. The shift on $x$-axis is same as for naproxen, the calculated QM value is 1.77 \AA~for IBU.
 
 For carbamazepine, there are two peaks in the RDF function. The peaks corresponding to those interactions are weak, we can see that the intensity of the peaks is really low. Under temperature 300 K the intensity of the first peak is slightly above one, but for 500 K the first peak is below one, meaning that this interaction occurs less at a small distance than in the rest of the system. The impact of the PLA concentration change is not that visible, especially for higher temperature of 500~K. This also correspond to we saw in the CBZ-CBZ interactions. The contact distance value from quantum calculations is 2.01 \AA, which is the same as the distance of first RDF obtained by MD.
 
 
-The hydrogen bonds with the oxygen bonded by ether bond in PLA structure are shown in Figure \ref{fig:ether}. All values also converge to 1 in a long distance for all APIs. Generally, those interactions are much weaker than those with oxygen from carbonyl group. For indomethacine and carbamazepin the value is below one at short distance, with the dimer contact distance obtained from QM 2.55 and 4.19 \AA~respectively. For ibuprofen the order of peaks amplitude for 300~K is also different with the peak for $x_\text{API}=0.92$ having the biggest value. For the temperature of 500~K the change in order is no longer visible. The QM distance between API hydrogen and ether-bonded oxygen in PLA for ibuprofen is 2.48 \AA.
+The hydrogen bonds with the oxygen bonded by ether bond in PLA structure are shown in Figure \ref{fig:ether}. All values also converge to 1 in a long distance for all APIs. Generally, those interactions are much weaker than those with oxygen from carbonyl group. For indomethacine and carbamazepin the value is below one at short distance, with the dimer contact distance obtained from QM 2.55 and 4.19 \AA~respectively. For ibuprofen the order of peaks amplitude for 300~K is also different with the peak for $x_\text{API}=0.92$ having the biggest value. For the temperature of 500~K the change in order is no longer visible. The QM distance between API hydrogen and ether-bonded oxygen in PLA for ibuprofen is 2.48 \AA. For naproxen the QM contact distance is 2.59 \AA. 
 
 
 \newpage

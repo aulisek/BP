@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces The concentration of API in mixtures with PLA, expressed in molar and mass fractions.}}{17}{table.caption.8}%
-\contentsline {table}{\numberline {2}{\ignorespaces Design of the neat PLA simulation boxes}}{19}{table.caption.11}%
-\contentsline {table}{\numberline {3}{\ignorespaces Comparison of calculated and experimental PLA denstities taken from \mciteCiteA {\@auxout }{main}{\relax }{\relax }{\cite }{klajmon_glass_2023}.}}{21}{table.caption.15}%
+\contentsline {table}{\numberline {1}{\ignorespaces The concentration of API in mixtures with PLA, expressed in molar and mass fractions.}}{17}{table.caption.7}%
+\contentsline {table}{\numberline {2}{\ignorespaces Design of the neat PLA simulation boxes}}{19}{table.caption.10}%
+\contentsline {table}{\numberline {3}{\ignorespaces Comparison of calculated and experimental PLA denstities taken from \mciteCiteA {\@auxout }{main}{\relax }{\relax }{\cite }{klajmon_glass_2023}.}}{21}{table.caption.14}%
 \contentsline {table}{\numberline {4}{\ignorespaces Properties of equlibrated simulations boxes for bulk API one-component systems, $T$=500 K.}}{25}{table.caption.19}%
 \contentsline {table}{\numberline {5}{\ignorespaces Comparison of simulated and experimental \mciteCiteA {\@auxout }{main}{\relax }{\relax }{\cite }{drebushchak_crystal_2008} crystallographic parameters for II polymorph of sulfathiazole. The index MD1 corresponds to force field taken from literature, index CHELPG to newly parametrized FF.}}{26}{table.caption.21}%
-\contentsline {table}{\numberline {6}{\ignorespaces Calculated excess energies (kJ mol$^{-1}$) and volumes (in cm$^3$ mol$^{-1}$) for API mixtures of different concentrations from simulations under 300~K ($V_{300}^\text {E}$, $E_{300}^\text {E}$) and 500~K ($V_{500}^\text {E}$, $E_{500}^\text {E}$) with their standard uncertainties (k=1).}}{29}{table.caption.23}%
-\contentsline {table}{\numberline {7}{\ignorespaces Calculated glass transition temperatures $T_\text {g}$ of mixtures composed from API and PLA with concentration of $x$=0.85 and their standard uncertainties.}}{41}{table.caption.34}%
+\contentsline {table}{\numberline {6}{\ignorespaces Calculated excess energies (kJ mol$^{-1}$) and volumes (in cm$^3$ mol$^{-1}$) for API mixtures of different concentrations from simulations under 300~K ($V_{300}^\text {E}$, $E_{300}^\text {E}$) and 500~K ($V_{500}^\text {E}$, $E_{500}^\text {E}$) with their standard uncertainties (k=1).}}{28}{table.caption.23}%
+\contentsline {table}{\numberline {7}{\ignorespaces Calculated glass transition temperatures $T_\text {g}$ of mixtures composed from API and PLA with concentration of $x$=0.85 and their standard uncertainties.}}{40}{table.caption.34}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  5 MAY 2024 14:04
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  5 MAY 2024 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1106,7 +1106,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Overfull \hbox (4.03537pt too wide) in paragraph at lines 17--18
+Overfull \hbox (4.03537pt too wide) in paragraph at lines 18--19
 []\TU/lmr/m/n/12 Other suitable biocompatible and biodegradable polymers for AS
 D could be polyethy-
  []
@@ -1116,29 +1116,24 @@ File: img/pla_vzorec.png Graphic file (type bmp)
 File: img/pla_1d.png Graphic file (type bmp)
 <img/pla_1d.png>
 
-Overfull \hbox (25.60735pt too wide) in paragraph at lines 30--31
+Overfull \hbox (25.60735pt too wide) in paragraph at lines 31--32
 [][] 
  []
 
 File: img/pla_100g_tube.png Graphic file (type bmp)
 <img/pla_100g_tube.png>
 
-Overfull \hbox (56.3359pt too wide) in paragraph at lines 33--34
+Overfull \hbox (56.3359pt too wide) in paragraph at lines 34--35
 [][] 
  []
 
 
-Overfull \hbox (18.0846pt too wide) in paragraph at lines 43--44
+Overfull \hbox (18.0846pt too wide) in paragraph at lines 44--45
 \TU/lmr/m/n/12 acid (C$[]$H$[]$O$[]$) as an example of a widely used analgesic,
  antipyretic, anti-inflammatory
  []
 
 [2]
-Overfull \hbox (25.05746pt too wide) in paragraph at lines 52--53
-[]\TU/lmr/bx/n/12 Indomethacin\TU/lmr/m/n/12 , 2-1-[(4-Chlorophenyl)carbonyl]-5
--methoxy-2-methyl-1H-indol-3-ylacetic
- []
-
 File: img/ibu_s_popis.png Graphic file (type bmp)
 <img/ibu_s_popis.png>
 File: img/nap_popis.png Graphic file (type bmp)
@@ -1148,30 +1143,36 @@ File: img/cbz_svk_popis.png Graphic file (type bmp)
 File: img/indo_popis.png Graphic file (type bmp)
 <img/indo_popis.png>
 
-Overfull \hbox (32.2421pt too wide) in paragraph at lines 56--64
+Overfull \hbox (32.2421pt too wide) in paragraph at lines 51--59
 []  []  [] 
+ []
+
+[3]
+Overfull \hbox (25.05746pt too wide) in paragraph at lines 68--69
+[]\TU/lmr/bx/n/12 Indomethacin\TU/lmr/m/n/12 , 2-1-[(4-Chlorophenyl)carbonyl]-5
+-methoxy-2-methyl-1H-indol-3-ylacetic
  []
 
 File: img/sulfathiazol.png Graphic file (type bmp)
 <img/sulfathiazol.png>
 
-Overfull \hbox (42.67848pt too wide) in paragraph at lines 73--74
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 77--78
 [][] 
  []
 
 File: img/sulfathiazol_packing.png Graphic file (type bmp)
 <img/sulfathiazol_packing.png>
 
-Overfull \hbox (21.34087pt too wide) in paragraph at lines 76--77
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 80--81
 [][] 
  []
 
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 72--78
+Overfull \hbox (2.608pt too wide) in paragraph at lines 76--82
 [][] [] 
  []
 
-) [3] [4]
+) [4]
 \openout2 = `THEORETICAL_PART.aux'.
 
  (./THEORETICAL_PART.tex [5
@@ -1186,43 +1187,46 @@ Overfull \hbox (39.18106pt too wide) detected at line 55
 [6]
 File: img/bond_angles.png Graphic file (type bmp)
 <img/bond_angles.png>
- [7]
 File: img/torsion.png Graphic file (type bmp)
 <img/torsion.png>
- [8]
+
+Overfull \hbox (2.608pt too wide) in paragraph at lines 64--71
+[][] []
+ []
+
+[7]
 File: img/lj.png Graphic file (type bmp)
 <img/lj.png>
- [9]
+ [8] [9]
 File: img/ewald.png Graphic file (type bmp)
 <img/ewald.png>
  [10] [11] [12]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 178.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 155.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 178
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 155
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 157.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 157
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 159.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 159
 .
 
 [13]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 180.
+LaTeX Warning: Reference `CRDF' on page 14 undefined on input line 184.
 
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 180
-.
-
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 182.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 182
-.
-
-[14]
-
-LaTeX Warning: Reference `CRDF' on page 15 undefined on input line 207.
-
-) [15]
+[14]) [15]
 \openout2 = `METHODS.aux'.
 
  (./METHODS.tex [16
@@ -1283,17 +1287,19 @@ File: img/polydispersity_occurences_new.png Graphic file (type bmp)
 <img/polydispersity_occurences_new.png>
 File: img/polydisperzita_new.png Graphic file (type bmp)
 <img/polydisperzita_new.png>
- [22]
+ [22] [23]
 File: img/vypocet_tg.png Graphic file (type bmp)
 <img/vypocet_tg.png>
 File: img/tg_ukazka_30.png Graphic file (type bmp)
 <img/tg_ukazka_30.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 164--171
+Overfull \hbox (2.608pt too wide) in paragraph at lines 168--175
 [][] []
  []
 
-[23] [24]
+File: img/glass_temp.png Graphic file (type bmp)
+<img/glass_temp.png>
+[24]
 File: img/tabulka_validace.png Graphic file (type bmp)
 <img/tabulka_validace.png>
  [25] [26]
@@ -1305,7 +1311,7 @@ File: img/cbz_100x_bp.png Graphic file (type bmp)
 <img/cbz_100x_bp.png>
 File: img/indo_100x_bp.png Graphic file (type bmp)
 <img/indo_100x_bp.png>
- [27] [28] [29] [30]
+ [27] [28] [29]
 File: img/rdf_indo_api_r1.png Graphic file (type bmp)
 <img/rdf_indo_api_r1.png>
 File: img/coord_indo_api_r1.png Graphic file (type bmp)
@@ -1314,7 +1320,7 @@ File: img/rdf_indo_api_r2.png Graphic file (type bmp)
 <img/rdf_indo_api_r2.png>
 File: img/coord_indo_api_r2.png Graphic file (type bmp)
 <img/coord_indo_api_r2.png>
- [31]
+ [30]
 File: img/rdf_nap_api_r1.png Graphic file (type bmp)
 <img/rdf_nap_api_r1.png>
 File: img/coord_nap_api_r1.png Graphic file (type bmp)
@@ -1331,7 +1337,7 @@ File: img/rdf_ibu_s_api_r2_15.png Graphic file (type bmp)
 <img/rdf_ibu_s_api_r2_15.png>
 File: img/coord_ibu_s_api_r2.png Graphic file (type bmp)
 <img/coord_ibu_s_api_r2.png>
- [32]
+ [31]
 File: img/rdf_cbz_api_r1.png Graphic file (type bmp)
 <img/rdf_cbz_api_r1.png>
 File: img/coord_cbz_api_r1.png Graphic file (type bmp)
@@ -1340,10 +1346,10 @@ File: img/rdf_cbz_api_r2.png Graphic file (type bmp)
 <img/rdf_cbz_api_r2.png>
 File: img/coord_cbz_api_r2.png Graphic file (type bmp)
 <img/coord_cbz_api_r2.png>
- [33]
+ [32]
 File: img/all_pla_api_bp.png Graphic file (type bmp)
 <img/all_pla_api_bp.png>
- [34] [35]
+ [33] [34]
 File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_2.png>
 File: img/RDF_ibu_s_20_2_r2.png Graphic file (type bmp)
@@ -1364,7 +1370,7 @@ File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
 Overfull \vbox (14.11101pt too high) has occurred while \output is active []
 
 
-[36]
+[35]
 File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
 <img/RDF_ibu_s_20_6.png>
 File: img/RDF_ibu_s_20_6_r2.png Graphic file (type bmp)
@@ -1385,10 +1391,10 @@ File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
 Overfull \vbox (14.11101pt too high) has occurred while \output is active []
 
 
-[37]
+[36]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 462.
+               Default added (so using `tbp') on input line 481.
 
 File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
@@ -1398,10 +1404,10 @@ File: img/msd_ibu_s_api_r2.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
-[38]
+[37]
 File: img/d.png Graphic file (type bmp)
 <img/d.png>
- [39]
+ [38]
 File: img/msd_cbz_api_r1.png Graphic file (type bmp)
 <img/msd_cbz_api_r1.png>
 File: img/msd_nap_api_r1.png Graphic file (type bmp)
@@ -1410,10 +1416,10 @@ File: img/msd_ibu_s_api_r1.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r1.png>
 File: img/msd_indo_api_r1.png Graphic file (type bmp)
 <img/msd_indo_api_r1.png>
- [40]) [41]
+ [39]) [40]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [42
+ (./CONCLUSION.tex) [41
 
 
 
@@ -1427,17 +1433,17 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
  a
  []
 
-[43
+[42
 
 
 
-]
-Underfull \hbox (badness 1769) in paragraph at lines 264--275
+] [43]
+Underfull \hbox (badness 1769) in paragraph at lines 271--282
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
 
-[44] [45]) [46] [47] [48] (./main.lot
+[44]) [45] [46] [47] (./main.lot
 Overfull \hbox (11.95944pt too wide) in paragraph at lines 5--5
  [][] [][][]\TU/lmr/m/n/12 Properties of equlibrated simulations boxes for bulk
  API one-component 
@@ -1447,7 +1453,7 @@ Overfull \hbox (11.95944pt too wide) in paragraph at lines 5--5
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [49] (./main.lof [50]
+ [48] (./main.lof [49]
 Overfull \hbox (7.59418pt too wide) in paragraph at lines 21--21
  [][] [][][]\TU/lmr/m/n/12 RDF of the API-API interaction between HCZ6 hydrogen
  atom bonded 
@@ -1471,7 +1477,7 @@ Overfull \hbox (14.92027pt too wide) in paragraph at lines 25--25
 /lmr/bx/n/12 top left\TU/lmr/m/n/12 ), naproxen 
  []
 
-[51]
+[50]
 Overfull \hbox (14.92027pt too wide) in paragraph at lines 27--27
  [][] [][][]\TU/lmr/m/n/12 MSD from simulations under 300 K, carbamazepine (\TU
 /lmr/bx/n/12 top left\TU/lmr/m/n/12 ), naproxen 
@@ -1481,10 +1487,10 @@ Overfull \hbox (14.92027pt too wide) in paragraph at lines 27--27
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [52]
+) [51]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [53
+ (./appendix.tex) [52
 
 
 
@@ -1500,19 +1506,19 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C73C043C7821526B9B982701640FC723;7142.
+(rerunfilecheck)             Checksum: 455F316933C9DDC3A57DA52C06DA40B6;7039.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27822 strings out of 475925
- 565176 string characters out of 5783280
- 1952839 words of memory out of 5000000
- 49400 multiletter control sequences out of 15000+600000
+ 27835 strings out of 475925
+ 565471 string characters out of 5783280
+ 1954839 words of memory out of 5000000
+ 49412 multiletter control sequences out of 15000+600000
  565971 words of font info for 80 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1624b,12617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1624b,12608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (60 pages).
+Output written on main.pdf (59 pages).

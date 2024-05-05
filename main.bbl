@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{39}
+\begin{mcitethebibliography}{40}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -219,6 +219,13 @@ Breneman,~C.~M.; Wiberg,~K.~B. Determining atom‐centered monopoles from
   molecular electrostatic potentials. {The} need for high sampling density in
   formamide conformational analysis. \emph{Journal of Computational Chemistry}
   \textbf{1990}, \emph{11}, 361–373\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Šritterová(2022)]{Sritterova}
+Šritterová,~V. Molecular simulations of the structure of porous metal-organic
+  liquids. 2022\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

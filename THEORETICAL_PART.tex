@@ -33,7 +33,7 @@ The total energy calculated using the force field can be broken down into two co
 %	\caption{caption}
 %	\label{fig:ff}    
 %\end{figure}  
-
+\newpage
 By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING, AMBER \cite{brooks_charmm_2009}, GAFF and OPLS. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF or ReaxFF.  The third class includes fluctuations of charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
 
 During the parameterization of force fields (FF), we start from the assumption of transferability,  similar chemical groups of different molecules interact in the same way. When constructing a force field for large molecules, we can use parameters obtained from data for small molecules, which are much more easily graspable and contain the same functional groups. \cite{monticelli_force_2013} In model development, our aim is to achieve the most universal description of the system while still closely corresponding to its actual state. This can be facilitated by employing higher-order terms; however, incorporating anharmonic and cross terms introduces the need for a greater amount of FF parameters. We strive to avoid situations where we employ an overly adapted and detailed model that merely reproduces inserted information without providing any predictive capabilities. \cite{vanommeslaeghe_molecular_2014}
@@ -56,29 +56,28 @@ Optimized Potential for Liquid Simulations (OPLS) force field was developed by W
 	
 $i$ and $j$ denote different atom types, $N$ is the total number of atom pairs, $\epsilon_{ij}$, $\sigma_{ij}$ are LJ parameters, $r_{ij}$ is the distance between atoms $i$ and $j$, and $f_{ij}$ is scaling factor equals 0.5 for 1-4 interactions ($i,j$=1,4) and 1 otherwise.
 	
-\textbf{Bonds and angles} are described as harmonic oscillators in OPLS FF. The equilibrium parameters are obtained by structural methods, such as x-ray diffraction NMR experiments. The values for force constants are then fitted to experimental data taken from vibrational spectroscopy. In Figure \ref{fig:bond} is the visualization of the constants.
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=1.0\linewidth]{img/bond_angles.png} 
-	\caption{caption}
-	\label{fig:bond}    
-\end{figure}   
+\textbf{Bonds and angles} are described as harmonic oscillators in OPLS FF. The equilibrium parameters are obtained by structural methods, such as x-ray diffraction NMR experiments. The values for force constants are then fitted to experimental data taken from vibrational spectroscopy. In Figure \ref{fig:torsion} is the visualization of the constants.
 
 Proper \textbf{dihedral angle} $\phi$ between atoms i,j,k,l is represented in Figure \ref{fig:torsion}. The torsional energy is described as a cosine expansion, where the first term corresponds to the rotation periodic after 360$^\circ$, second term by 180$^\circ$, the third term by 120$^\circ$ and the fourth term by 90$^\circ$. Each of this term has the $V_n$ constant, representing the barrier for rotation along the proper dihedral angle, which is dependent both on the torsional energy and non-bonded forces. Different approaches could be chosen, one of them is obtaining the parameters by QM calculations. \cite{mackerell_empirical_2004} We first optimize the molecular geometry using QM methods and then we run scanning of dihedral angle of interest. At each step, we optimize geometry and calculate the change in potential energy.  Then we compute potential energy of each optimized geometry using MD with dihedral parameters set to zero. Then we can fit the parameters by subtracting the results of MD from QM, this corresponds exactly to the influence of dihedrals. To do this procedure first all the other FF parameters should be known. 
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=1.0\linewidth]{img/torsion.png} 
-	\caption{caption}
-	\label{fig:torsion}    
-\end{figure}   
+\vspace{-0.2cm}
+\begin{figure}[H]
+\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.9\linewidth]{img/bond_angles.png} 
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.7\linewidth]{img/torsion.png}
+\end{subfigure} 
+\vspace{-0.2cm}
+\caption{Pokud je v pořádku obrázek, vytvořím vlastní}
+\label{fig:torsion}  
+\end{figure}
+\vspace{-0.5cm}
 
 \textbf{Charges} parametrization is also done by ab initio methods. When we are using the classical FF, the charges used to calculate the Coulomb potential remains the same during the simulations. Due to that, it is crucial to obtain the charges from equilibrium state of the molecules in order to avoid any errors from having the charges taken from structures with higher energy. When obtaining the charges, the first step is to optimize the geometry using the appropriate level of theory, meaning the basis set to be better or equal to 6-31G. Commonly used method to achieve the charges is CHELPG (CHarges from ELectrostatic Potentials using a Grid based method) \cite{breneman_determining_1990}, based on adjusting the partial charges at the centers of the nuclei in order to get the best representation of the electrostatic potential given by the wave functions. Calculation of the charges are often done using higher-level methods and basis sets such as B3LYP/cc-pVTZ or HF/6-31G**.
 
 \textbf{Van der Waals} forces are most often represented by the Lennard-Jones (LJ) potential. The functional form with the illustration is in Figure \ref{fig:lj}. Lennard-Jones potential is a combination of two terms, repulsive term describes the Pauli repulsion at short distances and the attractive term describes the London dispersion force. The $\epsilon$ values are adjusted to experimental values of heats of vaporization and $\sigma$ parameters are adjusted to experimental densities and structural data. 
 
-\begin{figure}[htb!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/lj.png} 
 	\caption{caption}
@@ -96,43 +95,18 @@ For the long-range interactions, such as Coulombic interactions ($1/r$) the situ
 
 
 \subsubsection{Ewald summation}
-%In periodic systems, particles interact not only with nearby particles but also with those in adjacent periodic images, leading to long-range interactions. 
+The idea of Ewald summation is based on a mathematical trick where we divide a three-dimensional very slowly and only relatively converging infinite series into two series that converge much faster. In practice, this trick means surrounding each of the point charges with a shielding diffusion cloud of opposite charge, which shape is described by Gaussian function. This shadow cloud is then compensated by a charge of identical shape but opposite sign, illustration is in Figure \ref{fig:ewald}. Next, the contributions from the shadow cloud are summed in real space and the contributions of the compensation potential are summed in reciprocal space using Fourier transform. Due to the smoothness of the charge distribution using Gaussian functions this converge really fast in Fourier space. The width of the Gaussian peak determine the number of iterations to converge in reciprocal and direct space, the optimal width is then calculated in order to achieve even distribution of computational workload in both spaces. \cite{Sritterova}
 
-The idea of Ewald summation is based on a mathematical trick where we divide a three-dimensional very slowly and only relatively converging infinite series into two series that converge much faster. In practice, this trick means surrounding each of the point charges with a shielding diffusion cloud of opposite charge, which shape is described by Gaussian function. This shadow cloud is then compensated by a charge of identical shape but opposite sign, illustration is in Figure \ref{fig:ewald}. Next, the contributions from the shadow cloud are summed in real space and the contributions of the compensation potential are summed in reciprocal space using Fourier transform. Due to the smoothness of the charge distribution using Gaussian functions this converge really fast in Fourier space. Width of the Gaussian peak is optimized   
-
-
-%Short-range interactions: The short-range interactions involve particles that are close to each other within a cutoff distance. These interactions are usually computed directly using standard pairwise interaction potentials, such as the Lennard-Jones potential for van der Waals interactions and Coulomb's law for electrostatic interactions. These calculations are straightforward and computationally efficient.
-%
-%The challenge lies in accurately computing the long-range interactions between particles that are far apart but still interact due to their charges. Ewald summation handles this by representing the charge distribution as a sum of periodic images of point charges, which interact with each other through the Coulomb potential.
-%
-%Fourier transformation: Ewald summation involves Fourier transforming the charge distribution into reciprocal space. This transformation simplifies the computation of long-range interactions because the Coulomb potential becomes a simple exponential decay in reciprocal space.
-%
-%Real and reciprocal space summation: Ewald summation combines computations in real space (direct space) and reciprocal space (Fourier space). In real space, the short-range interactions are calculated directly, while in reciprocal space, the long-range interactions are computed efficiently using Fourier transforms.
-%
-%Summation: Finally, the short-range and long-range components are summed to obtain the total electrostatic energy and forces on each particle in the system.
-%
-%Ewald summation is advantageous because it accurately accounts for long-range interactions while maintaining computational efficiency, especially in systems with periodic boundary conditions. However, it comes with its own computational cost, particularly in systems with a large number of particles. Nonetheless, its accuracy and versatility make it a widely used method in molecular dynamics simulations, enabling researchers to explore the behavior of complex systems in various fields of science and engineering.
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[width=1.0\linewidth]{img/ewald.png} 
+	\includegraphics[width=0.9\linewidth]{img/ewald.png} 
 	\caption{caption}
 	\label{fig:ewald}    
 \end{figure} 
-\subsubsection{Particle-Particle Particle-Mesh}
-Like the Ewald summation method, particle-particle particle-mesh (PPPM) addresses the challenge of accurately modeling interactions between charged particles that extend over long distances while accounting for periodic boundary conditions. PPPM is particularly well-suited for systems with a large number of particles, where the computational cost of traditional methods like Ewald summation becomes prohibitive.
 
-%Particle-Particle Interactions: PPPM divides the electrostatic interactions into short-range (particle-particle) and long-range (particle-mesh) components. The short-range interactions involve direct pairwise interactions between particles within a specified cutoff distance. These interactions are computed using standard techniques such as the Coulomb potential or other appropriate force fields.
-%
-%Particle-Mesh Interactions: The long-range interactions are calculated using a mesh-based approach. PPPM discretizes the charge distribution onto a grid (mesh) using interpolation techniques. The charge density is spread onto the mesh, and then the electric field due to this charge distribution is calculated using Fast Fourier Transform (FFT) techniques.
-%
-%FFT computation: FFT is used to transform the charge density from real space to reciprocal space (Fourier space), where the long-range interactions can be efficiently computed. In reciprocal space, the electric field due to the charge distribution can be expressed as a convolution between the charge density and the Green's function for the electrostatic potential.
-%
-%Force calculation: Once the electric field in reciprocal space is computed, it is transformed back to real space using inverse FFT. Then, the forces on particles due to long-range interactions are calculated based on the interpolated electric field at the positions of the particles.
-%
-%Combining short-range and long-range interactions: The short-range and long-range forces are then combined to obtain the total force acting on each particle in the system. These forces are used to update the positions and velocities of the particles over the course of the simulation.
-%
-%PPPM offers significant computational advantages compared to direct summation methods, especially for systems with a large number of particles, as it scales more efficiently with system size. However, PPPM requires careful tuning of parameters such as grid spacing and interpolation methods to achieve accurate results. Despite this, PPPM remains a widely used method in MD simulations, enabling researchers to study complex systems with long-range electrostatic interactions efficiently and accurately.
+\subsubsection{Particle-Particle Particle-Mesh}
+The Particle-Particle Particle-Mesh (PPPM) method addressing the same issue as Ewald sum. The PPPM method operates on the principle of decomposing the electrostatic potential into short-range and long-range components. The short-range interactions, which decay rapidly with distance, are typically calculated using direct methods like the Ewald summation or a cutoff-based approach. The long-range electrostatic potential is computed using a Fourier-based approach, where the charge distribution is mapped onto a grid using a fast Fourier transform (FFT). This grid-based representation allows for efficient calculation of the potential at grid points using convolution techniques. \cite{Sritterova}
 
 
 \subsection{Molecular dynamics}
@@ -156,20 +130,23 @@ Verlet integration method is a numerical method for integrating the equation \re
 \begin{equation}\label{sila3}
 	\Ddot{r_i}=\frac{r_i(t-h)-2r_i(t)+r_i(t+h)}{h^2},
 \end{equation}
-binding values at three points in a row ($t-h$, $t$ and $t+h$). We will use this characteristic to calculate $r_i(t+h)$. By substituting \ref{sila3} into \ref{sila1} we get 
+binding atomic coordinates at three points in a time row ($t-h$, $t$ and $t+h$). We will use this relation to calculate $r_i(t+h)$. By substituting \ref{sila3} into \ref{sila1} we get 
 \begin{equation}\label{sila4}
 	r_i(t+h)=2r_i(t)-r_i(t-h)+h^2\frac{f_i(t)}{m_i}.
 \end{equation}
-In this formulation, we are able to calculate the new positions at time $t+h$ from knowledge of the forces at time $t$, the positions of the particles at time $t$ and the previous time $t-h$. The time reversibility of the method is clearly visible here. The advantage is that the force is calculated only once in each step of the simulation. For the position preceding the initial position ($r_i(t_0-h)$), we can use the expansion \ref{sila5}
+In this formulation, we are able to calculate the new positions at time $t+h$ from knowledge of the forces at time $t$, the positions of the particles at time $t$ and the previous time $t-h$. The time reversibility of the method is clearly visible here. The advantage is that the force is calculated only once in each step of the simulation. For the position preceding the initial position ($t=-h$), we can use the expansion \ref{sila5}
 \begin{equation}\label{sila5}
-	r_i(t_0-h)=r_i(t)-h\dot{r_i}(t_0)+h^2\frac{f_i(t_0)}{2m_i}.
+	r_i(-h)=r_i(t_0)-h\dot{r_i}(t_0)+h^2\frac{f_i(t_0)}{2m_i}.
 \end{equation}
+
+We can then calculate the position at $t=h$ from the known positions of $t=0$ and $t=-h$. There are not explicit velocities in the equations, algorithm with velocities often used by computation software is called Velocity Verlet algorithm. \cite{mdskripta}
 
 \subsubsection{Constraint dynamics}
 
 When integrating equations of motion, we often impose constraints on certain aspects of molecular geometries. The main reason is to enable using a longer simulation time step. If we simulate with a too large time step, we introduce large errors into the simulations, leading in extreme cases to a crash of the simulation. The calculated particle positions at time $t+h$ may lead to overlapping of particles, the calculated force acting on the particles may divert from physically reasonable configurations. Conversely, the use of inappropriately short simulation steps reduces the efficiency of the simulations (the most computationally and therefore time consuming element of the simulations is the calculation of the forces when integrating the equations of motion). \cite{mdskripta} The criterion determining the optimal step length is the accuracy of the conservation of total energy. The step length can be determined by an Nyquist-Shannon \cite{shannon_communication_1949} sampling theorem that says that the time step must be half or less of the period of the quickest dynamics exhibited in the system. Thus, for systems containing very light hydrogen atoms, we can either artificially increase the mass of the hydrogen atom while redistributing the masses of the other molecules to conserve the overall mass of the molecule, or fix the bond angles or bond lengths terminating in the hydrogen atoms. It is the fixation of hydrogen bond lengths that is most often implemented in the Verlet method, using an algorithm called SHAKE. 
 
-The SHAKE algorithm \cite{ryckaert_numerical_1977} is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations.
+\newpage
+The SHAKE algorithm \cite{ryckaert_numerical_1977} is based on Verlet's integration method and is iterative. The first step is to initialize the initial velocities and positions of the atoms, then calculate the positions using Verlet's method without considering bond length constraint. We then create the $\lambda$ correction of the atom positions to constrain the bond length. Fixing the bond length allows us to use a longer time step (we are no longer limited by the motion of very light particles) and, unlike fixing angles, does not introduce large deviations in the simulations. \cite{mdskripta}
 
 \subsection{Measuring the properties}
 \subsubsection{Statistical ensembles}
