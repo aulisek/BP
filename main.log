@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  5 MAY 2024 21:33
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  6 MAY 2024 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1443,58 +1443,10 @@ Underfull \hbox (badness 1769) in paragraph at lines 271--282
 S.;
  []
 
-[44]) [45] [46] [47] (./main.lot
-Overfull \hbox (11.95944pt too wide) in paragraph at lines 5--5
- [][] [][][]\TU/lmr/m/n/12 Properties of equlibrated simulations boxes for bulk
- API one-component 
- []
-
-)
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
- [48] (./main.lof [49]
-Overfull \hbox (7.59418pt too wide) in paragraph at lines 21--21
- [][] [][][]\TU/lmr/m/n/12 RDF of the API-API interaction between HCZ6 hydrogen
- atom bonded 
- []
-
-
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 23--23
- [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
-een hydrogen atoms 
- []
-
-
-Overfull \hbox (6.16475pt too wide) in paragraph at lines 24--24
- [][] [][][]\TU/lmr/m/n/12 Radial distribution function of the interaction betw
-een hydrogen atoms 
- []
-
-
-Overfull \hbox (14.92027pt too wide) in paragraph at lines 25--25
- [][] [][][]\TU/lmr/m/n/12 MSD from simulations under 500 K, carbamazepine (\TU
-/lmr/bx/n/12 top left\TU/lmr/m/n/12 ), naproxen 
- []
-
-[50]
-Overfull \hbox (14.92027pt too wide) in paragraph at lines 27--27
- [][] [][][]\TU/lmr/m/n/12 MSD from simulations under 300 K, carbamazepine (\TU
-/lmr/bx/n/12 top left\TU/lmr/m/n/12 ), naproxen 
- []
-
-)
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
-) [51]
+[44])) [45]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex) [52
-
-
-
-] (./main.aux (./firstComponents.aux)
+ (./appendix.tex) (./main.aux (./firstComponents.aux)
 (./INTRODUCTION.aux) (./THEORETICAL_PART.aux) (./METHODS.aux) (./RESULTS.aux)
 (./CONCLUSION.aux) (./lastComponents.aux) (./appendix.aux))
  ***********
@@ -1506,19 +1458,19 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 455F316933C9DDC3A57DA52C06DA40B6;7039.
+(rerunfilecheck)             Checksum: 5590418297E61F61A4250E04CDEA51EE;6379.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27835 strings out of 475925
- 565471 string characters out of 5783280
+ 27819 strings out of 475925
+ 565253 string characters out of 5783280
  1954839 words of memory out of 5000000
- 49412 multiletter control sequences out of 15000+600000
+ 49402 multiletter control sequences out of 15000+600000
  565971 words of font info for 80 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
  87i,17n,131p,1624b,12608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (59 pages).
+Output written on main.pdf (52 pages).

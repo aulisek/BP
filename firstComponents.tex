@@ -57,5 +57,6 @@ Text.
 \tableofcontents
 
 %deleting page numbering from all of the List of Contents pages
-\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+\addtocontents{toc}{\vspace{-10ex}\protect\enlargethispage{\baselineskip}}
 \pagenumbering{gobble}
