@@ -15,47 +15,46 @@ Database file #1: acs-main.bib
 Database file #2: references.bib
 Warning--entry type for "Sritterova" isn't style-file defined
 --line 3 of file references.bib
-Warning--I didn't find a database entry for ""
 achemso 2024-01-30 v3.13g
-You've used 40 entries,
+You've used 42 entries,
             2538 wiz_defined-function locations,
-            1070 strings with 19627 characters,
-and the built_in function-call counts, 15856 in all, are:
-= -- 1179
-> -- 1069
-< -- 29
-+ -- 398
-- -- 362
-* -- 1740
-:= -- 2125
-add.period$ -- 74
-call.type$ -- 40
-change.case$ -- 6
-chr.to.int$ -- 6
-cite$ -- 40
-duplicate$ -- 791
-empty$ -- 1051
-format.name$ -- 412
-if$ -- 3119
+            1084 strings with 20099 characters,
+and the built_in function-call counts, 16524 in all, are:
+= -- 1233
+> -- 1101
+< -- 31
++ -- 410
+- -- 373
+* -- 1809
+:= -- 2215
+add.period$ -- 77
+call.type$ -- 42
+change.case$ -- 7
+chr.to.int$ -- 7
+cite$ -- 42
+duplicate$ -- 832
+empty$ -- 1108
+format.name$ -- 426
+if$ -- 3258
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 262
-num.names$ -- 119
-pop$ -- 80
+newline$ -- 274
+num.names$ -- 125
+pop$ -- 86
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 38
+skip$ -- 40
 stack$ -- 0
-substring$ -- 927
-swap$ -- 990
-text.length$ -- 81
+substring$ -- 959
+swap$ -- 1023
+text.length$ -- 85
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 268
+type$ -- 279
 warning$ -- 0
-while$ -- 121
+while$ -- 128
 width$ -- 0
-write$ -- 526
-(There were 2 warnings)
+write$ -- 551
+(There was 1 warning)

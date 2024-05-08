@@ -172,7 +172,7 @@ The calculated $T_\mathrm{g}$ value is very close to the experimental one, there
 		\includegraphics[width=1.0\linewidth]{img/tg_ukazka_30.png} 
 	\end{subfigure}   	
 	\vspace{-1cm}
-	\caption{Illustration of the trend shift method for one polymer chain length on the left and for length of TO DO: zjistit pocet retezcu on the right.}
+	\caption{Illustration of the trend shift method for two polymer chains of different lengths, 20 units on the left and for 30 units on the right.}
 	\label{fig:illust}
 \end{figure}
 
@@ -298,21 +298,21 @@ where $E_{\text{m}}^{\text{MIX}}$ is the average molar energy of the simulation 
 	\toprule
 	\textbf{API} & \boldmath{$x_{\text{API}}$} & \boldmath{$V_{300}^\textbf{E}$} & \boldmath{$\sigma_{V^\textbf{E}}$} & \boldmath{$V_{500}^\textbf{E}$} & \boldmath{$\sigma_{V^\textbf{E}}$} & \boldmath{$E_{300}^\textbf{E}$} & \boldmath{$\sigma_{E^\textbf{E}}$} & \boldmath{$E_{500}^\textbf{E}$} & \boldmath{$\sigma_{E^\textbf{E}}$} \\
 	\midrule
-		cbz & 0.85 & 0 & 0 & 0.92 & 0.50 & 0 & 0 & 4.74 & 0.46 \\
-		& 0.92 & 0 & 0 & 0.64 & 0.27 & 0 & 0 & 3.20 & 0.21 \\
-		& 0.95 & 0 & 0 & 0.22 & 0.17 & 0 & 0 & 2.65 & 0.16 \\
+		\text{cbz} & 0.85 & -5.47 & 0.27 & 0.92 & 0.50 & 0.63 & 0.30 & 4.74 & 0.46 \\
+		& 0.92 & -3.45 & 0.14 & 0.64 & 0.27 & 0.54 & 0.15 & 3.20 & 0.21 \\
+		& 0.95 & -2.34 & 0.11 & 0.22 & 0.17 & -0.09 & 0.11 & 2.65 & 0.16 \\
 		\midrule
-		nap & 0.85 & 0 & 0 & 3.28 & 0.48 & 0 & 0 & 7.49 & 0.44 \\
-		& 0.92 & 0 & 0 & 2.61 & 0.26 & 0 & 0 & 6.26 & 0.26 \\
-		& 0.95 & 0 & 0 & 1.46 & 0.18 & 0 & 0 & 4.72 & 0.20 \\
+		\text{nap} & 0.85 & -5.04 & 0.27 & 3.28 & 0.48 & 4.38 & 0.24 & 7.49 & 0.44 \\
+		& 0.92 & -2.16 & 0.16 & 2.61 & 0.26 & 3.88 & 0.24 & 6.26 & 0.26 \\
+		& 0.95 & -1.81 & 0.10 & 1.46 & 0.18 & 3.39 & 0.10 & 4.72 & 0.20 \\
 		\midrule
-		indo & 0.85 & 0 & 0 & -1.24 & 0.54 & 0 & 0 & 8.55 & 0.65 \\
-		& 0.92 & 0 & 0 & -1.73 & 0.28 & 0 & 0 & 6.37 & 0.29 \\
-		& 0.95 & 0 & 0 & -2.00 & 0.22 & 0 & 0 & 3.53 & 0.31 \\
+		\text{indo} & 0.85 & -7.33 & 0.26 & -1.24 & 0.54 & 5.20 & 0.25 & 8.55 & 0.65 \\
+		& 0.92 & -3.85 & 0.13 & -1.73 & 0.28 & 4.70 & 0.16 & 6.37 & 0.29 \\
+		& 0.95 & -2.96 & 0.17 & -2.00 & 0.22 & 2.04 & 0.15 & 3.53 & 0.31 \\
 		\midrule
-		ibu & 0.85 & 0 & 0 & 0.25 & 0.49 & 0 & 0 & 3.28 & 0.42 \\
-		& 0.92 & 0 & 0 & 0.11 & 0.29 & 0 & 0 & 2.63 & 0.24 \\
-		& 0.95 & 0 & 0 & -0.14 & 0.17 & 0 & 0 & 2.12 & 0.15 \\
+		\text{ibu} & 0.85 & -9.63 & 0.33 & 0.25 & 0.49 & -1.27 & 0.35 & 3.28 & 0.42 \\
+		& 0.92 & -6.45 & 0.21 & 0.11 & 0.29 & -0.34 & 0.17 & 2.63 & 0.24 \\
+		& 0.95 & -5.29 & 0.12 & -0.14 & 0.17 & 0.23 & 0.16 & 2.12 & 0.15 \\
 	\bottomrule
 	\end{tabular}
 	\label{tab:vobjemy} 
@@ -321,6 +321,8 @@ where $E_{\text{m}}^{\text{MIX}}$ is the average molar energy of the simulation 
 For higher temperature of 500~K all excess energies are positive, this indicate that addition of the polymer can attenuate the API-API interactions, but those are not fully compensated by creating new intermolecular interactions between API and PLA in the mixtures. We can see, that for higher concentration of API in the mixture ($x_{\text{API}}$) the values of $E^\text{E}$ are decreasing also with their uncertainties. The reason could be that more interactions of API-API are still presented resulting in less populated API-PLA interactions that do not fully compensate the API-API cohesion. The analysis of radial distribution functions of the most favorable interactions between API-API and API-PLA was performed in order to see the which specific interactions are forming. Same trend was observed for the height of the first peak for different concentrations. Complete results are given in following section.
 
 The excess volumes are also decreasing with higher concentration of API in the mixture. For carbamazepine and naproxen the $V^\text{E}$ values are positive, meaning less advantageous arrangement of molecules in space. For indomethacine all values are negative, more advantageous arrangement is observed. For ibuprofen the values are close to zero, for the highest API concentration the value is negative.
+
+For the lower temperature of 300~K all excess volumes ($V^\text{E}$) are negative, creating more beneficial space conformation.  The lowest value is for indomethacin indicates the strongest interaction, which is in agreement with the height of RDF first peak. For all APIs, there is visible trend, with higher concentration of PLA the $V^\text{E}$ value is lower. The same trend is observed for excess energies for 3 of 4 APIs (cbz, nap, indo), for ibuprofen the trend of $E^\text{E}$ is the opposite. 
 
 \vspace{-0.1cm}
 
@@ -347,8 +349,8 @@ The RDF of the hydrogen bonding interaction in carboxyl group of indomethacin is
 
 \begin{figure}[htb!]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_indo_api_r1.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_indo_api_r1.png}}\\
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_indo_api_r3.png}}
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_indo_api_r3.png}}\\
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_indo_api_r2.png}}
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_indo_api_r2.png}}
 	\vspace{-0.3cm}
@@ -359,12 +361,11 @@ The RDF of the hydrogen bonding interaction in carboxyl group of indomethacin is
 
 The RDFs of the interaction in carboxyl groups of naproxen and ibuprofen are shown in Figure \ref{fig:nap_RDF_} and \ref{fig:ibu_s_RDF_}. The contact distance of O-H$\cdots$O is 1.75 \AA~in both cases. We can observe interesting trend for both API. In pure API, the dimer is linked by two hydrogen bonds, corresponding to two massive peaks of the function. With the higher concentration of PLA in the mixture, the shape of the RDF is changing. This change resulted in higher probability of the contact at longer distances, meaning that APIs prefer looser contact of their COOH dimers. The reason for that could be that first sphere is taken by interaction of hydrogen from API with oxygens from PLA which happen on distances 2 and 4 \AA. This contact is described further in the PLA-API interaction part. 
 
-
 \newpage
 \begin{figure}[H]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_nap_api_r1.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_nap_api_r1.png}}\\
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_nap_api_r3.png}}
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_nap_api_r3.png}}\\
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_nap_api_r2.png}}
 	\subfloat{\includegraphics[width=0.4\linewidth]{img/coord_nap_api_r2.png}}
 	\vspace{-0.3cm}
@@ -374,30 +375,28 @@ The RDFs of the interaction in carboxyl groups of naproxen and ibuprofen are sho
 
 \begin{figure}[H]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_ibu_s_api_r1.png}}
-	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_ibu_s_api_r1.png}} \\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_ibu_s_api_r2_15.png}}
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_ibu_s_api_r3.png}}
+	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_ibu_s_api_r3.png}} \\
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_ibu_s_api_r2.png}}
 	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_ibu_s_api_r2.png}}
 	\vspace{-0.3cm}
 	\caption{RDF of the API-API interaction between carboxyl HOIB hydrogen atom and OCIB oxygen atom in a mixture of ibu and PLA for different concentration normalized on values for pure ibu, temperature of 300~K in the left upper corner and 500~K bottom left, coordination numbers on the right.}
 	\label{fig:ibu_s_RDF_}
 \end{figure}
 
-\newpage
 The RDF of the hydrogen bonding interaction of carbamazepine is shown in Figure \ref{fig:cbz_RDF_}. There are two peaks presented, that correspond to interactions of 2 equivalent hydrogen atoms bonded on nitrogen, each participating the same linking the dimer with 2 hydrogen bonds. The contact distance O-H$\cdots$O is 2.25 \AA. The shape and signal response of the peaks is similar for neat API and  mixtures for both temperatures. There is almost no change between different concentration of API, meaning that the impact of PLA on the cohesion of carbamazepine in the mixture is very low. The strength of API-API intermolecular interactions decreases in order of the APIs were discussed, indo < nap < ibu < cbz.
 
 
 \begin{figure}[htb]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_cbz_api_r1.png}}
-	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_cbz_api_r1.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/rdf_cbz_api_r2.png}}
+	\subfloat{\includegraphics[width=0.41\linewidth]{img/rdf_cbz_api_r3.png}}
+	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_cbz_api_r3.png}}\\
+	\subfloat{\includegraphics[width=0.41\linewidth]{img/rdf_cbz_api_r2.png}}
 	\subfloat{\includegraphics[width=0.39\linewidth]{img/coord_cbz_api_r2.png}}
 	\vspace{-0.3cm}
 	\caption{RDF of the API-API interaction between HCZ6 hydrogen atom bonded on nitrogen and OCZ1 oxygen atom in a mixture of cbz and PLA for different concentration normalized on values for pure cbz, temperature of 300~K in the left upper corner and 500~K bottom left, coordination numbers on the right.}
 	\label{fig:cbz_RDF_}
 \end{figure}
-
 
 \newpage
 \textbf{API-PLA interactions}
@@ -413,7 +412,7 @@ In this part we are focusing on the hydrogen bonding between API and PLA, where 
 \end{figure}
 
 
-The RDF of hydrogen bonding with the carbonyl group in PLA (OC) is shown in Figure \ref{fig:carbonyl}. The RDF value converges to one in a long distance for all API-PLA interactions, which is in good agreement with theory. For indomethacine, the amplitude of the peak decrease with lower PLA molecules presented in the mixture. This correspond with the observation for trends in INDO-INDO interactions. The contact distance in dimer obtained from quantum optimization is 1.76 \AA, from MD simulation we obtained the value of ? \AA.
+The RDF of hydrogen bonding with the carbonyl group in PLA (OC) is shown in Figure \ref{fig:carbonyl}. The RDF value converges to one in a long distance for all API-PLA interactions, which is in good agreement with theory. For indomethacine, the amplitude of the peak decrease with lower PLA molecules presented in the mixture. This correspond with the observation for trends in INDO-INDO interactions. The contact distance in dimer obtained from quantum optimization is 1.76 \AA, from MD simulation we obtained the value of 1.75 \AA.
 
 In case of naproxen, the RDF data shows one peak at distance of ? \AA, the value obtained by quantum simulation is 1.76 \AA. The peak amplitude is relatively high compared to other APIs. The RDF data for ibuprofen exhibit similar behavior, with slightly higher peak amplitude. For the temperature 300~K, there is different order of heights of the peaks. The peak corresponding to $x_\text{API}=0.85$ is switched with the one corresponding to $x_\text{API}=0.92$. The difference between those peaks is small, but it strange compared to trend observed in IBU-IBU RDF. The shift on $x$-axis is same as for naproxen, the calculated QM value is 1.77 \AA~for IBU.
 
@@ -499,16 +498,15 @@ Self-diffusivities were evaluated from the above data and plotted in Figure \ref
 	\label{fig:d}    
 \end{figure}  
 
-MSD was also evaluated at a lower temperature of 300 K, Figure \ref{fig:msd_r1}. For carbamazepine there is no visible trend for change of the concentration and neat API has the signal lower than the mixtures. From that we can definitely say, that addition of PLA has minimal effect on the pure API.
+MSD was also evaluated at a lower temperature of 300 K, Figure \ref{fig:msd_r1}. For carbamazepine, there is no visible trend of changed diffusivity for different concentrations, from that we can definitely say, that addition of PLA has minimal effect on the pure API. The situation of of naproxen is similar, we cannot determine the difference between the different concentrations in order of magnitude of simulation error. For ibuprofen, the situation is the same as for 500~K, the addition of PLA will result in lower diffusivity. For indomethacin, there is also no visible trend, the diffusivity of the mixture with the least amount of PLA is somehow higher. 
 
-The diffusivity of naproxen is always lower in mixtures, which is related to its stronger interactions with the polymer. The strength of the intermolecular interactions has a greater impact, meaning that paired molecules NAP-API slow the diffusion of other particles. The addition of polymer to ibuprofen results in decrease in diffusivity. 
 
 \begin{figure}[H]
 	\centering
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_cbz_api_r1.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_nap_api_r1.png}}\\
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_ibu_s_api_r1.png}}
-	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_indo_api_r1.png}} 
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_cbz_api_r3.png}}
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_nap_api_r3.png}}\\
+	\subfloat{\includegraphics[width=0.4\linewidth]{img/msd_ibu_s_api_r3.png}}
+	\subfloat{\includegraphics[width=0.41\linewidth]{img/msd_indo_api_r3.png}} 
 	\caption{MSD from simulations under 300 K, carbamazepine (\textbf{top left}), naproxen (\textbf{top right}), ibuprofen (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
 	\label{fig:msd_r1}    
 \end{figure}
@@ -520,21 +518,60 @@ The glass transition temperatures of the mixtures were evaluated from the simula
 	\rho(T)=\rho_0-a\left(T-T_0\right)-b\left[\frac{1}{2}\left(T-T_0\right)+\sqrt{\frac{\left(T-T_0\right)^2}{4}+e^c}\right].
 \end{equation}
 
-Since this method is sensitive to the initial state of the simulated box, more simulated data starting from different conformations must be provided to evaluate $T_\text{g}$ with the information about its uncertainty as it was described in methods section. We used data from 5 simulations from different initial states. The average value and its uncertainty for each API is given in Table \ref{tab:Tg_mix}.
+Since this method is sensitive to the initial state of the simulated box, more simulated data starting from different conformations must be provided to evaluate $T_\text{g}$ with the information about its uncertainty as it was described in methods section. We used data from 5 simulations from different initial states. The average value for each run and its uncertainty is given in Figure \ref{fig:results_tg}. 
 
-TO DO: DOPOČÍTAT PRO NOVÉ SIMULACE
+TO DO: DOPOČÍTAT PRO INDO A CBZ SIMULACE
+
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{img/results_tg.png} 
+	\caption{Calculated glass transition temperatures $T_\text{g}$ of mixtures composed from API and PLA with concentration of $x_\text{API}$=0.85 starting from 5 different conformations, mean values plotted by dashed line for each API.}
+	\label{fig:results_tg}    
+\end{figure}  
+
+The representative data sets used for determination of $T_\textbf{g}$ with the hyberbolic fit are displayed in Figure \ref{fig:tg_evaluation} for each API. The data obtained correspond to the initial positions obtained from second nanosecond of the 5~ns long simulation. 
+ 
+\begin{figure}[H]
+	\centering
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/blank.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/nap_tg.png}}\\
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/ibu_s_tg.png}}
+	\subfloat{\includegraphics[width=0.5\linewidth]{img/blank.png}} 
+	\caption{Determination of the glass transition temperature $T_\text{g}$ of mixture with API concentration of $x_\text{API}$=0.85 by the non-equilibrium hyperbola fit method, second data set. Carbamazepine (\textbf{top left}), naproxen (\textbf{top right}), ibuprofen (\textbf{bottom left}) and indomethacin (\textbf{bottom right}).}
+	\label{fig:tg_evaluation}    
+\end{figure}
+
+The Table \ref{tab:Tg_mix} shows the mean value of $T_\text{g}$ with the uncertainty for the mixture of API and PLA with $x_\text{API}=0.85$ obtained from 5 runs from different positions.
+
 \begin{table}[htb!]
-	\caption{Calculated glass transition temperatures $T_\text{g}$ of mixtures composed from API and PLA with concentration of $x$=0.85 and their standard uncertainties.}
+	\caption{Calculated glass transition temperatures $T_\text{g}$ of mixtures composed from API and PLA with concentration of $x_\text{API}$=0.85 and their standard uncertainties.}
 	\centering
 	\begin{tabular}{lcc} \toprule
 		{\textbf{API}} & {\textbf{\boldmath{$T_{\text{g}}$}}} & \textbf{{\boldmath{$\sigma_{T_\text{g}}$}}} \\
 		\midrule
 		carbamazepine  & 0 & 0 \\		
-		naproxen   & 0 & 0 \\
-		ibuprofen  & 0 & 0 \\
+		naproxen   & 370 & 6 \\
+		ibuprofen  & 363 & 3 \\
 		indomethacin  & 0 & 0 \\
 		\bottomrule
 	\end{tabular}
 	\label{tab:Tg_mix} 
 \end{table} 
 
+The experimental values were obtained from literature \cite for neat APIs and they are given in Table \
+
+\begin{table}[htb!]
+	\caption{Calculated glass transition temperatures $T_\text{g}$ of mixtures composed from API and PLA with concentration of $x_\text{API}$=0.85 and their standard uncertainties.}
+	\centering
+	\begin{tabular}{lcc} \toprule
+		{\textbf{API}} & {\textbf{\boldmath{$T_{\text{g}}$}}} & \textbf{{\boldmath{$\sigma_{T_\text{g}}$}}} \\
+		\midrule
+		carbamazepine  & 0 & 0 \\		
+		naproxen   & 370 & 6 \\
+		ibuprofen  & 363 & 3 \\
+		indomethacin  & 0 & 0 \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:Tg_neat} 
+\end{table}
