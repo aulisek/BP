@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  8 MAY 2024 17:23
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  30 MAY 2024 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,52 +1056,51 @@ File: documents/frontpage_placeholder.pdf Graphic file (type pdf)
 
 
 
-]
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 1>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 1>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 1>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 1>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 1>
- [2
+] [2] [3] [4] (./main.toc
+LaTeX Font Info:    Calculating math sizes for size <11.38109> on input line 4.
 
-]
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 2>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 2>
-File: documents/assignment_placeholder.pdf Graphic file (type pdf)
-<use documents/assignment_placeholder.pdf, page 2>
- [3
 
-] [4] [5] (./main.toc
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <11.38109> not available
+(Font)              size <10.95> substituted on input line 4.
+
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-) [1] [2]
+) [1]
 \openout2 = `INTRODUCTION.aux'.
 
- (./INTRODUCTION.tex
-[1
+ (./INTRODUCTION.tex [1
 
 
 
@@ -1311,7 +1310,7 @@ File: img/cbz_100x_bp.png Graphic file (type bmp)
 <img/cbz_100x_bp.png>
 File: img/indo_100x_bp.png Graphic file (type bmp)
 <img/indo_100x_bp.png>
- [27] [28] [29] [30]
+ [27] [28] [29]
 File: img/rdf_indo_api_r3.png Graphic file (type bmp)
 <img/rdf_indo_api_r3.png>
 File: img/coord_indo_api_r3.png Graphic file (type bmp)
@@ -1320,7 +1319,7 @@ File: img/rdf_indo_api_r2.png Graphic file (type bmp)
 <img/rdf_indo_api_r2.png>
 File: img/coord_indo_api_r2.png Graphic file (type bmp)
 <img/coord_indo_api_r2.png>
- [31]
+ [30] [31]
 File: img/rdf_nap_api_r3.png Graphic file (type bmp)
 <img/rdf_nap_api_r3.png>
 File: img/coord_nap_api_r3.png Graphic file (type bmp)
@@ -1349,52 +1348,52 @@ File: img/coord_cbz_api_r2.png Graphic file (type bmp)
  [33]
 File: img/all_pla_api_bp.png Graphic file (type bmp)
 <img/all_pla_api_bp.png>
- [34] [35]
-File: img/RDF_ibu_s_20_2.png Graphic file (type bmp)
-<img/RDF_ibu_s_20_2.png>
-File: img/RDF_ibu_s_20_2_r2.png Graphic file (type bmp)
-<img/RDF_ibu_s_20_2_r2.png>
-File: img/RDF_nap_2_31.png Graphic file (type bmp)
-<img/RDF_nap_2_31.png>
-File: img/RDF_nap_2_31_r2.png Graphic file (type bmp)
-<img/RDF_nap_2_31_r2.png>
-File: img/RDF_cbz_2_27.png Graphic file (type bmp)
-<img/RDF_cbz_2_27.png>
-File: img/RDF_cbz_2_27_r2.png Graphic file (type bmp)
-<img/RDF_cbz_2_27_r2.png>
-File: img/RDF_indo_2_36.png Graphic file (type bmp)
-<img/RDF_indo_2_36.png>
-File: img/RDF_indo_2_36_r2.png Graphic file (type bmp)
-<img/RDF_indo_2_36_r2.png>
-
-Overfull \vbox (14.11101pt too high) has occurred while \output is active []
-
-
-[36]
-File: img/RDF_ibu_s_20_6.png Graphic file (type bmp)
-<img/RDF_ibu_s_20_6.png>
-File: img/RDF_ibu_s_20_6_r2.png Graphic file (type bmp)
-<img/RDF_ibu_s_20_6_r2.png>
-File: img/RDF_nap_6_31.png Graphic file (type bmp)
-<img/RDF_nap_6_31.png>
-File: img/RDF_nap_6_31_r2.png Graphic file (type bmp)
-<img/RDF_nap_6_31_r2.png>
-File: img/RDF_cbz_6_27.png Graphic file (type bmp)
-<img/RDF_cbz_6_27.png>
-File: img/RDF_cbz_6_27_r2.png Graphic file (type bmp)
-<img/RDF_cbz_6_27_r2.png>
-File: img/RDF_indo_36_6.png Graphic file (type bmp)
-<img/RDF_indo_36_6.png>
-File: img/RDF_indo_36_6_r2.png Graphic file (type bmp)
-<img/RDF_indo_36_6_r2.png>
+ [34] [35] [36]
+File: img/RDF_Coordination_ibu_20_2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_2.png>
+File: img/RDF_Coordination_ibu_20_2_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_2_r2.png>
+File: img/RDF_Coordination_nap_2_31.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_2_31.png>
+File: img/RDF_Coordination_nap_2_31_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_2_31_r2.png>
+File: img/RDF_Coordination_cbz_2_27.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_2_27.png>
+File: img/RDF_Coordination_cbz_2_27_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_2_27_r2.png>
+File: img/RDF_Coordination_indo_2_36.png Graphic file (type bmp)
+<img/RDF_Coordination_indo_2_36.png>
+File: img/RDF_Coordination_indo_2_36_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_indo_2_36_r2.png>
 
 Overfull \vbox (14.11101pt too high) has occurred while \output is active []
 
 
 [37]
+File: img/RDF_Coordination_ibu_20_6.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_6.png>
+File: img/RDF_Coordination_ibu_20_6_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_6_r2.png>
+File: img/RDF_Coordination_nap_6_31.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_6_31.png>
+File: img/RDF_Coordination_nap_6_31_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_6_31_r2.png>
+File: img/RDF_Coordination_cbz_6_27.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_6_27.png>
+File: img/RDF_Coordination_cbz_6_27_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_6_27_r2.png>
+File: img/RDF_Coordination_indo_36_6.png Graphic file (type bmp)
+<img/RDF_Coordination_indo_36_6.png>
+File: img/RDF_Coordination_indo_36_6_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_indo_36_6_r2.png>
+
+Overfull \vbox (14.11101pt too high) has occurred while \output is active []
+
+
+[38] [39]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 480.
+               Default added (so using `tbp') on input line 492.
 
 File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
@@ -1404,10 +1403,9 @@ File: img/msd_ibu_s_api_r2.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
-[38]
+[40]
 File: img/d.png Graphic file (type bmp)
 <img/d.png>
- [39]
 File: img/msd_cbz_api_r3.png Graphic file (type bmp)
 <img/msd_cbz_api_r3.png>
 File: img/msd_nap_api_r3.png Graphic file (type bmp)
@@ -1416,21 +1414,24 @@ File: img/msd_ibu_s_api_r3.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r3.png>
 File: img/msd_indo_api_r3.png Graphic file (type bmp)
 <img/msd_indo_api_r3.png>
- [40]
+ [41]
+File: img/cbz_tg_tag.png Graphic file (type bmp)
+<img/cbz_tg_tag.png>
+File: img/nap_tg_tag.png Graphic file (type bmp)
+<img/nap_tg_tag.png>
+File: img/ibu_s_tg_tag.png Graphic file (type bmp)
+<img/ibu_s_tg_tag.png>
+File: img/indo_tg_tag.png Graphic file (type bmp)
+<img/indo_tg_tag.png>
+ [42] [43]
 File: img/results_tg.png Graphic file (type bmp)
 <img/results_tg.png>
-File: img/blank.png Graphic file (type bmp)
-<img/blank.png>
-File: img/nap_tg.png Graphic file (type bmp)
-<img/nap_tg.png>
-File: img/ibu_s_tg.png Graphic file (type bmp)
-<img/ibu_s_tg.png>
-File: img/blank.png Graphic file (type bmp)
-<img/blank.png>
-) [41] [42]
+File: img/results_tg_indo.png Graphic file (type bmp)
+<img/results_tg_indo.png>
+ [44]) [45]
 \openout2 = `CONCLUSION.aux'.
 
- (./CONCLUSION.tex) [43
+ (./CONCLUSION.tex) [46
 
 
 
@@ -1445,17 +1446,17 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
  a
  []
 
-[44
+[47
 
 
 
-] [45]
+] [48]
 Underfull \hbox (badness 1769) in paragraph at lines 287--298
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
 
-[46])) [47]
+[49])) [50]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex) (./main.aux (./firstComponents.aux)
@@ -1465,6 +1466,10 @@ S.;
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.43109pt have occurred.
 
 
 LaTeX Warning: There were undefined references.
@@ -1477,12 +1482,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27865 strings out of 475925
- 566304 string characters out of 5783280
- 1954839 words of memory out of 5000000
- 49444 multiletter control sequences out of 15000+600000
- 565971 words of font info for 80 fonts, out of 8000000 for 9000
+ 27915 strings out of 475925
+ 568958 string characters out of 5783280
+ 1951839 words of memory out of 5000000
+ 49487 multiletter control sequences out of 15000+600000
+ 569759 words of font info for 99 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
  87i,17n,131p,1624b,12614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (54 pages).
+Output written on main.pdf (55 pages).
