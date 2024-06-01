@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{42}
+\begin{mcitethebibliography}{47}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -153,6 +153,15 @@ Monticelli,~L.; Tieleman,~D.~P. In \emph{Biomolecular {Simulations}};
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Mayo \latin{et~al.}(1990)Mayo, Olafson, and
+  Goddard]{mayo_dreiding_1990}
+Mayo,~S.~L.; Olafson,~B.~D.; Goddard,~W.~A. {DREIDING}: a generic force field
+  for molecular simulations. \emph{The Journal of Physical Chemistry}
+  \textbf{1990}, \emph{94}, 8897–8909\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Brooks \latin{et~al.}(2009)Brooks, Brooks, Mackerell, Nilsson,
   Petrella, Roux, Won, Archontis, Bartels, Boresch, Caflisch, Caves, Cui,
   Dinner, Feig, Fischer, Gao, Hodoscek, Im, Kuczera, Lazaridis, Ma,
@@ -161,6 +170,45 @@ Monticelli,~L.; Tieleman,~D.~P. In \emph{Biomolecular {Simulations}};
 Brooks,~B.~R. \latin{et~al.}  {CHARMM}: {The} biomolecular simulation program.
   \emph{Journal of Computational Chemistry} \textbf{2009}, \emph{30},
   1545–1614\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2004)Wang, Wolf, Caldwell, Kollman, and
+  Case]{wang_development_2004}
+Wang,~J.; Wolf,~R.~M.; Caldwell,~J.~W.; Kollman,~P.~A.; Case,~D.~A. Development
+  and testing of a general amber force field. \emph{Journal of Computational
+  Chemistry} \textbf{2004}, \emph{25}, 1157–1174\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen and Tirado-Rives(1988)Jorgensen, and
+  Tirado-Rives]{jorgensen_opls_1988}
+Jorgensen,~W.~L.; Tirado-Rives,~J. The {OPLS} [optimized potentials for liquid
+  simulations] potential functions for proteins, energy minimizations for
+  crystals of cyclic peptides and crambin. \emph{Journal of the American
+  Chemical Society} \textbf{1988}, \emph{110}, 1657–1666\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sun \latin{et~al.}(1994)Sun, Mumby, Maple, and Hagler]{sun_ab_1994}
+Sun,~H.; Mumby,~S.~J.; Maple,~J.~R.; Hagler,~A.~T. An ab {Initio} {CFF93}
+  {All}-{Atom} {Force} {Field} for {Polycarbonates}. \emph{Journal of the
+  American Chemical Society} \textbf{1994}, \emph{116}, 2978–2987\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Senftle \latin{et~al.}(2016)Senftle, Hong, Islam, Kylasa, Zheng, Shin,
+  Junkermeier, Engel-Herbert, Janik, Aktulga, Verstraelen, Grama, and {Van
+  Duin}]{senftle_reaxff_2016}
+Senftle,~T.~P.; Hong,~S.; Islam,~M.~M.; Kylasa,~S.~B.; Zheng,~Y.; Shin,~Y.~K.;
+  Junkermeier,~C.; Engel-Herbert,~R.; Janik,~M.~J.; Aktulga,~H.~M.;
+  Verstraelen,~T.; Grama,~A.; {Van Duin},~A. C.~T. The {ReaxFF} reactive
+  force-field: development, applications and future directions. \emph{npj
+  Computational Materials} \textbf{2016}, \emph{2}, 15011\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -180,16 +228,6 @@ Vanommeslaeghe,~K.; Guvench,~O.; MacKerell,~A.~D. Molecular {Mechanics}.
   A.~C. Are all-atom any better than united-atom force fields for the
   description of liquid properties of alkanes? \emph{Journal of Molecular
   Modeling} \textbf{2020}, \emph{26}, 296\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Jorgensen and Tirado-Rives(1988)Jorgensen, and
-  Tirado-Rives]{jorgensen_opls_1988}
-Jorgensen,~W.~L.; Tirado-Rives,~J. The {OPLS} [optimized potentials for liquid
-  simulations] potential functions for proteins, energy minimizations for
-  crystals of cyclic peptides and crambin. \emph{Journal of the American
-  Chemical Society} \textbf{1988}, \emph{110}, 1657–1666\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -219,6 +257,15 @@ Breneman,~C.~M.; Wiberg,~K.~B. Determining atom‐centered monopoles from
   molecular electrostatic potentials. {The} need for high sampling density in
   formamide conformational analysis. \emph{Journal of Computational Chemistry}
   \textbf{1990}, \emph{11}, 361–373\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lapidus(2024)]{LJ}
+Lapidus,~L.~J. Lennard-Jones Potential.
+  \url{https://physicsatmcl.commons.msu.edu/lennard-jones-potential/}, 2024;
+  Licensed under CC License Name. Available at URL of the License (e.g.,
+  https://creativecommons.org/licenses/by-nc-sa/4.0/)\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

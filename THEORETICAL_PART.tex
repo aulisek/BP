@@ -34,7 +34,7 @@ The total energy calculated using the force field can be broken down into two co
 %	\label{fig:ff}    
 %\end{figure}  
 \newpage
-By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING, AMBER \cite{brooks_charmm_2009}, GAFF and OPLS. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF or ReaxFF.  The third class includes fluctuations of charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
+By the level of functional description (number of terms) of the interactions in the force field, we distinguish force fields of three classes. Class 1 force fields contain the 5 terms mentioned in the two equations above (bond, angle, torsion, Lennard-Jones and electrostatic), examples of such FF are the DREIDING \cite{mayo_dreiding_1990}, AMBER \cite{brooks_charmm_2009}, GAFF \cite{wang_development_2004} and OPLS \cite{jorgensen_opls_1988}. In addition, class 2 force fields include bond-bond and bond-angle coupling terms, anharmonic terms simultaneously with all class 1 terms, examples of such fields are PCFF \cite{sun_ab_1994} or ReaxFF \cite{senftle_reaxff_2016}.  The third class includes fluctuations of charge distribution in time (charge polarization effect), and they are called polarizable FF. \cite{vanommeslaeghe_molecular_2014}
 
 During the parameterization of force fields (FF), we start from the assumption of transferability,  similar chemical groups of different molecules interact in the same way. When constructing a force field for large molecules, we can use parameters obtained from data for small molecules, which are much more easily graspable and contain the same functional groups. \cite{monticelli_force_2013} In model development, our aim is to achieve the most universal description of the system while still closely corresponding to its actual state. This can be facilitated by employing higher-order terms; however, incorporating anharmonic and cross terms introduces the need for a greater amount of FF parameters. We strive to avoid situations where we employ an overly adapted and detailed model that merely reproduces inserted information without providing any predictive capabilities. \cite{vanommeslaeghe_molecular_2014}
 
@@ -61,14 +61,10 @@ $i$ and $j$ denote different atom types, $N$ is the total number of atom pairs, 
 Proper \textbf{dihedral angle} $\phi$ between atoms i,j,k,l is represented in Figure \ref{fig:torsion}. The torsional energy is described as a cosine expansion, where the first term corresponds to the rotation periodic after 360$^\circ$, second term by 180$^\circ$, the third term by 120$^\circ$ and the fourth term by 90$^\circ$. Each of this term has the $V_n$ constant, representing the barrier for rotation along the proper dihedral angle, which is dependent both on the torsional energy and non-bonded forces. Different approaches could be chosen, one of them is obtaining the parameters by QM calculations. \cite{mackerell_empirical_2004} We first optimize the molecular geometry using QM methods and then we run scanning of dihedral angle of interest. At each step, we optimize geometry and calculate the change in potential energy.  Then we compute potential energy of each optimized geometry using MD with dihedral parameters set to zero. Then we can fit the parameters by subtracting the results of MD from QM, this corresponds exactly to the influence of dihedrals. To do this procedure first all the other FF parameters should be known. 
 \vspace{-0.2cm}
 \begin{figure}[H]
-\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.9\linewidth]{img/bond_angles.png} 
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.7\linewidth]{img/torsion.png}
-\end{subfigure} 
+	\centering
+	\includegraphics[width=0.63\linewidth]{img/uhly_canva.png} 
 \vspace{-0.2cm}
-\caption{Pokud je v pořádku obrázek, vytvořím vlastní}
+\caption{Graphical representation of the terms from OPLS force field.}
 \label{fig:torsion}  
 \end{figure}
 \vspace{-0.5cm}
@@ -80,7 +76,7 @@ Proper \textbf{dihedral angle} $\phi$ between atoms i,j,k,l is represented in Fi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/lj.png} 
-	\caption{caption}
+	\caption{Description of the Lennard-Jones potential taken from online source \cite{LJ}.}
 	\label{fig:lj}    
 \end{figure} 
 
@@ -91,7 +87,7 @@ Due to the computational complexity, we are focused on only small region of a ve
 \subsubsection{Setting the cutoff}
 From the preceding paragraphs it is evident that the main problem in time complexity of the simulations is the evaluation of non-bonding energies. While the number of bonded terms increase linearly with the system size, the non-bonded terms show a quadratic increase in the number of contributions. A common strategy for reducing the computational time is to set specific cutoff distance, beyond which we neglect or estimate the non-bonded interaction energy contribution. We distinguish two type of interactions based on their decay with distance. First the so-called short-range interactions decreasing faster than $1/r^3$ such as van der Waals ($1/r^6$) that could be neglected on relatively short distance. By neglecting the van der Waals contributions at long distances, we introduce only a small numerical deviation for each pair, but the cumulative effect when all pairwise interactions are summed introduces larger deviations into the simulations. Theory says that van der Waals interactions are negligible beyond about 20 \AA, we choose 12 \AA~as the optimal cutoff in this work because of the optimal computational complexity. \cite{mdskripta}
 
-For the long-range interactions, such as Coulombic interactions ($1/r$) the situation is not that easy and they require larger cutoff than van der Waals due to their long-range nature. The easiest option, as mentioned above, is to solve this issue by neglecting any contributions beyond the cutoff distance. The problem in that approach is that we introduce discontinuities in the potential and its derivatives. Better and more effective approach, especially for periodic systems is called Ewald summation.
+For the long-range interactions, such as Coulombic interactions ($1/r$) the situation is not that easy and larger cutoff than for van der Waals is required due to their long-range nature. The easiest option, as mentioned above, is to solve this issue by neglecting any contributions beyond the cutoff distance. The problem in that approach is that we introduce discontinuities in the potential and its derivatives. Better and more effective approach, especially for periodic systems is called Ewald summation.
 
 
 \subsubsection{Ewald summation}
@@ -100,8 +96,8 @@ The idea of Ewald summation is based on a mathematical trick where we divide a t
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{img/ewald.png} 
-	\caption{caption}
+	\includegraphics[width=0.8\linewidth]{img/ewald.png} 
+	\caption{Illustration of the idea behind Ewald summation.}
 	\label{fig:ewald}    
 \end{figure} 
 
@@ -156,7 +152,7 @@ As already mentioned, the natural ensemble is the so-called microcanonical ensem
 
 Another commonly used ensemble is the canonical ensemble, often referred to as $\boldmath{NVT}$. Here, the system is maintained at constant temperature ($T$) and volume ($V$), allowing for heat exchange with a thermostat.
 
-For many chemical systems, particularly those involving reactions in solution or under variable pressure conditions, the $\boldmath{NPT}$ ensemble is preferred. In this ensemble, both temperature and pressure are kept constant, ensuring that the system remains in equilibrium with its environment. The $NPT$ ensemble is valuable for studying systems where pressure effects play a significant role.
+For many chemical systems, particularly those involving reactions in solution or under variable pressure conditions, the $\boldmath{NpT}$ ensemble is preferred. In this ensemble, both temperature and pressure are kept constant, ensuring that the system remains in equilibrium with its environment. The $NpT$ ensemble is valuable for studying systems where pressure effects play asignificant role.
 
 
 \subsubsection{Mean Square Displacement}
@@ -181,7 +177,7 @@ When we want to extract the RDF from MD simulations, the following strategy is a
 
 The first peak of RDF corresponds to the nearest neighbors of the particle. The position on $x$-axis is determined by the contact distance. The following minima correspond to the steric shielding of the first neighbours. The second peak has the meaning of the second shell of neighbors and so on for later peaks. The amplitude of the peaks corresponds to the relative occurrence in the mixture, the more contacts in the mixture the probability (height of the peak) is higher. \cite{mdskripta}
 
-When we want to extract more information from RDF and study how many particles are on average to the specific distance, we are talking about the cumulative RDF (CRDF). The CRDF is a function of coordination number on distance, that we can obtain by integrating the RDF from 0 to desired distance, usually to the first neighbor cutoff. The integration is shown in Equation \ref{CRDF}, where $g(r')$ is the RDF. The number of particles within the radius $r$ is then CDRF multiplied by density. \cite{mdskripta}
+When we want to extract more information from RDF and study how many particles are on average to the specific distance, we are talking about the cumulative RDF (CRDF). The CRDF is a function of coordination number on distance, that we can obtain by integrating the RDF from 0 to desired distance, usually to the first neighbor cutoff. The integration is shown in Equation \ref{eq:CRDF}, where $g(r')$ is the RDF. The number of particles within the radius $r$ is then CDRF multiplied by density.~\cite{mdskripta}
 
 \begin{equation}\label{eq:CRDF}
 	\text{CRDF}(r) = \int_{0}^{r} 4\pi r'^2 g(r') \, dr'
@@ -190,6 +186,6 @@ When we want to extract more information from RDF and study how many particles a
 \subsubsection{Block averaging scheme}
 When we are extracting the properties such as volume, density or energy, we are handling with average value obtained from MD simulation. MD simulation data often exhibit correlations between consecutive frames due to the nature of the molecular dynamics algorithm. When we are estimating the uncertainties or errors associated with calculated properties, we have to consider that the simulated data might be correlated and use appropriate statistical methods. 
 
-The often used method to evaluate the standard errors is the block averaging scheme. The trajectory data generated from the MD simulation are divided into non-overlapping blocks of equal length. We are assuming, that data within those blocks are no more correlated. For each block, the average value of the property and its standard deviation is calculated from the simulation data. Finally, the averages and standard deviations from all blocks are combined to obtain an overall estimate of the uncertainty in the property of interest. The algorithm used in this work is described more into details by Allen \cite{allen_computer_2017}.
+The often used method to evaluate the standard errors is the block averaging scheme. The trajectory data generated from the MD simulation are divided into non-overlapping blocks of equal length. We are assuming, that data within those blocks are no more correlated. For each block, the average value of the property and its standard deviation is calculated from the simulation data. Finally, the averages and standard deviations from all blocks are combined to obtain an overall estimate of the uncertainty in the property of interest. The algorithm used in this work is described more into details by Allen.  \cite{allen_computer_2017}
 
 

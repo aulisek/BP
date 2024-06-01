@@ -14,47 +14,47 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: acs-main.bib
 Database file #2: references.bib
 Warning--entry type for "Sritterova" isn't style-file defined
---line 3 of file references.bib
+--line 11 of file references.bib
 achemso 2024-01-30 v3.13g
-You've used 42 entries,
+You've used 47 entries,
             2538 wiz_defined-function locations,
-            1084 strings with 20099 characters,
-and the built_in function-call counts, 16524 in all, are:
-= -- 1233
-> -- 1101
-< -- 31
-+ -- 410
-- -- 373
-* -- 1809
-:= -- 2215
-add.period$ -- 77
-call.type$ -- 42
+            1120 strings with 21566 characters,
+and the built_in function-call counts, 18586 in all, are:
+= -- 1386
+> -- 1246
+< -- 32
++ -- 467
+- -- 425
+* -- 2039
+:= -- 2501
+add.period$ -- 87
+call.type$ -- 47
 change.case$ -- 7
 chr.to.int$ -- 7
-cite$ -- 42
-duplicate$ -- 832
-empty$ -- 1108
-format.name$ -- 426
-if$ -- 3258
+cite$ -- 47
+duplicate$ -- 944
+empty$ -- 1232
+format.name$ -- 483
+if$ -- 3653
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 274
-num.names$ -- 125
-pop$ -- 86
+newline$ -- 304
+num.names$ -- 140
+pop$ -- 96
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 40
+skip$ -- 44
 stack$ -- 0
-substring$ -- 959
-swap$ -- 1023
-text.length$ -- 85
+substring$ -- 1073
+swap$ -- 1157
+text.length$ -- 95
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 279
+type$ -- 314
 warning$ -- 0
-while$ -- 128
+while$ -- 142
 width$ -- 0
-write$ -- 551
+write$ -- 615
 (There was 1 warning)

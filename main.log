@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  30 MAY 2024 00:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.4.19)  31 MAY 2024 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,16 +1184,9 @@ Overfull \hbox (39.18106pt too wide) detected at line 55
  []
 
 [6]
-File: img/bond_angles.png Graphic file (type bmp)
-<img/bond_angles.png>
-File: img/torsion.png Graphic file (type bmp)
-<img/torsion.png>
-
-Overfull \hbox (2.608pt too wide) in paragraph at lines 64--71
-[][] []
- []
-
-[7]
+File: img/uhly_canva.png Graphic file (type bmp)
+<img/uhly_canva.png>
+ [7]
 File: img/lj.png Graphic file (type bmp)
 <img/lj.png>
  [8] [9]
@@ -1201,31 +1194,27 @@ File: img/ewald.png Graphic file (type bmp)
 <img/ewald.png>
  [10] [11] [12]
 
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 151.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 151
+.
+
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 153.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 153
+.
+
+
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 155.
 
 
 LaTeX Font Warning: Command \mathversion invalid in math mode on input line 155
 .
 
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 157.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 157
-.
-
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 159.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 159
-.
-
-[13]
-
-LaTeX Warning: Reference `CRDF' on page 14 undefined on input line 184.
-
-[14]) [15]
+[13] [14]) [15]
 \openout2 = `METHODS.aux'.
 
  (./METHODS.tex [16
@@ -1243,9 +1232,12 @@ File: img/pla_10g_tube.png Graphic file (type bmp)
 File: img/pla_100g_tube.png Graphic file (type bmp)
 <img/pla_100g_tube.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 20--26
+Overfull \hbox (2.608pt too wide) in paragraph at lines 21--27
 [][] [] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18
 
@@ -1257,51 +1249,64 @@ File: img/pla_linear_density.png Graphic file (type bmp)
 File: img/pla_glob_density.png Graphic file (type bmp)
 <img/pla_glob_density.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 57--67
+Overfull \hbox (2.608pt too wide) in paragraph at lines 59--69
 [][] [] 
  []
 
-[19]
 File: img/pla_linear_konce.png Graphic file (type bmp)
 <img/pla_linear_konce.png>
 File: img/pla_glob_konce.png Graphic file (type bmp)
 <img/pla_glob_konce.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 75--87
+Overfull \hbox (2.608pt too wide) in paragraph at lines 77--89
 [][] [] 
  []
 
-[20]
+[19]
 File: img/hustota_5_50_sigma.png Graphic file (type bmp)
 <img/hustota_5_50_sigma.png>
 File: img/konce_5_50.png Graphic file (type bmp)
 <img/konce_5_50.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 96--108
+Overfull \hbox (2.608pt too wide) in paragraph at lines 98--110
 [][] [] 
  []
 
-[21]
+[20] [21]
 File: img/polydispersity_occurences_new.png Graphic file (type bmp)
 <img/polydispersity_occurences_new.png>
 File: img/polydisperzita_new.png Graphic file (type bmp)
 <img/polydisperzita_new.png>
- [22] [23]
+ [22]
+Overfull \hbox (8.09108pt too wide) in paragraph at lines 169--170
+[]\TU/lmr/m/n/12 Available experimental $\OML/cmm/m/it/12 T[]$ \TU/lmr/m/n/12 o
+f L-PLA varies in the literature, the value of $\OML/cmm/m/it/12 T[]$ \TU/lmr/m
+/n/12 = 333 $\OMS/cmsy/m/n/12 ^^F$ \TU/lmr/m/n/12 4 K
+ []
+
+[23]
 File: img/vypocet_tg.png Graphic file (type bmp)
 <img/vypocet_tg.png>
 File: img/tg_ukazka_30.png Graphic file (type bmp)
 <img/tg_ukazka_30.png>
 
-Overfull \hbox (2.608pt too wide) in paragraph at lines 168--175
+Overfull \hbox (2.608pt too wide) in paragraph at lines 177--184
 [][] []
  []
 
 File: img/glass_temp.png Graphic file (type bmp)
 <img/glass_temp.png>
 [24]
-File: img/tabulka_validace.png Graphic file (type bmp)
-<img/tabulka_validace.png>
- [25] [26]
+Missing character: There is no α (U+03B1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no γ (U+03B3) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
+Overfull \hbox (12.76004pt too wide) in paragraph at lines 218--233
+ [][] 
+ []
+
+[25] [26]
 File: img/ibu_s_100x_bp.png Graphic file (type bmp)
 <img/ibu_s_100x_bp.png>
 File: img/nap_100x_bp.png Graphic file (type bmp)
@@ -1310,7 +1315,7 @@ File: img/cbz_100x_bp.png Graphic file (type bmp)
 <img/cbz_100x_bp.png>
 File: img/indo_100x_bp.png Graphic file (type bmp)
 <img/indo_100x_bp.png>
- [27] [28] [29]
+ [27] [28] [29] [30]
 File: img/rdf_indo_api_r3.png Graphic file (type bmp)
 <img/rdf_indo_api_r3.png>
 File: img/coord_indo_api_r3.png Graphic file (type bmp)
@@ -1319,7 +1324,7 @@ File: img/rdf_indo_api_r2.png Graphic file (type bmp)
 <img/rdf_indo_api_r2.png>
 File: img/coord_indo_api_r2.png Graphic file (type bmp)
 <img/coord_indo_api_r2.png>
- [30] [31]
+ [31]
 File: img/rdf_nap_api_r3.png Graphic file (type bmp)
 <img/rdf_nap_api_r3.png>
 File: img/coord_nap_api_r3.png Graphic file (type bmp)
@@ -1349,52 +1354,48 @@ File: img/coord_cbz_api_r2.png Graphic file (type bmp)
 File: img/all_pla_api_bp.png Graphic file (type bmp)
 <img/all_pla_api_bp.png>
  [34] [35] [36]
-File: img/RDF_Coordination_ibu_20_2.png Graphic file (type bmp)
-<img/RDF_Coordination_ibu_20_2.png>
-File: img/RDF_Coordination_ibu_20_2_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_ibu_20_2_r2.png>
-File: img/RDF_Coordination_nap_2_31.png Graphic file (type bmp)
-<img/RDF_Coordination_nap_2_31.png>
-File: img/RDF_Coordination_nap_2_31_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_nap_2_31_r2.png>
-File: img/RDF_Coordination_cbz_2_27.png Graphic file (type bmp)
-<img/RDF_Coordination_cbz_2_27.png>
-File: img/RDF_Coordination_cbz_2_27_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_cbz_2_27_r2.png>
 File: img/RDF_Coordination_indo_2_36.png Graphic file (type bmp)
 <img/RDF_Coordination_indo_2_36.png>
 File: img/RDF_Coordination_indo_2_36_r2.png Graphic file (type bmp)
 <img/RDF_Coordination_indo_2_36_r2.png>
+File: img/RDF_Coordination_nap_2_31.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_2_31.png>
+File: img/RDF_Coordination_nap_2_31_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_2_31_r2.png>
+File: img/RDF_Coordination_ibu_20_2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_2.png>
+File: img/RDF_Coordination_ibu_20_2_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_2_r2.png>
+File: img/RDF_Coordination_cbz_2_27.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_2_27.png>
+File: img/RDF_Coordination_cbz_2_27_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_2_27_r2.png>
 
-Overfull \vbox (14.11101pt too high) has occurred while \output is active []
+Overfull \vbox (28.61101pt too high) has occurred while \output is active []
 
 
 [37]
-File: img/RDF_Coordination_ibu_20_6.png Graphic file (type bmp)
-<img/RDF_Coordination_ibu_20_6.png>
-File: img/RDF_Coordination_ibu_20_6_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_ibu_20_6_r2.png>
-File: img/RDF_Coordination_nap_6_31.png Graphic file (type bmp)
-<img/RDF_Coordination_nap_6_31.png>
-File: img/RDF_Coordination_nap_6_31_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_nap_6_31_r2.png>
-File: img/RDF_Coordination_cbz_6_27.png Graphic file (type bmp)
-<img/RDF_Coordination_cbz_6_27.png>
-File: img/RDF_Coordination_cbz_6_27_r2.png Graphic file (type bmp)
-<img/RDF_Coordination_cbz_6_27_r2.png>
 File: img/RDF_Coordination_indo_36_6.png Graphic file (type bmp)
 <img/RDF_Coordination_indo_36_6.png>
 File: img/RDF_Coordination_indo_36_6_r2.png Graphic file (type bmp)
 <img/RDF_Coordination_indo_36_6_r2.png>
+File: img/RDF_Coordination_nap_6_31.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_6_31.png>
+File: img/RDF_Coordination_nap_6_31_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_nap_6_31_r2.png>
+File: img/RDF_Coordination_ibu_20_6.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_6.png>
+File: img/RDF_Coordination_ibu_20_6_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_ibu_20_6_r2.png>
+File: img/RDF_Coordination_cbz_6_27.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_6_27.png>
+File: img/RDF_Coordination_cbz_6_27_r2.png Graphic file (type bmp)
+<img/RDF_Coordination_cbz_6_27_r2.png>
 
-Overfull \vbox (14.11101pt too high) has occurred while \output is active []
+Overfull \vbox (28.61101pt too high) has occurred while \output is active []
 
 
 [38] [39]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 492.
-
 File: img/msd_cbz_api_r2.png Graphic file (type bmp)
 <img/msd_cbz_api_r2.png>
 File: img/msd_nap_api_r2.png Graphic file (type bmp)
@@ -1403,9 +1404,9 @@ File: img/msd_ibu_s_api_r2.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r2.png>
 File: img/msd_indo_api_r2.png Graphic file (type bmp)
 <img/msd_indo_api_r2.png>
-[40]
 File: img/d.png Graphic file (type bmp)
 <img/d.png>
+ [40]
 File: img/msd_cbz_api_r3.png Graphic file (type bmp)
 <img/msd_cbz_api_r3.png>
 File: img/msd_nap_api_r3.png Graphic file (type bmp)
@@ -1414,7 +1415,12 @@ File: img/msd_ibu_s_api_r3.png Graphic file (type bmp)
 <img/msd_ibu_s_api_r3.png>
 File: img/msd_indo_api_r3.png Graphic file (type bmp)
 <img/msd_indo_api_r3.png>
- [41]
+
+Overfull \hbox (4.26556pt too wide) in paragraph at lines 563--565
+ [][][] 
+ []
+
+[41]
 File: img/cbz_tg_tag.png Graphic file (type bmp)
 <img/cbz_tg_tag.png>
 File: img/nap_tg_tag.png Graphic file (type bmp)
@@ -1451,7 +1457,24 @@ Underfull \hbox (badness 6078) in paragraph at lines 38--45
 
 
 ] [48]
-Underfull \hbox (badness 1769) in paragraph at lines 287--298
+Underfull \hbox (badness 10000) in paragraph at lines 265--273
+[]\TU/lmr/m/n/12 Lapidus, L. J. Lennard-Jones Potential. [][]$[][][][][] [] [] 
+[] [][][][][][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--273
+[][][][][][][] [] [][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][
+][][][][][]$[][]\TU/lmr/m/n/12 , 2024; Licensed un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--273
+\TU/lmr/m/n/12 der CC License Name. Available at URL of the License (e.g.,
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 334--345
 []\TU/lmr/m/n/12 Thompson, A. P.; Aktulga, H. M.; Berger, R.; Bolintineanu, D. 
 S.;
  []
@@ -1471,9 +1494,6 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43109pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5590418297E61F61A4250E04CDEA51EE;6379.
  )
@@ -1482,12 +1502,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27915 strings out of 475925
- 568958 string characters out of 5783280
+ 27918 strings out of 475925
+ 569047 string characters out of 5783280
  1951839 words of memory out of 5000000
- 49487 multiletter control sequences out of 15000+600000
+ 49492 multiletter control sequences out of 15000+600000
  569759 words of font info for 99 fonts, out of 8000000 for 9000
  450 hyphenation exceptions out of 8191
- 87i,17n,131p,1624b,12614s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,1624b,12617s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (55 pages).

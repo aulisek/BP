@@ -26,12 +26,12 @@
 \contentsline {subsection}{\numberline {4.1}Simulations of neat PLA}{18}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Structural properties}{18}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Polydispersity effect}{21}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Glass transition modeling}{22}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3}Glass transition modeling}{23}{subsubsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.2}Simulations of neat API}{25}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Sulfathiazole FF parametrization}{25}{subsubsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.3}Simulations of mixtures of APIs and PLA}{27}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Excess properties}{27}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Radial distribution functions}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}Radial distribution functions}{30}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Diffusion coefficients}{39}{subsubsection.4.3.3}%
 \contentsline {subsubsection}{\numberline {4.3.4}Glass transition temperature}{42}{subsubsection.4.3.4}%
 \contentsline {section}{\numberline {5}CONCLUSION}{46}{section.5}%
