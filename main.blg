@@ -16,45 +16,45 @@ Database file #2: references.bib
 Warning--entry type for "Sritterova" isn't style-file defined
 --line 11 of file references.bib
 achemso 2024-01-30 v3.13g
-You've used 47 entries,
+You've used 50 entries,
             2538 wiz_defined-function locations,
-            1120 strings with 21566 characters,
-and the built_in function-call counts, 18586 in all, are:
-= -- 1386
-> -- 1246
-< -- 32
-+ -- 467
-- -- 425
-* -- 2039
-:= -- 2501
-add.period$ -- 87
-call.type$ -- 47
+            1141 strings with 22355 characters,
+and the built_in function-call counts, 19752 in all, are:
+= -- 1481
+> -- 1305
+< -- 33
++ -- 490
+- -- 445
+* -- 2173
+:= -- 2655
+add.period$ -- 93
+call.type$ -- 50
 change.case$ -- 7
 chr.to.int$ -- 7
-cite$ -- 47
-duplicate$ -- 944
-empty$ -- 1232
-format.name$ -- 483
-if$ -- 3653
+cite$ -- 50
+duplicate$ -- 1002
+empty$ -- 1318
+format.name$ -- 508
+if$ -- 3884
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 304
-num.names$ -- 140
-pop$ -- 96
+newline$ -- 322
+num.names$ -- 149
+pop$ -- 101
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 44
+skip$ -- 47
 stack$ -- 0
-substring$ -- 1073
-swap$ -- 1157
-text.length$ -- 95
+substring$ -- 1172
+swap$ -- 1217
+text.length$ -- 101
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 314
+type$ -- 335
 warning$ -- 0
-while$ -- 142
+while$ -- 151
 width$ -- 0
-write$ -- 615
+write$ -- 653
 (There was 1 warning)

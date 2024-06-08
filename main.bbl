@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{47}
+\begin{mcitethebibliography}{50}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -137,9 +137,7 @@ Drebushchak,~T.~N.; Boldyreva,~E.~V.; Mikhailenko,~M.~A. Crystal structures of
 \EndOfBibitem
 \bibitem[Leach(2001)]{leach_molecular_2001}
 Leach,~A.~R. \emph{Molecular modelling : principles and applications}, 2nd ed.;
-  Prentice Hall Harlow, England: Harlow, England, 2001; Section: xxiv, 744
-  pages, 16 unnumbered pages of plates : illustrations (some color) ; 24
-  cm\relax
+  Prentice Hall Harlow, England: Harlow, England, 2001\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -443,6 +441,36 @@ Smith,~D. G.~A.; Burns,~L.~A.; Patkowski,~K.; Sherrill,~C.~D. Revised {Damping}
   {Parameters} for the {D3} {Dispersion} {Correction} to {Density} {Functional}
   {Theory}. \emph{The Journal of Physical Chemistry Letters} \textbf{2016},
   \emph{7}, 2197–2203\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dodda \latin{et~al.}(2017)Dodda, {Cabeza de Vaca}, Tirado-Rives, and
+  Jorgensen]{dodda_ligpargen_2017}
+Dodda,~L.~S.; {Cabeza de Vaca},~I.; Tirado-Rives,~J.; Jorgensen,~W.~L.
+  {LigParGen} web server: an automatic {OPLS}-{AA} parameter generator for
+  organic ligands. \emph{Nucleic Acids Research} \textbf{2017}, \emph{45},
+  W331–W336\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen and Tirado-Rives(2005)Jorgensen, and
+  Tirado-Rives]{jorgensen_potential_2005}
+Jorgensen,~W.~L.; Tirado-Rives,~J. Potential energy functions for atomic-level
+  simulations of water and organic and biomolecular systems. \emph{Proceedings
+  of the National Academy of Sciences} \textbf{2005}, \emph{102},
+  6665–6670\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dodda \latin{et~al.}(2017)Dodda, Vilseck, Tirado-Rives, and
+  Jorgensen]{dodda_114cm1a-lbcc_2017}
+Dodda,~L.~S.; Vilseck,~J.~Z.; Tirado-Rives,~J.; Jorgensen,~W.~L.
+  1.14*{CM1A}-{LBCC}: {Localized} {Bond}-{Charge} {Corrected} {CM1A} {Charges}
+  for {Condensed}-{Phase} {Simulations}. \emph{The Journal of Physical
+  Chemistry B} \textbf{2017}, \emph{121}, 3864–3870\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
